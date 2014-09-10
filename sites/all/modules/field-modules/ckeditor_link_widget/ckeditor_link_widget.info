@@ -1,0 +1,6 @@
+name = CKEditor Link widget
+description = Provides CKEditor Link autocomplete as a widget for Link fields.
+core = 7.x
+dependencies[] = link
+dependencies[] = ckeditor_link
+package = Fields

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Baseline Text Edits feature.
+ */
+
+include_once 'baseline_text_edits.features.inc';

@@ -1,0 +1,94 @@
+.price-three {
+	.outer {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(4);		
+		}							
+	}
+	.outer:nth-child(3) {
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($last-column:true);		
+		}											
+	}
+}
+.price-four {
+	.outer {
+	@include grid-column(6);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(3);		
+		}							
+	}
+	.outer:nth-child(2) {
+	@include breakpoint($tablet-portrait-and-below) {
+		@include grid-column($last-column:true);
+		}
+	}
+	.outer:nth-child(4) {
+		@include grid-column($last-column:true);										
+	}
+}
+.price-five {
+	.outer {
+	@include grid-column(6);
+	@include breakpoint($tablet-landscape-and-above) {
+		width: 20%;
+		@extend .columns;		
+		}							
+	}
+	.outer:nth-child(2), .outer:nth-child(4) {
+	@include breakpoint($tablet-portrait-and-below) {
+		@include grid-column($last-column:true);
+		}
+	}
+	.outer:nth-child(5) {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($last-column:true);		
+		}											
+	}
+}
+.price-six {
+	.outer {
+	@include grid-column(6);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(2);		
+		}							
+	}
+	.outer:nth-child(2), .outer:nth-child(4) {
+	@include breakpoint($tablet-portrait-and-below) {
+		@include grid-column($last-column:true);
+		}
+	}
+	.outer:nth-child(6) {
+		@include grid-column($last-column:true);		
+	}
+}
+
+.price {
+  font-size: 3em;
+}
+ 
+.outer .panel {
+-webkit-transition-property : scale; 
+-webkit-transition-duration : 0.2s; 
+-webkit-transition-timing-function : ease-in-out; 
+-moz-transition : all 0.2s ease-in-out;  
+}
+ 
+.outer .panel:hover {
+box-shadow: 0 0 10px rgba(0,0,0,.5);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+}
+.description {
+	font-size: .85em;
+	color: $gray;
+}
+.frequency {
+	text-transform: uppercase;
+}
+.panel-primary .description {
+	color: $white;
+}

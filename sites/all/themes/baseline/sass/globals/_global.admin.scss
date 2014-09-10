@@ -1,0 +1,185 @@
+.left, .right {
+	width: 100%;
+	padding-right: 0;
+	float: none;
+	@include breakpoint ($tablet-landscape-and-above) {
+	width: 50%;
+	padding-right: 20px;
+	float: left;
+	}
+}
+
+#overlay-container,.overlay-modal-background,.overlay-element {
+z-index:1500;
+}
+
+.modal {
+z-index:1620;
+}
+
+.modal-dialog {
+z-index:1630;
+}
+
+.modal-backdrop {
+z-index:1610;
+}
+.modal-open {
+	overflow: visible;
+}
+.modal-content {
+	float: left;
+}
+#modal-content fieldset legend {
+	position: relative;
+	text-shadow: none;
+}
+
+#modal-content .form-item-view-settings {
+	display: block;
+}
+#page-manager-edit {
+	@extend .row;
+}
+
+.region-help>.glyphicon {
+font-size:18px;
+float:left;
+margin:-.05em .5em 0 0;
+}
+
+.region-help .block {
+overflow:hidden;
+}
+
+.help-block,.control-group .help-inline {
+color:#999;
+font-size:12px;
+margin:5px 0 10px;
+padding:0;
+}
+
+.error {
+color:#a94442;
+}
+
+div.error,table tr.error {
+background-color:#f2dede;
+color:#a94442;
+}
+
+.control-group.error {
+background:0;
+}
+
+.control-group.error label,.control-group.error .control-label {
+color:#a94442;
+font-weight:600;
+}
+
+.control-group.error input,.control-group.error textarea,.control-group.error select,.control-group.error .uneditable-input {
+color:#555;
+border:1px solid #ccc;
+}
+
+.control-group.error .help-block,.control-group.error .help-inline {
+color:#333;
+}
+
+
+.password-strength {
+width:17em;
+float:right;
+margin-top:1.4em;
+}
+
+.password-strength-title {
+display:inline;
+}
+
+.password-strength-text {
+float:right;
+font-weight:700;
+}
+
+.password-indicator {
+background-color:#949494;
+height:.3em;
+width:100%;
+}
+
+.password-indicator div {
+height:100%;
+width:0;
+background-color:#999;
+}
+
+input.password-confirm,input.password-field {
+width:16em;
+margin-bottom:.4em;
+}
+
+div.password-confirm {
+float:right;
+margin-top:1.5em;
+visibility:hidden;
+width:17em;
+}
+
+div.form-item div.password-suggestions {
+width:38.5em;
+border:1px solid #B4B4B4;
+margin:.7em 0;
+padding:.2em .5em;
+}
+
+.confirm-parent,.password-parent {
+clear:left;
+width:36.3em;
+margin:0;
+}
+.alert a {
+font-weight:700;
+}
+
+.alert-success a {
+color:#2b542c;
+}
+
+.alert-info a {
+color:#245269;
+}
+
+.alert-warning a {
+color:#66512c;
+}
+
+.alert-danger a {
+color:#843534;
+}
+
+ul.action-links {
+margin:12px 0;
+padding:0;
+}
+
+ul.action-links li {
+display:inline;
+margin:0;
+padding:0 6px 0 0;
+}
+
+ul.action-links .glyphicon {
+padding-right:.5em;
+}
+fieldset.at-layout-form div.form-type-radio label {
+	width: 60px!important;
+	text-indent: -1000px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+#content-wrapper .admin {
+	@extend .row;
+}

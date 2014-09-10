@@ -1,0 +1,102 @@
+<?php
+
+/**
+ * Implements hook_field_widget_info().
+ */
+function ckeditor_link_widget_field_widget_info() {
+  return array(
+    'ckeditor_link_widget' => array(
+      'label' => t('CKEditor Link'),
+      'field types' => array('link_field'),
+      'multiple values' => FIELD_BEHAVIOR_NONE,
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_widget_settings_form().
+ */
+function ckeditor_link_widget_field_widget_settings_form($field, $instance) {
+  $form = array();
+  $widget = $instance['widget'];
+  $settings = $widget['settings'];
+  return $form;
+}
+
+/**
+ * Implements hook_field_widget_form().
+ */
+function ckeditor_link_widget_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
+  // Revert the path to a full title with appended path
+  if (isset($items[$delta]['url']) && !empty($items[$delta]['url']) && ($item = menu_get_item($items[$delta]['url']))) {
+    $items[$delta]['url'] =  $item['title'] . ' (' . $items[$delta]['url'] . ')';
+  }
+  
+  $element += array(
+    '#type' => $instance['widget']['type'],
+    '#field' => array(
+      'widget' => array(
+        'settings' => array(),
+      ),
+    ),
+    '#default_value' => isset($items[$delta]) ? $items[$delta] : '',
+  );
+  
+  return $element;
+}
+
+/**
+ * Implements hook_element_info().
+ */
+function ckeditor_link_widget_element_info() {
+  return array(
+    'ckeditor_link_widget' => array(
+      '#input' => TRUE,
+      '#process' => array('ckeditor_link_widget_field_process'),
+      '#theme' => 'ckeditor_link_widget',
+      '#theme_wrappers' => array('form_element'),
+    ),
+  );
+}
+
+/**
+ * Create element array.
+ */
+function ckeditor_link_widget_field_process($element, &$form_state, &$complete_form) {
+  $element = link_field_process($element, $form_state, $complete_form);
+  $element['url']['#autocomplete_path'] = 'ckeditor_link/autocomplete';
+  $value = &$form_state['values'];
+  
+  // Drill down through field parents if present, to the link field.  
+  foreach ($element['#field_parents'] as $key) {
+    $value = &$value[$key];
+  }
+  
+  // Get a reference to the url value.
+  $value = &$value[$element['#field_name']][$element['#language']][$element['#delta']]['url'];
+
+  if (isset($element['#value']['url'])) {
+    // Replace autocomplete "title (path)" with just the path.
+    $value = preg_replace('/.*?\(([^)]+?)\)$/', '\1', $value);
+  }
+  
+  return $element;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ckeditor_link_widget_theme() {
+  return array(
+    'ckeditor_link_widget' => array(
+      'render element' => 'element',
+    ),
+  );
+}
+
+/**
+ * FAPI theme for an individual text element.
+ */
+function theme_ckeditor_link_widget($vars) {
+  return theme_link_field($vars);
+}

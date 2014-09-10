@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Baseline Paragraph Elements feature.
+ */
+
+include_once 'baseline_paragraph_elements.features.inc';

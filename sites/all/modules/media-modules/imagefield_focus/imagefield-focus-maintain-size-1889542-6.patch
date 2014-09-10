@@ -1,0 +1,59 @@
+diff --git a/imagefield_focus.effects.inc b/imagefield_focus.effects.inc
+index 041918d..01450e9 100644
+--- a/imagefield_focus.effects.inc
++++ b/imagefield_focus.effects.inc
+@@ -58,6 +58,13 @@ function imagefield_focus_theme() {
+ function imagefield_focus_scale_and_crop_form($data = array()) {
+   $form = image_resize_form($data);
+ 
++  $form['maintain_size'] = array(
++    '#type' => 'checkbox',
++    '#title' => t('Fixed dimensions'),
++    '#description' => t('Select this to force the width and height to always match the above values. This may cause upscaling, and in unusual cases may also result in parts of the focus area not being included in the image.'),
++    '#default_value' => !empty($data['maintain_size']) ? $data['maintain_size'] : FALSE,
++  );
++
+   $form['strength'] = array(
+     '#type' => 'radios',
+     '#title' => t('Focus strength'),
+@@ -87,7 +94,11 @@ function imagefield_focus_scale_and_crop_form($data = array()) {
+ 
+ function theme_imagefield_focus_scale_and_crop_summary($variables) {
+   $data = $variables['data'];
+-  return theme('image_resize_summary', array('data' => $data)) .' '. t('!strength strength', array('!strength' => t($data['strength'])));
++  $output = theme('image_resize_summary', array('data' => $data)) .' '. t('!strength strength', array('!strength' => t($data['strength'])));
++  if (!empty($data['maintain_size'])) {
++    $output .= ' (' . t('fixed dimensions') . ')';
++  }
++  return $output;
+ }
+ 
+ function imagefield_focus_scale_and_crop_effect(&$image, $data) {
+@@ -110,8 +121,16 @@ function imagefield_focus_scale_and_crop_effect(&$image, $data) {
+       $rect['yoffset'] -= $yoffset;
+ 
+       $scale = min(1, $data['width'] / $rect['width'], $data['height'] / $rect['height']);
+-      $scale_low = min($scale, max($data['width'] / $image->info['width'], $data['height'] / $image->info['height']));
+-      if ($data['strength'] == 'medium') {
++      $scale_low = max($data['width'] / $image->info['width'], $data['height'] / $image->info['height']);
++      if ($scale < $scale_low) {
++        if (!empty($data['maintain_size'])) {
++          $scale = $scale_low;
++        }
++        else {
++          $scale_low = $scale;
++        }
++      }
++      elseif ($data['strength'] == 'medium') {
+         $scale = sqrt($scale * $scale_low);
+       }
+       elseif ($data['strength'] == 'low') {
+@@ -120,7 +139,7 @@ function imagefield_focus_scale_and_crop_effect(&$image, $data) {
+ 
+       $width0 = $image->info['width'] * $scale;
+       $height0 = $image->info['height'] * $scale;
+-      if ($scale < 1 && !image_resize_effect($image, array('width' => $width0, 'height' => $height0))) {
++      if ($scale != 1 && !image_resize_effect($image, array('width' => $width0, 'height' => $height0))) {
+         return FALSE;
+       }
+ 

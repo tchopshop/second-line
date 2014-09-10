@@ -1,0 +1,1 @@
+This module has been heavily modified, adding bootstrap classes and moving the element order.

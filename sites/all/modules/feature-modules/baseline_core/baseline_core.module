@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Baseline Core feature.
+ */
+
+include_once 'baseline_core.features.inc';

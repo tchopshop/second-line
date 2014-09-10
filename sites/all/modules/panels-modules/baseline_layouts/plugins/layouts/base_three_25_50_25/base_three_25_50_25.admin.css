@@ -1,0 +1,5 @@
+#panels-dnd-main .top, #panels-dnd-main .main, #panels-dnd-main .sidebar-first, #panels-dnd-main .sidebar-second, #panels-dnd-main .bottom {margin-bottom: 5px;width:100%;right:auto; left:auto;}
+#panels-dnd-main .sidebar-first {float: left; width: 24.5%}
+#panels-dnd-main .main {float: left; width: 50%; margin-left: 0.5%}
+#panels-dnd-main .sidebar-second {float: right; width: 24.5%}
+#panels-dnd-main .bottom {clear: both}

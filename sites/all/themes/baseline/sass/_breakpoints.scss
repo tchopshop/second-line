@@ -1,0 +1,15 @@
+// BREAKPOINTS for Breakpoints plugin
+// --------------------------------------------------
+$breakpoint-to-ems: true;
+$standard:1025px;
+$tablet-landscape: 800px 1024px;
+$tablet-portrait: 481px 799px;
+$tablet: 481px 1024px;
+$smalltouch-landscape: 321px 480px;
+$smalltouch-portrait: max-width 320px;
+$smalltouch: max-width 480px;
+$tablet-portrait-and-above: 481px;
+$tablet-landscape-and-above: 800px;
+$tablet-portrait-and-below: max-width 799px;
+$tablet-landscape-small: 800px 900px;
+$tablet-landscape-large: 901px 1024px;

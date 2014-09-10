@@ -1,0 +1,81 @@
+@font-face { font-family: 'Glyphicons Halflings'; src: url("./fonts/glyphicons-halflings-regular.eot"); src: url("./fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/glyphicons-halflings-regular.woff") format("woff"), url("./fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+.glyphicon { position: relative; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; padding-right: 5px; }
+
+.glyphicon-plus:before { content: "\2b"; }
+
+.glyphicon-pencil:before { content: "\270f"; }
+
+.glyphicon-ok:before { content: "\e013"; }
+
+.glyphicon-remove:before { content: "\e014"; }
+
+.glyphicon-cog:before { content: "\e019"; }
+
+.glyphicon-trash:before { content: "\e020"; }
+
+.glyphicon-download:before { content: "\e026"; }
+
+.glyphicon-upload:before { content: "\e027"; }
+
+.glyphicon-refresh:before { content: "\e031"; }
+
+.glyphicon-filter:before { content: "\e138"; }
+
+.glyphicon-import:before { content: "\e169"; }
+
+.glyphicon-export:before { content: "\e170"; }
+
+@-ms-viewport { width: device-width; }
+
+.visible-xs, .visible-sm, .visible-md, .visible-lg { display: none !important; }
+
+@media (max-width: 767px) { .visible-xs { display: block !important; }
+  table.visible-xs { display: table; }
+  tr.visible-xs { display: table-row !important; }
+  th.visible-xs, td.visible-xs { display: table-cell !important; } }
+@media (min-width: 768px) and (max-width: 991px) { .visible-sm { display: block !important; }
+  table.visible-sm { display: table; }
+  tr.visible-sm { display: table-row !important; }
+  th.visible-sm, td.visible-sm { display: table-cell !important; } }
+@media (min-width: 992px) and (max-width: 1199px) { .visible-md { display: block !important; }
+  table.visible-md { display: table; }
+  tr.visible-md { display: table-row !important; }
+  th.visible-md, td.visible-md { display: table-cell !important; } }
+@media (min-width: 1200px) { .visible-lg { display: block !important; }
+  table.visible-lg { display: table; }
+  tr.visible-lg { display: table-row !important; }
+  th.visible-lg, td.visible-lg { display: table-cell !important; } }
+@media (max-width: 767px) { .hidden-xs { display: none !important; } }
+@media (min-width: 768px) and (max-width: 991px) { .hidden-sm { display: none !important; } }
+@media (min-width: 992px) and (max-width: 1199px) { .hidden-md { display: none !important; } }
+@media (min-width: 1200px) { .hidden-lg { display: none !important; } }
+.visible-print { display: none !important; }
+
+@media print { .visible-print { display: block !important; }
+  table.visible-print { display: table; }
+  tr.visible-print { display: table-row !important; }
+  th.visible-print, td.visible-print { display: table-cell !important; } }
+@media print { .hidden-print { display: none !important; } }
+/** responsive.custom.css is for custom media queries that are not set via the theme settings, such as cascading media queries.  By default all the other responsive stylesheets used in Adaptivetheme use a "stacking method", however cascading media queries use a waterfall method so you can leverage the cascade and inheritance for all browsers that support media queries, regardless of screen size.  @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack  NOTE: this file loads by default, to disable got to your theme settings and look under the "CSS" settings tab. */
+@media only screen and (max-width: 480px) { .region[class*="float-blocks"] .block { float: none; width: 100%; } }
+@media (max-width: 800px) { .dl-horizontal dt { float: none; clear: none; width: auto; text-align: left; }
+  .dl-horizontal dd { margin-left: 0; }
+  .tabbable.tabs-left.vertical-tabs > ul { width: 100%; }
+  .tabbable.tabs-left.vertical-tabs > ul > li { float: left; width: 50%; }
+  .tabbable.tabs-left.vertical-tabs > ul > li a { width: 99%; border: 1px solid silver; padding: 5px; }
+  .tabbable.tabs-left.vertical-tabs fieldset { min-width: 100%; }
+  .tabbable.tabs-left.vertical-tabs .nav-tabs > li > a { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; } }
+@media (min-width: 801px) { .dl-back, .dl-parent { display: none; }
+  .widget-type-select.form-control, .field-type-select.form-control, table .form-control, .form-text.form-control, .views-exposed-widgets .form-control { width: 100%; } }
+@media (min-width: 886px) and (max-width: 915px) { #menu-bar { width: 100%; float: none; margin-top: 0; }
+  .flexnav > li > a { padding: 4px 6px; }
+  #menu-bar .flexnav { display: table; width: 100%; }
+  #menu-bar .flexnav > li { display: table-cell; text-align: center; white-space: nowrap; float: none; position: relative; }
+  #menu-bar .flexnav > li > ul { max-width: 250px; left: auto; }
+  #menu-bar .flexnav > li > ul li { text-align: left; } }
+@media (min-width: 979px) and (max-width: 1080px) { #menu-bar ul.bootstrap-menu > li { margin-left: 3px; }
+  .region-header .region-inner { padding: 0; } }
+@media (min-width: 900px) and (max-width: 979px) { .flexnav > li > a { padding: 4px 8px; } }
+@media (min-width: 980px) and (max-width: 1049px) { .flexnav > li > a { padding: 4px 10px; } }
+@media (min-width: 1050px) and (max-width: 1199px) { .flexnav > li > a { padding: 4px 15px; } }

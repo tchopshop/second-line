@@ -1,0 +1,162 @@
+diff --git a/form_builder.js b/form_builder.js
+index 0f583f0..169cbd2 100644
+--- a/form_builder.js
++++ b/form_builder.js
+@@ -168,7 +168,25 @@ Drupal.behaviors.formBuilderDeleteConfirmation.attach = function(context) {
+   }
+ 
+   if ($confirmForm.length) {
+-    $confirmForm.submit(Drupal.formBuilder.deleteField);
++    $confirmForm.find('input[type=submit]').bind('click', function(event) {
++      event.preventDefault();
++      Drupal.formBuilder.ajaxOptions = {
++        url: $confirmForm.attr('action'),
++        success: Drupal.formBuilder.deleteField,
++        error: Drupal.formBuilder.ajaxError,
++        type: 'post',
++        dataType: 'json',
++        errorMessage: Drupal.t('Field could not be deleted at this time.  Please try again later.'),
++        data: $confirmForm.serialize(),
++        tryCount: 0,
++        maxTry: 3
++      };
++      // Submit the form via ajax
++      $.ajax(Drupal.formBuilder.ajaxOptions);
++      // Bind this action to disable any submit buttons on the page.  It will be
++      // removed on success or after the retries have been exhausted.
++      $('form').submit(Drupal.formBuilder.preventSubmit);
++    });
+     $confirmForm.find('a').click(Drupal.formBuilder.clickCancel);
+   }
+ };
+@@ -353,13 +371,19 @@ Drupal.formBuilder.editField = function() {
+       $(Drupal.formBuilder.fieldConfigureForm).html(Drupal.settings.formBuilder.fieldLoading);
+     }
+ 
+-    $.ajax({
++    Drupal.formBuilder.ajaxOptions = {
+       url: $link.attr('href'),
+       type: 'GET',
+       dataType: 'json',
+       data: 'js=1',
+-      success: Drupal.formBuilder.displayForm
+-    });
++      success: Drupal.formBuilder.displayForm,
++      error: Drupal.formBuilder.ajaxError,
++      errorMessage: Drupal.t('Form could not be loaded at this time. Please try again later.'),
++      tryCount: 0,
++      maxTry: 3
++    };
++    
++    $.ajax(Drupal.formBuilder.ajaxOptions);
+   };
+ 
+   Drupal.formBuilder.updatingElement = true;
+@@ -373,15 +397,20 @@ Drupal.formBuilder.editField = function() {
+  * Click handler for deleting a field.
+  */
+ Drupal.formBuilder.deleteField = function() {
+-  $(this).parents('div.form-builder-wrapper:first').animate({ height: 'hide', opacity: 'hide' }, 'normal', function() {
++  var active = $(Drupal.formBuilder.activeElement);
++  // Renable form submission.
++  $('form').unbind('submit', Drupal.formBuilder.preventSubmit);
++  active.fadeOut(function() {
+     // If this is a unique field, show the field in the palette again.
+-    var elementId = $(this).find('div.form-builder-element').attr('id');
++    var elementId = active.find('.form-builder-element').attr('id');
+     $('ul.form-builder-fields').find('li.' + elementId).show('slow');
+     // Remove the field from the form.
+-    $(this).remove();
+-
++    active.remove();
++   
+     // Check for an entirely empty form and for empty fieldsets.
+     Drupal.formBuilder.checkForm();
++
++    // Check for empty fieldsets.
+     Drupal.formBuilder.checkFieldsets([], true);
+   });
+ };
+@@ -436,10 +465,25 @@ Drupal.formBuilder.displayForm = function(response) {
+  */
+ Drupal.formBuilder.elementChange = function() {
+   if (!Drupal.formBuilder.updatingElement) {
+-    $(this).parents('form:first').ajaxSubmit({
++    // Store the form and the options
++    var form = $(this).closest('form');
++    Drupal.formBuilder.ajaxOptions = {
++      url: form.attr('action'),
+       success: Drupal.formBuilder.updateElement,
+-      dataType: 'json'
+-    });
++      error: Drupal.formBuilder.ajaxError,
++      type: 'post',
++      dataType: 'json',
++      errorMessage: Drupal.t('Field could not be updated at this time. Please try again later.'),
++      data: form.serialize(),
++      tryCount: 0,
++      maxTry: 3
++    };
++    // Submit the form via ajax
++    $.ajax(Drupal.formBuilder.ajaxOptions);
++
++    // Bind this action to disable any submit buttons on the page.  It will be
++    // removed on success or after the retries have been exhausted.
++    $('form').submit(Drupal.formBuilder.preventSubmit);
+   }
+ 
+   // Clear any pending updates until further changes are made.
+@@ -450,6 +494,23 @@ Drupal.formBuilder.elementChange = function() {
+   Drupal.formBuilder.updatingElement = true;
+ };
+ 
++Drupal.formBuilder.ajaxError = function (XMLHttpRequest, textStatus, errorThrown) {
++  var options = Drupal.formBuilder.ajaxOptions;
++  var message = this.errorMessage ? this.errorMessage : 'Unable to reach server.  Please try again later.';
++
++  options.tryCount++;
++  if (options.tryCount <= options.maxTry) {
++    $.ajax(options);
++  } else {
++    $('form').unbind('submit', Drupal.formBuilder.preventSubmit);
++    alert(message);
++  }
++};
++
++Drupal.formBuilder.preventSubmit = function (event) {
++  event.preventDefault();
++}
++
+ /**
+  * Update a field after a delay.
+  *
+@@ -525,6 +586,7 @@ Drupal.formBuilder.updateElement = function(response) {
+ 
+   // Set the variable stating we're done updating.
+   Drupal.formBuilder.updatingElement = false;
++  $('form').unbind('submit', Drupal.formBuilder.preventSubmit);
+ };
+ 
+ /**
+@@ -655,13 +717,18 @@ Drupal.formBuilder.dropElement = function (event, ui) {
+ 
+     var $ajaxPlaceholder = $('<div class="form-builder-wrapper form-builder-new-field"><div id="form-builder-element-' + name + '" class="form-builder-element"><span class="progress">' + Drupal.t('Please wait...') + '</span></div></div>');
+ 
+-    $.ajax({
++    Drupal.formBuilder.ajaxOptions = {
+       url: $element.find('a').attr('href'),
+       type: 'GET',
+       dataType: 'json',
+       data: 'js=1&element_id=' + name,
+-      success: Drupal.formBuilder.addElement
+-    });
++      success: Drupal.formBuilder.addElement,
++      error: Drupal.formBuilder.ajaxError,
++      errorMessage: Drupal.t('Element could not be added at this time. Please try again later.'),
++      tryCount: 0,
++      maxTry: 3
++    };
++    $.ajax(Drupal.formBuilder.ajaxOptions);
+ 
+     $placeholder.replaceWith($ajaxPlaceholder);
+ 

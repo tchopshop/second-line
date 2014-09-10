@@ -1,0 +1,4 @@
+#panels-dnd-main .top, #panels-dnd-main .first, #panels-dnd-main .second, #panels-dnd-main .third, #panels-dnd-main .bottom {margin-bottom: 5px;width:100%;right:auto; left:auto;}
+#panels-dnd-main .first, #panels-dnd-main .second, #panels-dnd-main .third {float: left; width: 33%;}
+#panels-dnd-main .second {margin-left: 0.5%; margin-right: 0.5%}
+#panels-dnd-main .bottom {clear: both}

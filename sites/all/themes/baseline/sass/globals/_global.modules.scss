@@ -1,0 +1,206 @@
+//
+// Devel Module
+//
+.dev-query {
+  background: #eee;
+  padding: 30px;
+}
+
+.views-display-settings .label {
+font-size:100%;
+color:#666;
+}
+
+.views-display-settings .footer {
+margin:4px 0 0;
+padding:0;
+}
+
+.mceButton {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+ul.flexnav {
+	padding-left: 0;
+}
+
+
+
+// Fieldgroup module
+
+.field-group-htabs-wrapper {
+	clear: left;
+	float: left;
+	width: 100%;
+}
+
+.field-group-bootstrap_fieldgroup_nav {
+	margin-bottom: 15px!important;
+}
+.tab-pane {
+	margin-bottom: 15px;
+}
+
+// jQuery UI
+
+.ui-corner-all {
+	border-radius: $border-radius-base;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid $btn-default-border;
+    color: $gray-dark;
+    font-weight: normal;
+}
+.ui-widget {
+	font-family: $font-family-base;
+	@include rems (font-size, $font-size-base);
+}
+.ui-multiselect-menu {
+	@include box-shadow (2px 2px 5px $gray);
+	label {
+		margin-bottom: 0;
+		padding: 0;
+		padding-left: 2px;
+		input {
+			top: -2px;
+		}
+	}
+}
+
+// Workbench
+
+.admin.my-workbench .contextual-links-region {
+	margin-bottom: 50px;
+}
+
+div.admin.my-workbench .left {
+	margin-left: 0;
+}
+div.admin.my-workbench .right {
+	margin-right: 0;
+}
+
+// Tagging
+
+#tagging-widget-container .tagging-widget-input, input.tagging-widget-input {
+  width:100%;
+  float:left;
+  margin:0px;
+  padding: 6px 12px;
+  height: 34px;
+}
+
+// Panels modal
+.option-text-aligner .form-item.checkbox {
+	padding: 0 0 0 20px;
+	label {
+		height: auto;
+		padding-right: 0;
+		clear:none;
+	}
+}
+div#modalContent {
+	overflow: visible!important;
+	top: 100px!important;
+	.ctools-modal-dialog {
+		height: auto!important;
+		div#modal-content.modal-body {
+		height: auto!important;			
+		}
+	}
+}
+#panopoly-form-widget-preview {
+	width: 50%;
+	float: right;
+}
+.panels-ipe-portlet-wrapper .panels-ipe-linkbar li:first-child a {
+	@extend %glyphicon-pencil;
+	@extend %glyphicon;
+	font-size: 1.2rem;
+	padding-right: 0;
+}
+.panels-ipe-portlet-wrapper .panels-ipe-linkbar li+li a {
+	@extend %glyphicon-star;
+	@extend %glyphicon;
+	font-size: 1.2rem;
+	padding-right: 0;
+}
+.panels-ipe-portlet-wrapper .panels-ipe-linkbar li+li+li a {
+	@extend %glyphicon-remove;
+	@extend %glyphicon;
+	font-size: 1.2rem;
+	padding-right: 0;
+}
+.panels-ipe-save.btn-success {
+	@extend %glyphicon-ok;
+	@extend %glyphicon;
+	padding: 0 0.8em!important;
+}
+.panels-ipe-cancel.form-submit {
+	@extend %glyphicon-remove;
+	@extend %glyphicon;
+	padding: 0 0.8em!important;	
+}
+.imagefield-focus.focus-box {
+	width: 100%;
+	min-width: inherit;
+	max-width: 800px;
+	.imgfocus-wrapper {
+		width: auto!important;
+		height: auto!important;
+	}
+}
+
+// Views
+.views-field img.image-style-none {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+// Media
+.media-widget a {
+	@extend .btn;
+	@extend .btn-default;
+	margin-right: 10px;
+}
+
+//Form builder 
+#form-builder-field-palette ul li {
+	width: 150px;
+	font-size: 14px;
+	clear: left;
+}
+
+// Features 
+
+.page-admin-structure-features .form-type-checkbox {
+	float: none;
+	padding-left: 20px!important;
+}
+
+// Form Builder
+
+#form-builder fieldset.form-builder-group .form-item.checkbox, #form-builder fieldset.form-builder-group .form-item.radio {
+	padding-left: 20px;
+}
+#form-builder fieldset.form-builder-group .form-item.checkbox, #form-builder fieldset.form-builder-group .form-item.radio {
+	margin-right: 20px;
+}
+div.form-builder-element {
+	margin: 0;
+}
+#form-builder form {
+	clear: left;
+}
+#form-builder .form-select {
+	float: left;
+	margin-right: 20px;
+}
+div.form-builder-wrapper {
+	margin-bottom: 15px;
+}

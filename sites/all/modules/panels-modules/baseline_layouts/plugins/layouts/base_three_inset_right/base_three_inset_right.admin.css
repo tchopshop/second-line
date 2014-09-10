@@ -1,0 +1,7 @@
+#panels-dnd-main .top, #panels-dnd-main .sidebar-left, #panels-dnd-main .main, #panels-dnd-main .sidebar-right, #panels-dnd-main .bottom {float: left; margin-bottom: 5px;width: 100%;right:auto; left:auto;}
+#panels-dnd-main .sidebar-left {width: 25%}
+#panels-dnd-main .inset-wrapper {float: right; width: 74.5%; margin-left: 0.5%;right:auto; left:auto;}
+#panels-dnd-main .inset-wrapper .top, #panels-dnd-main .inset-wrapper .bottom {width: 100%}
+#panels-dnd-main .main {width: 69.5%}
+#panels-dnd-main .sidebar-right {float:right;width: 30%; margin-left: 0.5%}
+#panels-dnd-main .bottom {clear: both}

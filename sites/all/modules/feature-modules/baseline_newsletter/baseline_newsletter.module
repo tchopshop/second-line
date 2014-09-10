@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Baseline Newsletter feature.
+ */
+
+include_once 'baseline_newsletter.features.inc';

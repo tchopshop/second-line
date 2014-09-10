@@ -1,0 +1,27 @@
+https://drupal.org/node/2016029
+
+Well, For those that feel to know and want images to work with the dev version...I solved the issue finally :)
+In the field_group_multiple_process_field_file_submit thats in the file.inc file.
+The language code needs to be added.
+
+I changed this:
+
+      if (isset($value[$field_name]['0'])) {
+        // composite value
+        $values[$field_name]['empty'][$delta] = $function($value[$field_name]['0'], $field_info);
+        $values[$field_name]['values'][$langcode][$delta] = $value[$field_name]['0'];
+        if ($values[$field_name]['empty'][$delta]) {
+          $values[$field_name]['values'][$langcode][$delta] = NULL;
+        }
+      }
+To this:
+
+      if (isset($value[$field_name][$langcode]['0'])) {
+        // composite value
+        $values[$field_name]['empty'][$delta] = $function($value[$field_name][$langcode]['0'], $field_info);
+        $values[$field_name]['values'][$langcode][$delta] = $value[$field_name][$langcode]['0'];
+        if ($values[$field_name]['empty'][$delta]) {
+          $values[$field_name]['values'][$langcode][$delta] = NULL;
+        }
+Now all is happy and images work with the multiple table field group.
+Yay :)

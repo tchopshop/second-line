@@ -1,0 +1,26 @@
+<?php
+/**
+ * This was strickly a Proof of Concept Module. To try an improve the way the filters are display
+ */
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function tab_formats_element_info_alter(&$types) {
+  $types['text_format']['#pre_render'][] = 'tab_formats_render_text_format';
+}
+
+/**
+ *
+ */
+function tab_formats_render_text_format($element) {
+  if (!isset($element['format']) || !empty($element['value']['#disabled'])) {
+    return $element;
+  }
+  else {
+    $format_field = &$element['format'];
+    $format_field['format']['#attributes']['class'][] = 'tab-formats';
+    drupal_add_js(drupal_get_path('module', 'tab_formats') . '/tab_formats.js');
+    return $element;
+  }
+}

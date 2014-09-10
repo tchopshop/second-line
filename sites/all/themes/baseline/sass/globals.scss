@@ -1,0 +1,100 @@
+/**
+ * Global Styles
+ *
+ * We use the "global" namespace to denote files that load for all
+ * devices as opposed to CSS embedded in media queries.
+ *
+ * This file imports all the global stylesheets into one file.
+ * This is done purely as a house-keeping exercise and to make it easy
+ * to unset one stylesheet by simply commenting it out.
+ *
+ * When CSS aggregation is ON the @imports are resolved and only one
+ * aggreated file is generated, so there is zero performance overhead
+ * in using @import. In other words this files content is replaced by
+ * all the CSS in the imported stylseheets, then compressed and cached
+ * by Drupal in the public files directory.
+ *
+ * The modular structure is very similar to Zen and the actual CSS used in
+ * some of these files is lifted from the Zen theme - this is to  provide
+ * a consistant themer experience for those who have used Zen. Adaptivetheme
+ * adds additional classes, makes minor adjustments to some classes, id's
+ * and the actual styles, and adds base styles for tables and Panels.
+ */
+
+@import "base";
+// Core variables and mixins
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+//@import "bootstrap/code";
+//@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Components
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+//@import "bootstrap/button-groups";
+@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+@import "bootstrap/submenus";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/pagination";
+@import "bootstrap/pager";
+@import "bootstrap/labels";
+//@import "bootstrap/badges";
+//@import "bootstrap/jumbotron";
+@import "bootstrap/thumbnails";
+@import "bootstrap/alerts";
+//@import "bootstrap/progress-bars";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/panels";
+//@import "bootstrap/responsive-embed";
+//@import "bootstrap/wells";
+@import "bootstrap/close";
+
+// Components w/ JavaScript
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+//@import "bootstrap/popovers";
+//@import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+// GLOBALS
+@import "extras/grid-foundation";
+
+@import "globals/global.admin";
+//@import "extras/price-tables";
+@import "extras/tab-format-module";
+@import "extras/block-grid";
+@import "extras/autocomplete_deluxe";
+@import "extras/flexslider";
+@import "extras/paragraph-grids";
+/* Global form styles */
+@import "globals/global.base";
+@import "globals/global.forms";
+@import "extras/paragraphs";
+@import "extras/flexnav-basic";
+/* General styles for page template elements */
+@import "globals/global.pages";
+
+/* Main navigation, menus, breadcrumbs, local tasks, action links, pager and skip navigation */
+@import "globals/global.nav";
+
+/* Global styles for fields */
+@import "globals/global.fields";
+
+@import "globals/global.modules";
+
+@import "globals/global.images";
+@import "secondlinestages";

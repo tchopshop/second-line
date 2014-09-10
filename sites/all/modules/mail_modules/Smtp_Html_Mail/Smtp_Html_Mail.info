@@ -1,0 +1,6 @@
+name = Custom HTML SMTP Email Class
+description = Defines custom class for used with MailSystem Module.
+package = GagaBaby
+core = 7.x
+
+files[] = includes/HTMLMailSystem__SmtpMailSystem.mail.inc 

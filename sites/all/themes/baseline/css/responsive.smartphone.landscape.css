@@ -1,0 +1,155 @@
+@font-face { font-family: 'Glyphicons Halflings'; src: url("./fonts/glyphicons-halflings-regular.eot"); src: url("./fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/glyphicons-halflings-regular.woff") format("woff"), url("./fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+.glyphicon { position: relative; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; padding-right: 5px; }
+
+.glyphicon-plus:before { content: "\2b"; }
+
+.glyphicon-pencil:before { content: "\270f"; }
+
+.glyphicon-ok:before { content: "\e013"; }
+
+.glyphicon-remove:before { content: "\e014"; }
+
+.glyphicon-cog:before { content: "\e019"; }
+
+.glyphicon-trash:before { content: "\e020"; }
+
+.glyphicon-download:before { content: "\e026"; }
+
+.glyphicon-upload:before { content: "\e027"; }
+
+.glyphicon-refresh:before { content: "\e031"; }
+
+.glyphicon-filter:before { content: "\e138"; }
+
+.glyphicon-import:before { content: "\e169"; }
+
+.glyphicon-export:before { content: "\e170"; }
+
+/* Common styles of menus */
+.dl-menuwrapper { width: 100%; max-width: 250px; float: left; position: relative; -webkit-perspective: 1000px; -moz-perspective: 1000px; perspective: 1000px; -webkit-perspective-origin: 50% 200%; -moz-perspective-origin: 50% 200%; perspective-origin: 50% 200%; z-index: 2000; }
+
+.dl-menuwrapper:first-child { margin-right: 100px; }
+
+.dl-menuwrapper ul { padding: 0; list-style: none; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; }
+
+.dl-menuwrapper li { position: relative; float: none !important; }
+.dl-menuwrapper li a { display: block; position: relative; outline: none; }
+.dl-menuwrapper li a b { display: none; }
+
+.dl-menuwrapper li.dl-back > a { padding-left: 30px; background: rgba(0, 0, 0, 0.1); }
+
+.dl-menuwrapper li.dl-back:after, .dl-menuwrapper li a:not(:only-child):after { content: " "; position: absolute; width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 5px 0 5px 7px; border-left-color: #cccccc; margin-top: 5px; margin-right: 8px; }
+
+.dl-menuwrapper li.dl-back:after { left: 10px; color: #d4ccc6; border-width: 5px 7px 5px 0; border-right-color: #cccccc; margin-right: 0; top: 5px; }
+
+.dl-menuwrapper li > a:after { right: 10px; color: rgba(0, 0, 0, 0.15); }
+
+.dl-menuwrapper .dl-menu { margin: 5px 0 0 0; position: absolute; width: 100%; opacity: 0; pointer-events: none; -webkit-transform: translateY(10px); -moz-transform: translateY(10px); transform: translateY(10px); -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+
+.dl-menuwrapper .dl-menu.dl-menu-toggle { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.dl-menuwrapper .dl-menu.dl-menuopen { opacity: 1; pointer-events: auto; -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px); }
+
+/* Hide the inner submenus */
+.dl-menuwrapper li .dl-submenu { display: none; }
+
+.dl-menu { position: absolute; top: 100%; left: 0; z-index: 1000; min-width: 160px; padding: 0; margin: 2px 0 0; list-style: none; background-color: white; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.dl-submenu { position: relative; float: none; padding: 9px 0.65rem; -webkit-box-shadow: none; box-shadow: none; left: 0; margin: 0; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: white; }
+.dl-submenu li a { color: #222222; text-decoration: none; }
+.dl-submenu a:after { border: none; margin: 0; width: auto; height: auto; }
+
+.dropdown-submenu .dropdown-menu.dl-submenu { left: 0; margin: 0; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: white; }
+
+.dropdown-submenu > .dropdown-menu.dl-submenu { display: none; }
+
+.dropdown-submenu .dropdown-menu.dl-submenu:hover { display: none; margin: 0; border: none; left: 0; top: auto; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding: 0; background-color: transparent; }
+
+.dropdown-menu.dl-submenu li:hover a { background-image: none; background-color: transparent; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; border: none; }
+
+dl-menu.dl-subview:hover { background-color: white; }
+
+.dropdown-menu.dl-submenu li a:hover, .dropdown-menu.dl-submenu li > a:focus { background-color: rgba(0, 0, 0, 0.1); background-image: none; color: #555555; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: none; }
+
+.dl-menuopen .caret { display: none; }
+
+/* 
+When a submenu is openend, we will hide all li siblings.
+For that we give a class to the parent menu called "dl-subview".
+We also hide the submenu link. 
+The opened submenu will get the class "dl-subviewopen".
+All this is done for any sub-level being entered.
+*/
+.dl-menu.dl-subview li, .dl-menu.dl-subview li.dl-subviewopen > a, .dl-menu.dl-subview li.dl-subview > a { display: none; }
+
+.dl-menu.dl-subview li.dl-subview, .dl-menu.dl-subview li.dl-subview .dl-submenu, .dl-menu.dl-subview li.dl-subviewopen, .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu, .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li { display: block; }
+
+/* Dynamically added submenu outside of the menu context */
+.dl-menuwrapper > .dl-submenu { position: absolute; width: 100%; top: 50px; left: 0; margin: 0; }
+
+/* Animation classes for moving out and in */
+.dl-menu.dl-animate-out-2 { -webkit-animation: MenuAnimOut2 0.3s ease-in-out; -moz-animation: MenuAnimOut2 0.3s ease-in-out; animation: MenuAnimOut2 0.3s ease-in-out; }
+
+@-webkit-keyframes MenuAnimOut2 { 100% { -webkit-transform: translateX(-100%); opacity: 0; } }
+
+@-moz-keyframes MenuAnimOut2 { 100% { -moz-transform: translateX(-100%); opacity: 0; } }
+
+@keyframes MenuAnimOut2 { 100% { transform: translateX(-100%); opacity: 0; } }
+
+.dl-menu.dl-animate-in-2 { -webkit-animation: MenuAnimIn2 0.3s ease-in-out; -moz-animation: MenuAnimIn2 0.3s ease-in-out; animation: MenuAnimIn2 0.3s ease-in-out; }
+
+@-webkit-keyframes MenuAnimIn2 { 0% { -webkit-transform: translateX(-100%); opacity: 0; }
+  100% { -webkit-transform: translateX(0px); opacity: 1; } }
+
+@-moz-keyframes MenuAnimIn2 { 0% { -moz-transform: translateX(-100%); opacity: 0; }
+  100% { -moz-transform: translateX(0px); opacity: 1; } }
+
+@keyframes MenuAnimIn2 { 0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0px); opacity: 1; } }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-in-2 { -webkit-animation: SubMenuAnimIn2 0.3s ease-in-out; -moz-animation: SubMenuAnimIn2 0.3s ease-in-out; animation: SubMenuAnimIn2 0.3s ease-in-out; }
+
+@-webkit-keyframes SubMenuAnimIn2 { 0% { -webkit-transform: translateX(100%); opacity: 0; }
+  100% { -webkit-transform: translateX(0px); opacity: 1; } }
+
+@-moz-keyframes SubMenuAnimIn2 { 0% { -moz-transform: translateX(100%); opacity: 0; }
+  100% { -moz-transform: translateX(0px); opacity: 1; } }
+
+@keyframes SubMenuAnimIn2 { 0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0px); opacity: 1; } }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-out-2 { -webkit-animation: SubMenuAnimOut2 0.3s ease-in-out; -moz-animation: SubMenuAnimOut2 0.3s ease-in-out; animation: SubMenuAnimOut2 0.3s ease-in-out; }
+
+@-webkit-keyframes SubMenuAnimOut2 { 0% { -webkit-transform: translateX(0%); opacity: 1; }
+  100% { -webkit-transform: translateX(100%); opacity: 0; } }
+
+@-moz-keyframes SubMenuAnimOut2 { 0% { -moz-transform: translateX(0%); opacity: 1; }
+  100% { -moz-transform: translateX(100%); opacity: 0; } }
+
+@keyframes SubMenuAnimOut2 { 0% { transform: translateX(0%); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; } }
+
+/* No JS Fallback */
+.no-js .dl-menuwrapper .dl-menu { position: relative; opacity: 1; -webkit-transform: none; -moz-transform: none; transform: none; }
+
+.no-js .dl-menuwrapper li .dl-submenu { display: block; }
+
+.no-js .dl-menuwrapper li.dl-back { display: none; }
+
+.no-js .dl-menuwrapper li > a:not(:only-child) { background: rgba(0, 0, 0, 0.1); }
+
+.no-js .dl-menuwrapper li > a:not(:only-child):after { content: ''; }
+
+#admin-area .pull-right { position: absolute; margin-top: -3px; left: 80px; }
+
+.dl-trigger { margin-top: 5px; margin-left: 5px; }
+
+/** Important Information about this CSS File  - Do not delete or rename this file, if you do not use it leave it blank (delete everything) and the file will be skipped when you enable Production Mode in the Global theme settings.  - There is an scss (SASS) version of this file in the /sass/ directory in your sub-theme, if you set Compass to watch it or the directory this file will be overwritten!  - Read the _README file in this directory, it contains useful help and other information. */
+html { font-size: 112.5%; /* Increase the body font size on small devices */ }
+
+table { margin: 0; }
+
+.left, .right { width: 100%; padding-right: 0; float: none; }
+
+.navbar-nav li a { padding: 5px 15px 5px 25px; line-height: 20px; }

@@ -1,0 +1,32 @@
+@font-face { font-family: 'Glyphicons Halflings'; src: url("./fonts/glyphicons-halflings-regular.eot"); src: url("./fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/glyphicons-halflings-regular.woff") format("woff"), url("./fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+.glyphicon { position: relative; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; padding-right: 5px; }
+
+.glyphicon-plus:before { content: "\2b"; }
+
+.glyphicon-pencil:before { content: "\270f"; }
+
+.glyphicon-ok:before { content: "\e013"; }
+
+.glyphicon-remove:before { content: "\e014"; }
+
+.glyphicon-cog:before { content: "\e019"; }
+
+.glyphicon-trash:before { content: "\e020"; }
+
+.glyphicon-download:before { content: "\e026"; }
+
+.glyphicon-upload:before { content: "\e027"; }
+
+.glyphicon-refresh:before { content: "\e031"; }
+
+.glyphicon-filter:before { content: "\e138"; }
+
+.glyphicon-import:before { content: "\e169"; }
+
+.glyphicon-export:before { content: "\e170"; }
+
+/** Important Information about this CSS File  - Do not delete or rename this file, if you do not use it leave it blank (delete everything) and the file will be skipped when you enable Production Mode in the Global theme settings.  - There is an scss (SASS) version of this file in the /sass/ directory in your sub-theme, if you set Compass to watch it or the directory this file will be overwritten!  - Read the _README file in this directory, it contains useful help and other information. */
+.form-control { width: 30%; }
+
+.dl-trigger { display: none; }

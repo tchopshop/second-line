@@ -1,0 +1,75 @@
+name = Baseline
+description = Uses the SASS Bootstrap framework source files.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/globals.css
+stylesheets[screen and (max-width:799px)][] = css/dl-menu.css
+
+
+;----------// Panels
+  plugins[panels][layouts] = plugins/layouts
+
+  ; Enable style plugins if required
+  ;plugins[panels][styles] = plugins/styles
+  ;api[panels][styles][version] = 2
+
+;----------// Page manager
+  api[page_manager][pages_default][version] = 1
+  api[page_manager][pages_default][path] = pages
+
+;----------// Site Features
+  features[] = logo
+  features[] = name
+  features[] = slogan
+  features[] = node_user_picture
+  features[] = comment_user_picture
+  features[] = comment_user_verification
+  features[] = favicon
+  features[] = main_menu
+  features[] = secondary_menu
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/bootstrap/affix.js
+scripts[] = js/bootstrap/alert.js
+scripts[] = js/bootstrap/button.js
+scripts[] = js/bootstrap/carousel.js
+scripts[] = js/bootstrap/collapse.js
+scripts[] = js/bootstrap/dropdown.js
+scripts[] = js/bootstrap/modal.js
+scripts[] = js/bootstrap/tooltip.js
+scripts[] = js/bootstrap/popover.js
+scripts[] = js/bootstrap/scrollspy.js
+scripts[] = js/bootstrap/tab.js
+scripts[] = js/bootstrap/transition.js
+scripts[] = js/modernizr.custom.js
+scripts[] = js/dropdownHover-ck.js
+scripts[] = js/jquery.dlmenu-ck.js
+scripts[] = js/script-ck.js
+
+; Disable BootstrapCDN so the compiled LESS source files can be used.
+settings[bootstrap_cdn] = ''

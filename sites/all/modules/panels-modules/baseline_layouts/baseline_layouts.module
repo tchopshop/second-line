@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function baseline_layouts_ctools_plugin_directory($module, $plugin) {
+  return 'plugins/' . $plugin;
+}

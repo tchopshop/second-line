@@ -1,0 +1,15 @@
+diff --git a/plugins/entity/PanelizerEntityNode.class.php b/plugins/entity/PanelizerEntityNode.class.php
+index ce68082..5ea50a1 100644
+--- a/plugins/entity/PanelizerEntityNode.class.php
++++ b/plugins/entity/PanelizerEntityNode.class.php
+@@ -28,6 +28,10 @@ class PanelizerEntityNode extends PanelizerEntityDefault {
+    * Implement the save function for the entity.
+    */
+   public function entity_save($entity) {
++    // Disable workbench revisioning before saving.
++    if (isset($entity->workbench_moderation)) {
++      $entity->workbench_moderation['updating_live_revision'] = TRUE;
++    }
+     node_save($entity);
+   }
+ 

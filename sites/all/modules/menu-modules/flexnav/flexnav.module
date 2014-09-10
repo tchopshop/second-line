@@ -1,0 +1,167 @@
+<?php
+
+/**
+ * @file
+ * Integration with the FlexNav jQuery plugin for responsive menus.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function flexnav_block_info() {
+  // This example comes from node.module.
+  $blocks['flexnav'] = array(
+    'info' => t('Responsive Main Menu (FlexNav)'),
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function flexnav_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'flexnav':
+      // Load the menu and all it's data.
+      $menu = menu_tree_all_data('main-menu');
+
+      // Allow i18n module to translate strings where available.
+      if (module_exists('i18n_menu')) {
+        $menu = i18n_menu_localize_tree($menu);
+      }
+
+      // Return a renderable.
+      $block['content'] = array(
+        '#theme' => 'flexnav_menu',
+        '#tree' => $menu,
+      );
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function flexnav_theme($existing, $type, $theme, $path) {
+  return array(
+    'flexnav_menu' => array(
+      'variables' => array(
+        'tree' => array(),
+      ),
+    ),
+  );
+}
+
+/**
+ * Theme function definition.
+ */
+function theme_flexnav_menu($variables = array()) {
+  // We need to do this first, so that the info hook is called.
+  $library = libraries_detect('flexnav');
+
+  // Then we can add the library.
+  libraries_load('flexnav');
+
+  // And initialize.
+  drupal_add_js('
+  (function($) {$(document).ready(function() {
+    $(".flexnav").flexNav();
+  });}(jQuery));', 'inline');
+
+  // Build the menu.
+  $tree = $variables['tree'];
+  $output  = '<div class="menu-button">Menu</div>';
+  $output .= '<ul class="flexnav" data-breakpoint="800">';
+
+  foreach ($tree as $item) {
+    if ($item['link']['hidden'] == 0) {
+      $link = l(t($item['link']['link_title']), $item['link']['link_path'], $item['link']['options']);
+      $output .= '<li>';
+      $output .= $link;
+
+      // Render child items.
+      if (!empty($item['below'])) {
+        $output .= '<ul>';
+        foreach ($item['below'] as $child) {
+          if ($item['link']['hidden'] == 0) {
+            $link = l(t($child['link']['link_title']), $child['link']['link_path'], $child['link']['options']);
+            $output .= '<li>';
+            $output .= $link;
+
+            // Render grandchild items.
+            if (!empty($child['below'])) {
+              $output .= '<ul>';
+              foreach ($child['below'] as $grandchild) {
+                if ($item['link']['hidden'] == 0) {
+                  $link = l(t($grandchild['link']['link_title']), $grandchild['link']['link_path'], $grandchild['link']['options']);
+                  $output .= '<li>' . $link . '</li>';
+
+                  // NOTE: not rendering menus more than 3 levels deep! @todo
+                }
+              }
+              $output .= '</ul>';
+            }
+            $output .= '</li>';
+          }
+        }
+        $output .= '</ul>';
+      }
+      $output .= '</li>';
+    }
+  }
+
+  $output .= '</ul>';
+
+  // Since there's a possibility of having an empty ul, remove if it exists.
+  $output = str_replace('<ul></ul>', '', $output);
+
+  return $output;
+}
+
+/**
+ * Implements hook_libraries_info().
+ */
+function flexnav_libraries_info() {
+  $libraries['flexnav'] = array(
+    'name' => 'Flexnav jQuery plugin',
+    'vendor url' => 'http://jasonweaver.name/lab/flexiblenavigation',
+    'download url' => 'https://github.com/indyplanets/flexnav',
+    'version arguments' => array(
+      'file' => 'js/jquery.flexnav.js',
+      'pattern' => '@(?i:FlexNav.js) ([0-9\.a-z]+)@',
+      'lines' => 5,
+    ),
+    'files' => array(
+      'css' => array(
+        'css/flexnav.css',
+      ),
+      'js' => array(
+        'js/jquery.flexnav.js' => array('scope' => 'footer'),
+      ),
+    ),
+    'variants' => array(
+      'minified' => array(
+        'files' => array(
+          'js' => array(
+            'js/jquery.flexnav.min.js',
+          ),
+        ),
+      ),
+      'source' => array(
+        'files' => array(
+          'js' => array(
+            'js/jquery.flexnav.js',
+          ),
+        ),
+      ),
+    ),
+  );
+
+  return $libraries;
+}

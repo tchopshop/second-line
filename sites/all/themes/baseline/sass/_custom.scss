@@ -1,0 +1,178 @@
+//
+// Custom sass mixins
+//
+// To use a mixin in this file, add this line to the top of your .scss file:
+//   @import "base";
+// Then to use a mixin for a particular rule, add this inside the ruleset's
+// curly brackets:
+//   @include mix-in-name;
+
+//
+// Image replacement
+// Kellum Method: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
+// Additional helpers from http://html5boilerplate.com/docs/css/
+// This is also included as a SASS mixin, see: sass/custom.rb
+//
+@mixin ir {
+  // Kellum Method
+  display: block !important;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  // Additional helpers
+  border: 0;                     // Remove the default border from elements like button
+  font: 0/0 a;                   // Crush the text down to take up no space
+  text-shadow: none;             // Remove any text shadows
+  color: transparent;            // Hide any residual text in Safari 4 and any mobile devices that may need it
+  background-color: transparent; // Hide the default background color on elements like button
+}
+
+// element-invisible improved and more robust
+@mixin element-invisible {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
+  }
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+// Shift content offscreen, can be usefull when you reall need to do this
+@mixin offscreen {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+}
+
+// Hide content from all users
+@mixin element-hidden {
+  display: none;
+}
+
+@function toRem($pxval, $base: $font-size-base) {
+  @return #{$pxval / $base}rem;
+}
+@function toEm($pxval, $base: $font-size-base) {
+  @return #{$pxval / $base}em;
+}
+// example font-size: toRem(16);
+
+@mixin rems($key, $value) {
+  #{$key}: $value;
+  #{$key}: toRem($value);
+}
+@mixin ems($key, $value) {
+  #{$key}: $value;
+  #{$key}: toEm($value);
+}
+@function lineheightToRem($pxval, $base: $line-height-base) {
+    @return #{$pxval / $base}rem;
+}
+
+@mixin kwd-font-size($font-size: 16){
+  font-size: $font-size;
+  font-size: toRem($font-size); 
+}
+
+@mixin kwd-line-height($line-height: 16){
+	line-height: $line-height;
+	@if $line-height != 1 {
+	  line-height: lineheightToRem($line-height);
+	}
+}
+
+@mixin font-shorthand($size: $font-size-base, $weight: normal, $lineHeight: $baseLineHeight) {
+//  font-size: $size;
+  @include kwd-font-size($size);
+  font-weight: $weight;
+//  line-height: $lineHeight;
+  @include kwd-line-height($lineHeight);
+}
+@mixin font-serif($size: $font-size-base, $weight: normal, $lineHeight: $baseLineHeight) {
+  @include font-family-serif();
+  @include font-shorthand($size, $weight, $lineHeight);
+}
+@mixin font-sans-serif($size: $font-size-base, $weight: normal, $lineHeight: $baseLineHeight) {
+  @include font-family-sans-serif();
+  @include font-shorthand($size, $weight, $lineHeight);
+}
+@mixin font-monospace($size: $font-size-base, $weight: normal, $lineHeight: $baseLineHeight) {
+  @include font-family-monospace();
+  @include font-shorthand($size, $weight, $lineHeight);
+}
+
+
+// We use this to create isosceles triangles
+// $triangle-size - Used to set border-size. No default, set a px or em size.
+// $triangle-color - Used to set border-color which makes up triangle. No default
+// $triangle-direction - Used to determine which direction triangle points. Options: top, bottom, left, right
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset $triangle-size;
+  @if ($triangle-direction == top) {
+    border-color: $triangle-color transparent transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == bottom) {
+    border-color: transparent transparent $triangle-color transparent;
+    border-bottom-style: solid;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+
+// We use this to do clear floats
+@mixin clearfix {
+  *zoom:1;
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+// @mixins
+//
+// We use this to add a glowing effect to block elements
+// $selector - Used for selector state. Default: focus, Options: hover, active, visited
+// $fade-time - Default: 300ms
+// $glowing-effect-color - Default: fade-out($primary-color, .25)
+@mixin block-glowing-effect($selector:focus, $fade-time:300ms, $glowing-effect-color:fade-out($primary-color, .25)) {
+  transition: box-shadow $fade-time, border-color $fade-time ease-in-out;
+
+  &:#{$selector} {
+    box-shadow: 0 0 5px $glowing-effect-color;
+    border-color: $glowing-effect-color;
+  }
+}

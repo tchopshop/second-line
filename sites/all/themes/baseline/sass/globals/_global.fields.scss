@@ -1,0 +1,193 @@
+// Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues.
+.field .field-label {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit; // Forces the h2 to inherit the global font family instead of the h2 font family.
+  line-height: inherit;
+  margin: 0;
+}
+
+p:empty {
+	margin-bottom: 0;
+}
+
+// Taxonomy
+.field-type-taxonomy-term-reference {
+
+  // The same bottom margin as p, blockquote, ul, ol and dl
+  margin-bottom: 1.5em;
+
+  // Restyle the list when the label is inline
+  &.field-label-inline .field-items {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.field-label-inline .field-item {
+    display: inline;
+    list-style: none;
+    padding: 0 10px 0 0; /* LTR */
+  }
+}
+
+
+fieldset legend.panel-heading {
+float:left;
+line-height:1em;
+margin:0;
+}
+
+fieldset .panel-body {
+clear:both;
+display:inherit;
+}
+
+fieldset .panel-heading a.panel-title {
+color:inherit;
+display:block;
+margin:-10px -15px;
+padding:10px 15px;
+}
+
+fieldset .panel-heading a.panel-title:hover {
+text-decoration:none;
+}
+
+.list-inline>li.first {
+padding-left:0;
+}
+
+ul li.collapsed,ul li.expanded,ul li.leaf {
+list-style:none;
+list-style-image:none;
+}
+.page-header,.block:first-child h2.block-title {
+margin-top:0;
+}
+p:last-child,.navbar-search .control-group,.radio:last-child,.checkbox:last-child,div.password-suggestions ul {
+margin-bottom:0;
+}
+
+.panel-heading,.tab-content>.active,div.image-style-new,div.image-style-new div {
+display:block;
+}
+
+
+.pane-inner > h1 {
+	margin-top: 0;
+}
+
+.vertical-tabs-panes > fieldset > .panel-body {
+	padding: 0;
+}
+.panel-body {
+	padding: 0 $panel-body-padding $panel-body-padding;
+	}
+
+.collapsible-panels .panel-body {
+	label {
+		display: none;
+	}
+	label + div {
+		padding-top: $panel-body-padding;
+	}
+	label + select {
+		margin-top: $panel-body-padding;
+	}
+	.form-type-checkbox label, .form-type-radio label {
+		display: block;
+	}
+}
+	
+.collapsible-panels .form-group {
+	label {
+	display: block;
+	font-weight: bold;
+	margin-top: 10px;
+	}
+	label + div, label + select {
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+}
+
+.collapsible-panels .panel-default {
+	margin-bottom: -2px;
+	.panel-title a {
+		margin: -10px -15px;
+		padding: 10px 15px;
+		display: block;
+		text-decoration: none;
+	}
+}
+.collapsible-panels .form-control {
+	width: 100%;
+}
+
+.tabs--secondary {
+	margin-top: 10px;
+}
+
+#edit-panels-wrapper {
+	fieldset legend {
+	display: block;
+	}
+	.form-type-radio label {
+		width: inherit;
+		text-indent: -1000px;
+	}
+}
+.theme-settings-header h1 {
+	margin-bottom: 15px;
+}
+.image-float-left .columns, .float-left .column, .float-left, .column.float-left, .columns.float-left {
+	float: left;
+	padding-left: 0;
+}
+.image-float-right .columns, .float-right .column, .float-right, .column.float-right, .columns.float-right {
+	float: right;
+	padding-right: 0;
+}
+.image-center .columns, .center .column, .center, .column.center, .columns.center {
+	margin: 0 auto;
+	position: relative;
+	float: none;
+	margin-bottom: 15px;
+}
+.image-float-left .columns {
+	padding-left: 0;
+	margin-bottom: 15px;
+}
+.image-float-right .columns {
+	padding-right: 0;
+	margin-bottom: 15px;
+}
+blockquote footer span.second-line {
+	display: block;
+	    &:before {
+      content: '\2014 \00A0'; // em dash, nbsp
+      color: transparent;
+    }
+}
+.text-columns {
+	@extend .row;
+}
+
+td.download {
+	min-width: 120px;
+	ul {
+		padding-left: 0;
+	}
+	li {
+		list-style: none;
+	}
+}
+.summary {
+	display: none;
+}
+
+
+//.panel-title > a {
+//	display: block;
+//}

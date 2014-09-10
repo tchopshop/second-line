@@ -1,0 +1,7 @@
+name = CacheFlusher
+description = Adds a quick way to flush your cache with a button on the admin toolbar.
+package = "Administration"
+core = 7.x
+
+files[] = cacheflusher.module
+

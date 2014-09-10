@@ -1,0 +1,5 @@
+name = "Enquire JS"
+description = "Makes the enquire.js library available to Drupal"
+core = 7.x
+package = "User Interface"
+dependencies[] = libraries

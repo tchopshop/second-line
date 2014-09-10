@@ -1,0 +1,8 @@
+replace 190
++      '#markup' => '<span class="label">Author:</span> <span class="value authored-by">' . $authored_by . '</span> <a href="#" class="edit-authored-by node-form-summary-toggle" data-toggle="form-item-name">edit</a>',
+
+replace 209
++      '#markup' => '<span class="label">Publish date:</span> <span class="value authored-on-date">' . $authored_on_date . '</span> <a href="#" class="edit-authored-on-date node-form-summary-toggle" data-toggle="form-item-date">edit</a>',
+
+replace 328
++      '#markup' => '<span class="label">Featured:</span> <span class="value promoted">' . $promoted . '</span> <a href="#" class="edit-promoted node-form-summary-toggle" data-toggle="form-item-promote">edit</a>',

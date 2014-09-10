@@ -1,0 +1,146 @@
+.region-leaderboard, .region-header, .region-help, .region-secondary-content, .region-highlighted, .region-content-aside, .region-tertiary-content, #footer {
+	@extend .small-12;
+	@extend .columns;
+}
+
+
+// Generic styles for links. See the ul.links declaration in node and comment stylesheets
+ul.links {
+  margin: 0;
+  padding: 0;
+
+  &.inline {
+    display: block;
+  }
+
+  li {
+    display: inline;
+    list-style: none;
+    padding: 0 10px 0 0;
+  }
+}
+
+
+// Aggregator feed source
+#aggregator .feed-source .feed-icon {
+  display: inline;
+  float: none;
+  margin-right: 10px;
+}
+
+.feed-details dt,
+.feed-details dd {
+  display: inline;
+  margin: 0;
+}
+
+
+// Search results are an ordered list so reset the margin
+.search-results {
+  margin: 0;
+}
+
+// Set the gutter width for you entire site, $gutter-width is set in base.scss
+.block-inner,
+.pane-inner,
+#branding,
+#primary-nav,
+#secondary-nav,
+#breadcrumb,
+#main-content,
+#attribution,
+.at-panel .rounded-corner {
+//  margin-left: $gutter-width;
+//  margin-right: $gutter-width;
+}
+// Panel pages need negative margin applied to #content equal to the gutter width
+.page-panels #content {
+//  margin-left: -$gutter-width;
+//  margin-right: -$gutter-width;
+}
+
+//
+// Full Width Wrappers
+// These are used in the optional page--full-width-wrappers.tpl.php template.
+// All have internal .container classes. In the full width wrapper template the
+// .container classes set the width or max-width of the contained element - you
+// can style this but never add any width/margin/padding/borders etc to .container
+//
+
+// Unpublished nodes
+.node-unpublished,
+.comment-unpublished {
+}
+
+
+.node-unpublished,
+.comment-unpublished {
+
+  p.unpublished {
+    color: #fff;
+    color: rgba(239, 170, 170, 0.4);
+    font-family: Impact,"Arial Narrow",Helvetica,sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    height: 0;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+  }
+}
+
+
+// Otherwise these elements will appear below the "Unpublished" text
+.lt-ie8 {
+  .node-unpublished > *,
+  .comment-unpublished > * {
+    position: relative;
+
+  }
+}
+
+
+.branding-elements, #main-content, div.messages, .block-inner, .pane-inner, .menu-wrapper, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, .rendered-by-ds .at-panel .region-inner, div.messages, .at-gutter {
+	margin: 0!important;
+}
+
+.panel-pane, .panel-bootstrap-pane {
+//	padding: 0 $column-gutter / 2;
+	@include box-shadow(none); 
+}
+.region-inner {
+//	padding: 0 $column-gutter / 2;
+}
+
+.panel-bootstrap-pane.panel-default {
+	border: none;
+	.pane-inner {
+	  margin-bottom: $line-height-computed;
+	  background-color: $panel-bg;
+	  border: 1px solid transparent;
+	  border-radius: $panel-border-radius;
+	  @include box-shadow(0 1px 1px rgba(0,0,0,.05));
+		  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+	}
+}
+
+.box {
+	.pane-inner {
+	padding: 0 $column-gutter / 2;
+	}
+}
+
+.at-panel {
+	margin-left: -$column-gutter / 2;
+	margin-right: -$column-gutter / 2;
+}
+
+.page-node-delete {
+	#content-wrapper {
+		@extend .row;
+	}
+}

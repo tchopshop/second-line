@@ -1,0 +1,10 @@
+name = Revision Ownership
+description = Allows configuration of content types to enable preservation of ownership across revisions
+core = 7.x
+configure = admin/revision-ownership/settings
+; Information added by drupal.org packaging script on 2012-11-01
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "revision_ownership"
+datestamp = "1351743133"
+

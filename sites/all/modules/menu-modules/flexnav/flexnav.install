@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Requirements, install, update, and uninstall functions for the FlexNav module.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function flexnav_requirements($phase) {
+  $requirements = array();
+
+  if ($phase == 'runtime') {
+    $t = get_t();
+    $library = libraries_detect('flexnav');
+
+    if (empty($library['installed'])) {
+      $requirements['flexnav_plugin'] = array(
+        'title' => $t('Flexnav plugin'),
+        'severity' => REQUIREMENT_ERROR,
+        'value' => t('Missing library'),
+        'description' => $t('You need to download the !plugin, extract the archive, place the decompressed files in the %path directory on your server, and rename the flexnav-master directory to simply flexnav.', array('!plugin' => l($t('Flexnav jQuery plugin'), $library['download url']), '%path' => 'sites/all/libraries')),
+      );
+    }
+    else {
+      $requirements['flexnav_plugin'] = array(
+        'title' => $t('Flexnav plugin'),
+        'severity' => REQUIREMENT_OK,
+        'value' => $library['version'],
+      );
+    }
+  }
+
+  return $requirements;
+}

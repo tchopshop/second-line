@@ -1,0 +1,283 @@
+html {
+	font-size: $font-size-base;
+	font-size: 112.5%;
+	@include breakpoint($tablet-portrait) {
+		font-size: 81.3%;
+	}
+	@include breakpoint($tablet-landscape-and-above) {
+		font-size: 100%;
+	}
+}
+
+body {
+position:relative;
+}
+
+table {
+    margin: 0; 
+  }
+
+// Prevent overflowing content
+header[role=banner],
+.content-inner,
+.nav,
+.region-sidebar-first,
+.region-sidebar-second,
+.region-secondary-content,
+.region-tertiary-content,
+.region-footer {
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+
+#logo {
+	float: left;
+	margin-right: 20px;
+}
+
+.row {
+	max-width: 1200px;
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+.region, .nav, .top, .bottom {
+	@include grid-column(12);
+}
+
+.base-two-66-33, .base-two-33-66 {
+	.main {
+	@include grid-column(12);
+	@include breakpoint($tablet-portrait) {
+		@include grid-column(9);		
+		}
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(8);		
+	}
+	}
+	.sidebar {
+	@include grid-column(12);
+	@include breakpoint($tablet-portrait) {
+		@include grid-column(3);		
+		}
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(4);		
+	}
+	}
+}
+.base-two-75-25, .base-two-25-75 {
+	.main {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(9);		
+	}
+	}
+	.sidebar {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(3);		
+	}
+	}
+}
+.base-two-66-33, .base-two-75-25 {
+	@include breakpoint($tablet-landscape-and-above) {
+	.sidebar {
+	@include grid-column($last-column:true);	
+	}
+	}
+}
+.base-two-33-66, .base-two-25-75 {
+	@include breakpoint($tablet-landscape-and-above) {
+	.main {
+	@include grid-column($last-column:true);	
+	}
+}}
+.base-two-50 {
+	.first, .second {
+	@include grid-column(12);
+	@include breakpoint($tablet-portrait-and-above) {
+		@include grid-column(6);		
+		}	
+	}
+	.second {
+	@include breakpoint($tablet-portrait-and-above) {
+		@include grid-column($last-column:true);		
+		}			
+	}
+}
+.base-four-4x25 {
+	.four-first, .four-second, .four-third, .four-fourth {
+	@include grid-column(12);
+	@include breakpoint($tablet-portrait) {
+		@include grid-column(6);		
+		}
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(3);		
+		}		
+	}
+	.four-second {
+	@include breakpoint($tablet-portrait) {
+		@include grid-column($last-column:true);		
+		}		
+	}
+	.four-fourth {
+	@include breakpoint($tablet-portrait-and-above) {
+		@include grid-column($last-column:true);
+		}
+	}
+}
+.base-five-5x20 {
+	.five-first, .five-second, .five-third, .five-fourth, .five-fifth {
+	@include grid-column(12);
+	@include breakpoint($tablet-portrait) {
+		@include grid-column(4);		
+		}
+	@include breakpoint($tablet-landscape-and-above) {
+		width: 20%;	
+		@extend .columns;
+		}		
+	}	
+	.five-fourth, .five-fifth {
+	@include breakpoint($tablet-portrait) {
+		@include grid-column(6);		
+		}		
+	}
+	.five-third, .five-fifth {
+	@include breakpoint($tablet-portrait) {
+		@include grid-column($last-column:true);		
+		}		
+	}
+	.five-fifth {
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($last-column:true);
+		}				
+	}
+}
+.base-six-6x16 {
+	.six-first, .six-second, .six-third, .six-fourth, .six-fifth, .six-sixth {
+	@include grid-column(6);
+	@include breakpoint($tablet-portrait) {
+		@include grid-column(4);		
+		}
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(2);		
+		}				
+	}
+	.six-third, .six-sixth {
+	@include breakpoint($tablet-portrait) {
+		@include grid-column($last-column:true);		
+		}		
+	}
+	.six-sixth {
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($last-column:true);		
+		}		
+	}
+}
+.base-three-3x33 {
+	.first, .second, .third {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(4);		
+		}							
+	}
+	.third {
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($last-column:true);		
+		}									
+	}
+}
+.base-three-25-25-50 {
+	.sidebar-first, .sidebar-second {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:3,$pull:6);		
+		}									
+	}
+	.main {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:6,$push:6,$last-column:true);		
+		}											
+	}
+}
+.base-three-25-50-25 {
+	.sidebar-first {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:3,$pull:6);		
+		}									
+	}
+	.sidebar-second {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:3,$last-column:true);		
+		}									
+	}
+	.main {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:6,$push:3);		
+		}											
+	}
+}
+.base-three-50-25-25 {
+	.main {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(6);		
+		}											
+	}
+	.sidebar-first {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(3);		
+		}									
+	}
+	.sidebar-second {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:3,$last-column:true);		
+		}									
+	}
+}
+.base-three-inset-left {
+	.inset-wrapper {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column(9);		
+		}											
+	}
+	.sidebar-right {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:3,$last-column:true);		
+		}													
+	}
+	.sidebar-left {
+		@include grid-column($columns:3,$pull:9);
+	}
+	.main {
+		@include grid-column($columns:9,$push:3,$last-column:true);		
+	}
+}
+.base-three-inset-right {
+	.inset-wrapper {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:9,$push:3,$last-column:true);		
+		}											
+	}
+	.sidebar-left {
+	@include grid-column(12);
+	@include breakpoint($tablet-landscape-and-above) {
+		@include grid-column($columns:3,$pull:9);		
+		}													
+	}
+	.sidebar-right {
+		@include grid-column($columns:3,$last-column:true);
+	}
+	.main {
+		@include grid-column($columns:9);
+	}
+}

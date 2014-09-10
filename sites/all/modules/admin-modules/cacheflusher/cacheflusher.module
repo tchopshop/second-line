@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * Implement hook_enable()
+ */
+function cacheflusher_enable() {
+  drupal_set_message($message = t('The CacheFlusher  module was successfully enabled.'), $type = 'status');
+}
+
+/**
+ * Implement hook_disble()
+ */
+ function cacheflusher_disable() {
+   drupal_set_message($message = t('The CacheFlusher module was successfully disabled.'), $type = 'status');
+}
+
+
+/**
+ * Implement hook_help()
+ */
+function cacheflusher_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#cacheflusher':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t("The CacheFlusher Module places a Flush Cache button on your dashboard") . '<p>';
+      return $output;
+  }
+}
+
+
+/**
+ * Implement hook_uninstall()
+ */
+ function cacheflusher_uninstall () {
+   drupal_set_message($message = t('The CacheFlusher module was successfully uninstalled. '), $type = 'status');
+}
+
+
+/**
+ * Implement hook_menu()
+ */
+function cacheflusher_menu() {
+
+  $items = array();
+  $items['flush-cache'] = array(
+  'type' => MENU_CALLBACK,
+  'title' => t('Flush the cache'),
+  'description' => 'Cacheflusher Custom Cache Flush',
+  'page callback' => 'cacheflusher_cache_clear',
+  'access callback' => user_access('flush cache'),
+
+);
+  return $items;
+}
+
+function cacheflusher_cache_clear() {
+  drupal_flush_all_caches();
+  drupal_set_message($message = t('All Caches cleared. '), $type = 'status');
+
+  // Go back to the last viewed page (if possible).
+  drupal_goto($_SERVER['HTTP_REFERER']);
+}
+
+
+
+
+
+
+
+

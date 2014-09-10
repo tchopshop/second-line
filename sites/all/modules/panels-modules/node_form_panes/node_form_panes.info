@@ -1,0 +1,12 @@
+name = Node Form Panes
+description = Exposes Node Form Elements as invidual panel panes (or, to be more specific, ctools content types).
+package = Panels
+core = 7.x
+dependencies[] = ctools
+
+; Information added by drupal.org packaging script on 2013-10-04
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "node_form_panes"
+datestamp = "1380851171"
+

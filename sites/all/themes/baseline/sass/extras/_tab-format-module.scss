@@ -1,0 +1,43 @@
+/* CSS for the Tabular Format module that put the text formats select as tabs above the wysiwyg */
+
+.text-format-wrapper {
+	.nav-tabs {
+	margin-bottom: -1px;
+	padding-bottom: 0;
+	float: right;
+	}
+	.form-type-textarea {
+		margin-top: 0;
+	}
+}	
+
+.filter-tabs-li:first-child a {
+      &:hover {
+        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+        }
+}
+.filter-tabs-li:active a {
+        color: $nav-tabs-active-link-hover-color;
+        background: #F0F0EE;
+        border: 1px solid $nav-tabs-active-link-hover-border-color;
+        border-bottom-color: transparent;
+        cursor: default;
+}
+
+.form-textarea-wrapper {
+	clear: both;
+}
+
+.form-type-textarea label {
+	float: left;
+}
+
+// Markitup
+
+.markItUp {
+	width: auto!important;
+}
+.markItUpContainer {
+	top:-16px;
+	position: relative;
+}

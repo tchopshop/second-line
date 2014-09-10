@@ -1,0 +1,9 @@
+name = File Entity Link
+description = Provides ability to link files to their referencing entities
+core = 7.x
+; Information added by Drupal.org packaging script on 2013-12-24
+version = "7.x-1.0-alpha3+1-dev"
+core = "7.x"
+project = "file_entity_link"
+datestamp = "1387863210"
+

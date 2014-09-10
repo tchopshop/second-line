@@ -1,0 +1,220 @@
+// Paragraphs 
+
+.form-item-field-paragraphs-add-more-type select {
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.field-type-paragraphs.form-wrapper  {
+	tr.draggable > td  {
+		position: relative;
+		&> div > button.btn-danger, &> div.ajax-new-content > div > button.btn-danger {
+			position: absolute;
+			top: 55px;
+			left: -30px;
+		}
+		&> button.btn-danger {
+			position: absolute;
+			top: 55px;
+			left: -30px;
+		}
+		&> div > button.btn-default {
+			position: absolute;
+			top: 8px;
+			right: 0px;
+		}
+	}
+}
+.field-type-paragraphs.field-name-field-paragraphs.form-wrapper {
+	
+	#field-paragraphs-values {
+		margin-bottom: 0;
+		margin-left: -15px;
+	}
+	.btn-danger {
+	@extend %glyphicon;
+	@extend %glyphicon-trash;
+	background-color: transparent;
+	border-color: transparent;	
+	font-size: 0;
+	padding: 0;
+	&:before {
+		font-size: 20px;
+		padding-right: 0;
+		color: $black;
+	}
+	}
+	.field-type-link-field, .field-name-field-paragraph-image {
+	button {
+	@extend %glyphicon;
+	@extend %glyphicon-plus;	
+	font-size: 0;
+	position: absolute;
+	right: 0px;
+	bottom: 48px;
+	&:before {
+		font-size: 16px;
+		padding-right: 0;
+		}
+	}
+	}
+	.field-name-field-3-field-file-table {
+		@include breakpoint ($tablet-landscape-and-above) {
+		.field-type-text-long {
+			width: 37%;
+			margin-right: 2%;
+			float: left;
+			clear: none;
+			margin-top: 0;
+		}
+		.field-name-field-downloadable-file {
+			width: 20%;
+			float: left;
+			clear: none;
+		}
+		}
+	}
+	div.field-name-field-paragraph-image {
+	button {
+		bottom: 190px; 
+		@include breakpoint ($tablet-portrait-and-above) {
+			bottom: 165px;
+		}
+		}
+	}
+	table.sticky-header {
+		position: absolute!important;
+	}
+	thead {
+	display: none;
+	}
+	.field-type-link-field,  .field-type-tablefield, .field-type-text-long {
+	margin-top: 20px;
+	}
+	.link-field-subrow {
+		width: 92%;
+	}
+	.tabledrag-handle {
+	@extend %glyphicon;
+	@extend %glyphicon-move;
+	color: $gray-darker;
+	font-size: 24px;	
+	.handle {
+		display: none;
+	}	
+	&:before {
+		padding-right: 0;
+	}
+	}
+	.draggable a.tabledrag-handle {
+	margin-left: 0;
+	width: 30px;
+	padding:0;
+	margin:0;
+	}
+	.field-type-formatter, .field-name-field-column-width {
+		width: 45%;
+		float:left;
+		margin-right: 5%;
+		clear: left;
+	}
+	.field-name-field-image-alignment, .field-name-field-alignment {
+		width: 45%;
+		float: left;
+		clear: none;
+	}
+	&>div >div.form-item > div.clearfix {
+		background-color: $brand-primary;
+		margin: 0px -15px -30px;
+		padding: 15px;
+		border-top: 20px solid $white;
+		position: relative;
+		@include border-bottom-radius($border-radius-base);
+	}
+	.field-multiple-table .field-multiple-table {
+		margin-bottom: 15px;
+		.form-item {
+			margin-bottom: 0;
+		}
+	}
+	.field-multiple-table #field-table-types-values {
+		width: 100%;
+	}
+	.table-striped > tbody > tr:nth-child(odd) > td {
+		background-color: transparent;
+	}
+	td.field-multiple-drag {
+		background-color: $gray-lighter!important;
+		width: 5%;
+	}
+	.table > tbody > tr > td {
+		border-top: 2px solid #ddd;
+		border-bottom: 2px solid #ddd;
+	}
+	.field-name-field-paragraph-image table thead > tr {
+		display: none;
+	}
+	.link-field-subrow {
+		p.help-block {
+			display: none;
+		}
+	}
+	div.preview.launcher {
+		float: left;
+		margin-bottom: 15px;
+	}
+	.mediaBrowserLaunch-processed {
+		a {
+			margin-bottom: 10px;
+		}
+	}
+	td {
+		color: $brand-primary;
+		padding-right: 0!important;
+		label {
+			color: $black;
+		}
+	}
+	.field-name-field-paragraph-text {
+	label {
+		display: none;
+	}
+	.nav-tabs a {
+		color: $black;
+	}
+	}
+	.table {
+		background-color: transparent;
+	}
+	.table-hover > tbody > tr:hover > td {
+		background-color: $gray-lighter;
+	}
+}
+
+.form-item-field-paragraphs-add-more-type {
+	margin-bottom: 10px;
+	label {
+		font-size: 1.2em;
+		color: $white;
+	}
+	label:before {
+		content: "Add Another ";
+	}
+}
+#node_news_form_group_main_content {
+	margin-top: 20px;
+	&> .panel-heading {
+		background-color: $brand-primary;
+		color: $white;
+		font-weight: bold;
+	}
+}
+.field-add-more-submit {
+	@extend .btn-info;
+}
+.paragraphs-view .field-group-multiple-table {
+	thead {
+		display: none;
+	}
+}

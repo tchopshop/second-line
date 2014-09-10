@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Baseline Admin feature.
+ */
+
+include_once 'baseline_admin.features.inc';

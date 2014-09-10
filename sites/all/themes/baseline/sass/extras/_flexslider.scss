@@ -1,0 +1,73 @@
+.flexslider {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	position: relative;
+	@include box-shadow(0 0 0);
+}
+.flex-caption {
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    width: 35%;
+    line-height: 1;
+    letter-spacing: 1px;
+	font-size: 1.2em;
+    color: $white;
+	@include breakpoint($tablet-portrait) {
+    font-size: 1.8em;
+    }
+	@include breakpoint($tablet-landscape) {
+    font-size: 2.5em;
+    line-height: 1.2;
+    }
+	@include breakpoint($standard) {
+    font-size: 3.1em;
+    line-height: 1.2;
+    }
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  }
+@-webkit-keyframes flex-caption {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes flex-caption {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.flex-caption {
+  -webkit-animation-name: flex-caption;
+  animation-name: flex-caption;
+}
+
+li.flex-active-slide {
+	margin-right: 0!important;
+	margin-top: -4px;
+}

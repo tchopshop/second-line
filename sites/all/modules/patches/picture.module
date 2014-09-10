@@ -1,0 +1,6 @@
+$output[] = '<noscript>' . theme('image_style', $variables) . '</noscript>';
+    $output[] = '</span>';
++    if (!empty($variables['title'])) {
++      $output[] = '<span class="image-caption-title">' . $variables['title'] . '</span>';
++    }
+    return implode("\n", $output);

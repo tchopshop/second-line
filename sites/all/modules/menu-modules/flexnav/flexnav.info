@@ -1,0 +1,7 @@
+name = FlexNav
+description = Integration with the <a href="https://github.com/indyplanets/flexnav">FlexNav</a> jQuery plugin for responsive menus.
+core = 7.x
+
+dependencies[] = jquery_update
+dependencies[] = libraries
+dependencies[] = menu

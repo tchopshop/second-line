@@ -1,0 +1,8 @@
+name = Baseline Layouts
+description = Baseline Core Layouts
+core = 7.x
+
+dependencies[] = panels
+stylesheets[all][] = baseline_layouts.css
+
+

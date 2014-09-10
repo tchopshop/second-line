@@ -1,0 +1,8 @@
+name = Email Layouts
+description = Responsive html email layouts via Ink from Zurb
+core = 7.x
+
+dependencies[] = panels
+stylesheets[all][] = email_layouts.css
+
+
