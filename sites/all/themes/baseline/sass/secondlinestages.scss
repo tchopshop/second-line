@@ -387,3 +387,29 @@ figure.media {
 	position: relative;
 	z-index: 4;
 }
+
+.green-vendor-grid {
+	text-align: justify;
+	font-size: .1px;	
+}
+.green-vendor {
+		width: 50%;
+		display: inline-block;
+		font-size: 16px;
+		text-align: left;
+		vertical-align: top;
+		padding: 10px;
+		margin-bottom: 20px;
+		h3 {
+			margin-top: 0;
+		}
+		@include breakpoint($tablet-portrait) {
+		width: 33%;
+		}
+		@include breakpoint($tablet-landscape) {
+		width: 24.5%;			
+		}
+		@include breakpoint($standard) {
+		width: 19.75%;
+		}
+}

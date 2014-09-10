@@ -2664,3 +2664,11 @@ figure.media { overflow: visible; margin-top: 25px; margin-left: -15px; }
 #map_canvas { position: absolute; width: 100%; min-height: 100%; z-index: 3; }
 
 .page-node-11 .main { background-color: black; position: relative; z-index: 4; }
+
+.green-vendor-grid { text-align: justify; font-size: .1px; }
+
+.green-vendor { width: 50%; display: inline-block; font-size: 16px; text-align: left; vertical-align: top; padding: 10px; margin-bottom: 20px; }
+.green-vendor h3, .green-vendor .grid-title { margin-top: 0; }
+@media (min-width: 30.0625em) and (max-width: 49.9375em) { .green-vendor { width: 33%; } }
+@media (min-width: 50em) and (max-width: 64em) { .green-vendor { width: 24.5%; } }
+@media (min-width: 64.0625em) { .green-vendor { width: 19.75%; } }
