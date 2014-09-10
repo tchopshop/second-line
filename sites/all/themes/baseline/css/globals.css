@@ -2669,8 +2669,8 @@ figure.media { overflow: visible; margin-top: 25px; margin-left: -15px; }
 
 .green-vendor { width: 50%; display: inline-block; font-size: 16px; text-align: left; vertical-align: top; padding: 10px; margin-bottom: 20px; }
 .green-vendor h3, .green-vendor .grid-title { margin-top: 0; }
-.green-vendor h3 a, .green-vendor .grid-title a { color: white; }
-.green-vendor .inner { border: 1px solid gray; padding: 10px; }
+.green-vendor h3 a, .green-vendor .grid-title a { color: #999999; }
+.green-vendor .inner { padding: 10px; }
 @media (min-width: 30.0625em) and (max-width: 49.9375em) { .green-vendor { width: 33%; } }
 @media (min-width: 50em) and (max-width: 64em) { .green-vendor { width: 24.5%; } }
 @media (min-width: 64.0625em) { .green-vendor { width: 19.75%; } }

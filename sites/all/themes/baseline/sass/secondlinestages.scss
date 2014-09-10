@@ -403,11 +403,10 @@ figure.media {
 		h3 {
 			margin-top: 0;
 			a {
-				color: white;
+				color: $gray-light;
 			}
 		}
 		.inner {
-			border: 1px solid gray;
 			padding: 10px;
 		}
 		@include breakpoint($tablet-portrait) {
