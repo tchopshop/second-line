@@ -2630,7 +2630,6 @@ h4 { font-size: 1.5em; color: #ec4d37; font-family: sans-serif; }
 
 .stages h1 { color: #ec4d37; }
 .stages .block-grid-4 img { border: 8px solid #eeeeee; padding: 4px; }
-.stages #messages-help-wrapper { background: url(images/slsstage.jpg) center top no-repeat; position: relative; }
 .stages .table-striped > tbody > tr:nth-child(odd) > td { background-color: transparent; }
 .stages .table-hover > tbody > tr:hover > td { background-color: #eeeeee; }
 .stages #content-wrapper, .stages #messages-help-wrapper { background-color: white; }
@@ -2641,6 +2640,12 @@ h4 { font-size: 1.5em; color: #ec4d37; font-family: sans-serif; }
 .stages h3, .stages .grid-title { padding-left: 15px; padding-top: 30px !important; margin-bottom: 10px !important; }
 .stages .table-responsive table { margin-bottom: 0; }
 .stages .tablefield-export-link a { color: #999999; margin-left: 15px; padding-top: 5px; border-top: 1px solid #999999; margin-bottom: 20px; }
+
+.page-node-261 #messages-help-wrapper { background: url(images/slsstage.jpg) center top no-repeat; position: relative; }
+
+.page-node-663 #messages-help-wrapper { background: url(images/richardst-header.jpg) center top no-repeat; position: relative; }
+
+.page-node-664 #messages-help-wrapper { background: url(images/richardst-header.jpg) center top no-repeat; position: relative; }
 
 figure.media { overflow: visible; margin-top: 25px; margin-left: -15px; }
 
