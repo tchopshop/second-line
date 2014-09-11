@@ -2629,7 +2629,7 @@ h4 { font-size: 1.5em; color: #ec4d37; font-family: sans-serif; }
 .table-responsive .mobile-table tr th, .table-responsive .mobile-table tr { background: transparent; }
 
 .stages h1 { color: #ec4d37; }
-.stages .block-grid-4 img { border: 8px solid #eeeeee; padding: 4px; }
+.stages .block-grid-4 img, .stages .block-grid-5 img { border: 8px solid #eeeeee; padding: 4px; }
 .stages .table-striped > tbody > tr:nth-child(odd) > td { background-color: transparent; }
 .stages .table-hover > tbody > tr:hover > td { background-color: #eeeeee; }
 .stages #content-wrapper, .stages #messages-help-wrapper { background-color: white; }
