@@ -13,9 +13,9 @@ files[] = tests/ds.views.test
 files[] = tests/ds.forms.test
 configure = admin/structure/ds
 
-; Information added by Drupal.org packaging script on 2014-04-17
-version = "7.x-2.6+24-dev"
+; Information added by Drupal.org packaging script on 2014-07-11
+version = "7.x-2.6+29-dev"
 core = "7.x"
 project = "ds"
-datestamp = "1397740761"
+datestamp = "1405108128"
 
