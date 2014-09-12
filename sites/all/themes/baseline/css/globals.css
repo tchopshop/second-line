@@ -2679,3 +2679,5 @@ figure.media { overflow: visible; margin-top: 25px; margin-left: -15px; }
 @media (min-width: 30.0625em) and (max-width: 49.9375em) { .green-vendor { width: 33%; } }
 @media (min-width: 50em) and (max-width: 64em) { .green-vendor { width: 24.5%; } }
 @media (min-width: 64.0625em) { .green-vendor { width: 19.75%; } }
+
+.page-admin #content-wrapper { max-width: 1200px; position: relative; margin: 0 auto; padding: 0 10px; }
