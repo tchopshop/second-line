@@ -45,11 +45,11 @@ function features_populate($info, $module_name) {
  * @return fully populated $export array.
  */
 function _features_populate($pipe, &$export, $module_name = '', $reset = FALSE) {
-  static $processed = array();
-  features_include();
   if ($reset) {
-    $processed = array();
+    drupal_static_reset(__FUNCTION__);
   }
+  $processed = &drupal_static(__FUNCTION__, array());
+  features_include();
   foreach ($pipe as $component => $data) {
     // Convert already defined items to dependencies.
 //    _features_resolve_dependencies($data, $export, $module_name, $component);
@@ -385,10 +385,7 @@ function features_export_render($export, $module_name, $reset = FALSE) {
  * Detect differences between DB and code components of a feature.
  */
 function features_detect_overrides($module) {
-  static $cache;
-  if (!isset($cache)) {
-    $cache = array();
-  }
+  $cache = &drupal_static(__FUNCTION__, array());
   if (!isset($cache[$module->name])) {
     // Rebuild feature from .info file description and prepare an export from current DB state.
     $export = features_populate($module->info, $module->name);
@@ -410,7 +407,7 @@ function features_detect_overrides($module) {
     foreach ($states[$module->name] as $component => $state) {
       if ($state != FEATURES_DEFAULT) {
         $normal = features_get_normal($component, $module->name);
-        $default = features_get_default_explicit($component, $module->name);
+        $default = features_get_default($component, $module->name);
         _features_sanitize($normal);
         _features_sanitize($default);
 
@@ -659,7 +656,7 @@ function features_get_signature($state = 'default', $module_name, $component, $r
       $codecache = variable_get('features_codecache', array());
       return isset($codecache[$module_name][$component]) ? $codecache[$module_name][$component] : FALSE;
     case 'default':
-      $objects = features_get_default_explicit($component, $module_name, TRUE, $reset);
+      $objects = features_get_default($component, $module_name, TRUE, $reset);
       break;
     case 'normal':
       $objects = features_get_normal($component, $module_name, $reset);
@@ -713,10 +710,10 @@ function features_semaphore($op, $component) {
  * Get normal objects for a given module/component pair.
  */
 function features_get_normal($component, $module_name, $reset = FALSE) {
-  static $cache;
-  if (!isset($cache) || $reset) {
-    $cache = array();
+  if ($reset) {
+    drupal_static_reset(__FUNCTION__);
   }
+  $cache = &drupal_static(__FUNCTION__, array());
   if (!isset($cache[$module_name][$component])) {
     features_include();
     $code = NULL;
@@ -746,7 +743,7 @@ function features_get_normal($component, $module_name, $reset = FALSE) {
  * Get defaults for a given module/component pair.
  */
 function features_get_default($component, $module_name = NULL, $alter = TRUE, $reset = FALSE) {
-  static $cache = array();
+  $cache = &drupal_static(__FUNCTION__, array());
   $alter = !empty($alter); // ensure $alter is a true/false boolean
   features_include();
   features_include_defaults($component);
@@ -817,28 +814,10 @@ function features_get_default($component, $module_name = NULL, $alter = TRUE, $r
 }
 
 /**
- * Get explicitly declared defaults for a given module/component pair.
- */
-function features_get_default_explicit($component, $module_name = NULL, $alter = TRUE, $reset = FALSE) {
-  $objects = features_get_default($component, $module_name, $alter, $reset);
-  // Restrict altered defaults to those explicitly provided by module.
-  if (!empty($objects) && is_array($objects) && features_get_default_alter_hook($component)) {
-    $module = features_get_features($module_name);
-    if (empty($module->info['features'][$component])) {
-      $objects = array();
-    }
-    else {
-      $objects = array_intersect_key($objects, drupal_map_assoc($module->info['features'][$component]));
-    }
-  }
-  return $objects;
-}
-
-/**
  * Get a map of components to their providing modules.
  */
 function features_get_default_map($component, $attribute = NULL, $callback = NULL, $reset = FALSE) {
-  static $map = array();
+  $map = &drupal_static(__FUNCTION__, array());
 
   global $features_ignore_conflicts;
   if ($features_ignore_conflicts) {
@@ -884,10 +863,10 @@ function features_get_default_map($component, $attribute = NULL, $callback = NUL
  * Retrieve an array of features/components and their current states.
  */
 function features_get_component_states($features = array(), $rebuild_only = TRUE, $reset = FALSE) {
-  static $cache;
-  if (!isset($cache) || $reset) {
-    $cache = array();
+  if ($reset) {
+    drupal_static_reset(__FUNCTION__);
   }
+  $cache = &drupal_static(__FUNCTION__, array());
 
   $all_features = features_get_features();
   $features = !empty($features) ? $features : array_keys($all_features);
