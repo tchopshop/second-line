@@ -342,29 +342,31 @@ function tablefield_field_formatter_view($entity_type, $entity, $field, $instanc
 
       // Check for an empty header, if so we don't want to theme it.
       $noheader = TRUE;
-      foreach ($header_data as $cell) {
-        if (strlen($cell['data']) > 0) {
-          $noheader = FALSE;
-          break;
+      if (!empty($header_data)) :
+        foreach ($header_data as $cell) {
+          if (strlen($cell['data']) > 0) {
+            $noheader = FALSE;
+            break;
+          }
         }
-      }
 
-      $header = $noheader ? NULL : $header_data;
+        $header = $noheader ? NULL : $header_data;
 
-      $entity_info = entity_get_info($entity_type);
-      $entity_id = !empty($entity_info['entity keys']['id']) ? $entity->{$entity_info['entity keys']['id']} : NULL;
+        $entity_info = entity_get_info($entity_type);
+        $entity_id = !empty($entity_info['entity keys']['id']) ? $entity->{$entity_info['entity keys']['id']} : NULL;
 
-      // Theme the table for display
-      $element[$delta]['#markup'] = theme('tablefield_view', array(
-        'header' => $header,
-        'rows' => $tabledata,
-        'delta' => $delta,
-        'export' => isset($field['settings']['export']) ? $field['settings']['export'] : NULL,
-        'entity_type' => $entity_type,
-        'entity_id' => $entity_id,
-        'field_name' => $field['field_name'],
-        'langcode' => $langcode,
-      ));
+        // Theme the table for display
+        $element[$delta]['#markup'] = theme('tablefield_view', array(
+          'header' => $header,
+          'rows' => $tabledata,
+          'delta' => $delta,
+          'export' => isset($field['settings']['export']) ? $field['settings']['export'] : NULL,
+          'entity_type' => $entity_type,
+          'entity_id' => $entity_id,
+          'field_name' => $field['field_name'],
+          'langcode' => $langcode,
+        ));
+      endif;
     }
 
   }
@@ -399,7 +401,12 @@ function tablefield_field_widget_form(&$form, &$form_state, $field, $instance, $
   // Establish a list of saved/submitted/default values
   if (isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#name'] == 'tablefield_rebuild_' . $field['field_name'] . '_' . $delta) {
     // Rebuilding table rows/cols
-    $default_value = tablefield_rationalize_table($form_state['tablefield_rebuild'][$field['field_name']][$langcode][$delta]['tablefield']);
+    if(!empty($element['#field_parents'])) {
+      $default_value = tablefield_rationalize_table($form_state['tablefield_rebuild'][$element['#bundle']][$langcode][$delta][$field['field_name']][$langcode][$delta]['tablefield']);
+    }
+    else {
+      $default_value = tablefield_rationalize_table($form_state['tablefield_rebuild'][$field['field_name']][$langcode][$delta]['tablefield']);
+    }
   }
   elseif (isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#name'] == 'tablefield-import-button-' . $field['field_name'] . '-' . $delta) {
     // Importing CSV data
@@ -480,6 +487,14 @@ function tablefield_field_widget_form(&$form, &$form_state, $field, $instance, $
   if (isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#name'] == 'tablefield_rebuild_' . $field['field_name'] . '_' . $delta) {
     $count_cols = $form_state['tablefield_rebuild'][$field['field_name']][$langcode][$delta]['tablefield']['rebuild']['count_cols'];
     $count_rows = $form_state['tablefield_rebuild'][$field['field_name']][$langcode][$delta]['tablefield']['rebuild']['count_rows'];
+    if(!empty($element['#field_parents'])) {
+      $count_cols = $form_state['tablefield_rebuild'][$element['#bundle']][$langcode][$delta][$field['field_name']][$langcode][$delta]['tablefield']['rebuild']['count_cols'];
+      $count_rows = $form_state['tablefield_rebuild'][$element['#bundle']][$langcode][$delta][$field['field_name']][$langcode][$delta]['tablefield']['rebuild']['count_rows'];
+    }
+    else {
+      $count_cols = $form_state['tablefield_rebuild'][$field['field_name']][$langcode][$delta]['tablefield']['rebuild']['count_cols'];
+      $count_rows = $form_state['tablefield_rebuild'][$field['field_name']][$langcode][$delta]['tablefield']['rebuild']['count_rows'];
+    }
 
     drupal_set_message(t('Table structure rebuilt.'), 'status', FALSE);
   }
