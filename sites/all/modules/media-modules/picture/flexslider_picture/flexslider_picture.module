@@ -93,6 +93,7 @@ function flexslider_picture_field_formatter_view($entity_type, $entity, $field, 
  */
 function flexslider_picture_form_ctools_export_ui_edit_item_form_alter(&$form, &$form_state) {
   if ($form_state['plugin']['schema'] == 'flexslider_optionset') {
+    $form['image_style']['#tree'] = TRUE;
     $form['image_style']['imagestyle_type'] = array(
       '#type' => 'radios',
       '#title' => t('Image type'),
@@ -160,7 +161,7 @@ function flexslider_picture_form_ctools_export_ui_edit_item_form_alter(&$form, &
  * Submit callback.
  */
 function _flexslider_picture_ctools_export_ui_edit_item_form_submit($form, &$form_state) {
-  $fields = array_intersect_key($form_state['values'], drupal_map_assoc(array('imagestyle_type', 'mapping')));
+  $fields = array_intersect_key($form_state['values']['image_style'], drupal_map_assoc(array('imagestyle_type', 'mapping')));
   $fields['flexslider_optionset'] = $form_state['values']['name'];
   db_merge('flexslider_picture_optionset')
     ->key(array('flexslider_optionset' => $form_state['values']['name']))
