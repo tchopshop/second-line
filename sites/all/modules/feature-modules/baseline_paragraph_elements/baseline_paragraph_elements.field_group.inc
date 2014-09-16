@@ -33,6 +33,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row',
         'element' => 'blockquote',
         'attributes' => '',
+        'id' => 'paragraphs_item_quotation_full_group_blockquote',
       ),
     ),
   );
@@ -60,6 +61,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'second-line',
         'element' => 'span',
         'attributes' => '',
+        'id' => 'paragraphs_item_quotation_full_group_break',
       ),
     ),
   );
@@ -87,6 +89,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'collapsible-panels',
         'element' => 'div',
         'attributes' => '',
+        'id' => 'paragraphs_item_accordian_full_group_collapsible',
       ),
     ),
   );
@@ -118,6 +121,7 @@ function baseline_paragraph_elements_field_group_info() {
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'none',
+        'id' => 'paragraphs_item_pricing_table_full_group_columns',
       ),
       'formatter' => 'open',
     ),
@@ -146,6 +150,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => '',
         'element' => 'dl',
         'attributes' => '',
+        'id' => 'paragraphs_item_links_full_group_definition_list',
       ),
     ),
   );
@@ -173,6 +178,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'slides',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_slideshow_full_group_flex_list',
       ),
     ),
   );
@@ -200,6 +206,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row flexslider',
         'element' => 'div',
         'attributes' => '',
+        'id' => 'paragraphs_item_slideshow_full_group_flexslider',
       ),
     ),
   );
@@ -228,6 +235,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => '',
         'element' => 'footer',
         'attributes' => '',
+        'id' => 'paragraphs_item_quotation_full_group_footer',
       ),
     ),
   );
@@ -256,6 +264,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'panel-heading',
         'element' => 'div',
         'attributes' => '',
+        'id' => 'field_collection_item_field_pricing_table_full_group_header',
       ),
     ),
   );
@@ -284,6 +293,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'list-group',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'field_collection_item_field_pricing_table_full_group_list_group',
       ),
     ),
   );
@@ -311,6 +321,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row content-grid-2',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_boxes_2_up_full_group_list_group',
       ),
     ),
   );
@@ -338,6 +349,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row content-grid-3',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_boxes_3_up_full_group_list_group',
       ),
     ),
   );
@@ -365,6 +377,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row content-grid-4',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_boxes_4_up_full_group_list_group',
       ),
     ),
   );
@@ -392,6 +405,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'inline-stats',
         'element' => 'div',
         'attributes' => '',
+        'id' => 'paragraphs_item_statistics_full_group_list_group',
       ),
     ),
   );
@@ -447,6 +461,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row block-grid-3',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_grid_3_across_full_group_list_item',
       ),
     ),
   );
@@ -474,6 +489,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row block-grid-2',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_grid_2_across_full_group_list',
       ),
     ),
   );
@@ -501,6 +517,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row block-grid-4',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_grid_4_across_full_group_list',
       ),
     ),
   );
@@ -528,6 +545,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row block-grid-5',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_grid_5_across_full_group_list',
       ),
     ),
   );
@@ -556,6 +574,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'panel-body',
         'element' => 'div',
         'attributes' => '',
+        'id' => 'field_collection_item_field_pricing_table_full_group_price',
       ),
     ),
   );
@@ -584,6 +603,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => '',
         'element' => 'div',
         'attributes' => '',
+        'id' => 'paragraphs_item_image_full_group_row',
       ),
     ),
   );
@@ -612,6 +632,7 @@ function baseline_paragraph_elements_field_group_info() {
         'classes' => 'row',
         'element' => 'ul',
         'attributes' => '',
+        'id' => 'paragraphs_item_statistics_full_group_wrapper',
       ),
     ),
   );

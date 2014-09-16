@@ -1,7 +1,7 @@
 name = Baseline Paragraph Elements
 core = 7.x
 package = Baseline
-version = 7.x-2.8
+version = 7.x-3.0
 project = baseline_paragraph_elements
 dependencies[] = baseline_core
 dependencies[] = collageformatter
@@ -221,7 +221,6 @@ features[field_instance][] = paragraphs_item-h4-field_paragraph_text_headline
 features[field_instance][] = paragraphs_item-h5-field_paragraph_text_headline
 features[field_instance][] = paragraphs_item-h6-field_paragraph_text_headline
 features[field_instance][] = paragraphs_item-headline-field_paragraph_headline
-features[field_instance][] = paragraphs_item-image-field_alignment
 features[field_instance][] = paragraphs_item-image-field_image_alignment
 features[field_instance][] = paragraphs_item-image-field_paragraph_image
 features[field_instance][] = paragraphs_item-image-field_paragraph_image_layout

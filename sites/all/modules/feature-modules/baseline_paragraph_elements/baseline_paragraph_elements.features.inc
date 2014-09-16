@@ -88,7 +88,7 @@ function baseline_paragraph_elements_paragraphs_info() {
       'locked' => '1',
     ),
     'content_boxes' => array(
-      'name' => 'Content Boxes',
+      'name' => 'Content Grids',
       'bundle' => 'content_boxes',
       'locked' => '1',
     ),
@@ -108,27 +108,27 @@ function baseline_paragraph_elements_paragraphs_info() {
       'locked' => '1',
     ),
     'grid_2_across' => array(
-      'name' => 'Grid 2 Across',
+      'name' => 'Grid 2 Across (Landscape)',
       'bundle' => 'grid_2_across',
       'locked' => '1',
     ),
     'grid_3_across' => array(
-      'name' => 'Grid 3 Across',
+      'name' => 'Grid 3 Across (Landscape)',
       'bundle' => 'grid_3_across',
       'locked' => '1',
     ),
     'grid_4_across' => array(
-      'name' => 'Grid 4 Across',
+      'name' => 'Grid 4 Across (Landscape)',
       'bundle' => 'grid_4_across',
       'locked' => '1',
     ),
     'grid_5_across' => array(
-      'name' => 'Grid 5 Across',
+      'name' => 'Grid 5 Across (Landscape)',
       'bundle' => 'grid_5_across',
       'locked' => '1',
     ),
     'grids' => array(
-      'name' => 'Grids',
+      'name' => 'Image Grids',
       'bundle' => 'grids',
       'locked' => '1',
     ),
