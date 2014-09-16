@@ -91,6 +91,18 @@ function baseline_images_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
+      'grid_2_across_vertical' => array(
+        'custom_settings' => TRUE,
+      ),
+      'grid_3_across_vertical' => array(
+        'custom_settings' => TRUE,
+      ),
+      'grid_4_across_vertical' => array(
+        'custom_settings' => TRUE,
+      ),
+      'grid_5_across_vertical' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -172,6 +184,22 @@ function baseline_images_strongarm() {
             'weight' => '1',
             'visible' => TRUE,
           ),
+          'grid_2_across_vertical' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'grid_3_across_vertical' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'grid_4_across_vertical' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'grid_5_across_vertical' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
         ),
       ),
     ),
@@ -184,18 +212,6 @@ function baseline_images_strongarm() {
   $strongarm->name = 'focus';
   $strongarm->value = 1;
   $export['focus'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'imagefield_focus_media_settings';
-  $strongarm->value = array(
-    'focus' => 1,
-    'focus_lock_ratio' => 0,
-    'focus_min_size' => '',
-    'focus_required' => 0,
-  );
-  $export['imagefield_focus_media_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

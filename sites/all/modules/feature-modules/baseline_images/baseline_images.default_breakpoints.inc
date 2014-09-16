@@ -19,7 +19,7 @@ function baseline_images_default_breakpoints() {
   $breakpoint->source = 'baseline';
   $breakpoint->source_type = 'theme';
   $breakpoint->status = 1;
-  $breakpoint->weight = 2;
+  $breakpoint->weight = 10;
   $breakpoint->multipliers = array(
     '1x' => '1x',
     '2x' => '2x',
@@ -35,7 +35,7 @@ function baseline_images_default_breakpoints() {
   $breakpoint->source = 'baseline';
   $breakpoint->source_type = 'theme';
   $breakpoint->status = 1;
-  $breakpoint->weight = 1;
+  $breakpoint->weight = 11;
   $breakpoint->multipliers = array(
     '1x' => '1x',
     '2x' => '2x',
@@ -51,7 +51,7 @@ function baseline_images_default_breakpoints() {
   $breakpoint->source = 'baseline';
   $breakpoint->source_type = 'theme';
   $breakpoint->status = 1;
-  $breakpoint->weight = 0;
+  $breakpoint->weight = 12;
   $breakpoint->multipliers = array(
     '1x' => '1x',
     '2x' => '2x',
@@ -82,7 +82,7 @@ function baseline_images_default_breakpoints() {
   $breakpoint->source = 'baseline';
   $breakpoint->source_type = 'theme';
   $breakpoint->status = 1;
-  $breakpoint->weight = 5;
+  $breakpoint->weight = 7;
   $breakpoint->multipliers = array(
     '1x' => '1x',
     '2x' => '2x',
@@ -98,7 +98,7 @@ function baseline_images_default_breakpoints() {
   $breakpoint->source = 'baseline';
   $breakpoint->source_type = 'theme';
   $breakpoint->status = 1;
-  $breakpoint->weight = 4;
+  $breakpoint->weight = 8;
   $breakpoint->multipliers = array(
     '1x' => '1x',
     '2x' => '2x',
@@ -114,7 +114,7 @@ function baseline_images_default_breakpoints() {
   $breakpoint->source = 'baseline';
   $breakpoint->source_type = 'theme';
   $breakpoint->status = 1;
-  $breakpoint->weight = 3;
+  $breakpoint->weight = 9;
   $breakpoint->multipliers = array(
     '1x' => '1x',
     '2x' => '2x',
