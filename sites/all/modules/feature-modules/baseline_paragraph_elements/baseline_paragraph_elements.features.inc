@@ -112,9 +112,19 @@ function baseline_paragraph_elements_paragraphs_info() {
       'bundle' => 'grid_2_across',
       'locked' => '1',
     ),
+    'grid_2_across_portrait' => array(
+      'name' => 'Grid 2 Across (Portrait)',
+      'bundle' => 'grid_2_across_portrait',
+      'locked' => '1',
+    ),
     'grid_3_across' => array(
       'name' => 'Grid 3 Across (Landscape)',
       'bundle' => 'grid_3_across',
+      'locked' => '1',
+    ),
+    'grid_3_across_portrait' => array(
+      'name' => 'Grid 3 Across (Portrait)',
+      'bundle' => 'grid_3_across_portrait',
       'locked' => '1',
     ),
     'grid_4_across' => array(
@@ -122,9 +132,19 @@ function baseline_paragraph_elements_paragraphs_info() {
       'bundle' => 'grid_4_across',
       'locked' => '1',
     ),
+    'grid_4_across_portrait' => array(
+      'name' => 'Grid 4 Across (Portrait)',
+      'bundle' => 'grid_4_across_portrait',
+      'locked' => '1',
+    ),
     'grid_5_across' => array(
       'name' => 'Grid 5 Across (Landscape)',
       'bundle' => 'grid_5_across',
+      'locked' => '1',
+    ),
+    'grid_5_across_portrait' => array(
+      'name' => 'Grid 5 Across (Portrait)',
+      'bundle' => 'grid_5_across_portrait',
       'locked' => '1',
     ),
     'grids' => array(
