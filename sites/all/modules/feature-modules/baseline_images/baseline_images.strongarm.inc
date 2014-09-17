@@ -103,6 +103,9 @@ function baseline_images_strongarm() {
       'grid_5_across_vertical' => array(
         'custom_settings' => TRUE,
       ),
+      'carousel' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -197,6 +200,10 @@ function baseline_images_strongarm() {
             'visible' => TRUE,
           ),
           'grid_5_across_vertical' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'carousel' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),

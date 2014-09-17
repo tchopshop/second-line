@@ -13,6 +13,35 @@ function baseline_images_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_flexslider|paragraphs_item|carousel|default';
+  $field_group->group_name = 'group_flexslider';
+  $field_group->entity_type = 'paragraphs_item';
+  $field_group->bundle = 'carousel';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'wrapper',
+    'weight' => '0',
+    'children' => array(
+      0 => 'group_slides',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'wrapper',
+      'instance_settings' => array(
+        'classes' => 'row flexslider',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $export['group_flexslider|paragraphs_item|carousel|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_list_group|paragraphs_item|grid_2_across_portrait|default';
   $field_group->group_name = 'group_list_group';
   $field_group->entity_type = 'paragraphs_item';
@@ -125,6 +154,35 @@ function baseline_images_field_group_info() {
     ),
   );
   $export['group_list_group|paragraphs_item|grid_5_across_portrait|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_slides|paragraphs_item|carousel|default';
+  $field_group->group_name = 'group_slides';
+  $field_group->entity_type = 'paragraphs_item';
+  $field_group->bundle = 'carousel';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_flexslider';
+  $field_group->data = array(
+    'label' => 'slides',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_paragraph_image',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'slides',
+      'instance_settings' => array(
+        'classes' => 'slides',
+        'element' => 'ul',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $export['group_slides|paragraphs_item|carousel|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

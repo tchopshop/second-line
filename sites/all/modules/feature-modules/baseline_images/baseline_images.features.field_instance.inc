@@ -89,6 +89,12 @@ function baseline_images_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 3,
       ),
+      'carousel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -251,6 +257,63 @@ function baseline_images_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-carousel-field_paragraph_image'
+  $field_instances['paragraphs_item-carousel-field_paragraph_image'] = array(
+    'bundle' => 'carousel',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'carousel',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 2,
+      ),
+    ),
+    'ds_extras_field_template' => 'theme_ds_field_reset',
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_paragraph_image',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'images/[current-page:title]',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 'media_internet',
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
     ),
   );
 
@@ -485,6 +548,7 @@ function baseline_images_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Caption');
+  t('Image');
   t('Images');
   t('Title text is used in the tool tip when a user hovers their mouse over the image. Adding title text makes it easier to understand the context of an image and improves usability.');
 

@@ -240,6 +240,25 @@ function baseline_images_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
+  $file_display->name = 'image__carousel__file_field_picture';
+  $file_display->weight = 0;
+  $file_display->status = TRUE;
+  $file_display->settings = array(
+    'picture_mapping' => '4_column',
+    'fallback_image_style' => '4_columns',
+    'image_link' => 'colorbox',
+    'colorbox_settings' => array(
+      'colorbox_group' => '12_columns',
+      'colorbox_gallery' => 'page',
+      'colorbox_gallery_custom' => '',
+      'colorbox_caption' => 'auto',
+      'colorbox_caption_custom' => '',
+    ),
+  );
+  $export['image__carousel__file_field_picture'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
   $file_display->name = 'image__flexslider__file_field_picture';
   $file_display->weight = 0;
   $file_display->status = TRUE;
