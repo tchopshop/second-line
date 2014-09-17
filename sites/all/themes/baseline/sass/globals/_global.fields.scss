@@ -81,7 +81,7 @@ display:block;
 	padding: 0;
 }
 .panel-body {
-	padding: 0 $panel-body-padding $panel-body-padding;
+	padding: $panel-body-padding $panel-body-padding;
 	}
 
 .collapsible-panels .panel-body {
@@ -191,3 +191,46 @@ td.download {
 //.panel-title > a {
 //	display: block;
 //}
+
+body.page-node-edit , body.page-node-add, body.page-admin {
+	.table-striped {
+		> tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: $gray-lighter;
+	  }
+	}
+  }
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+	.table-hover {
+		> tbody > tr:hover {
+    > td,
+    > th {
+      background-color: darken($gray-lighter, 10%);
+	  }
+	}
+  }
+  @include table-row-variant('active', #f5f5f5);
+  
+  .table {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top: 1px solid #ddd;
+      }
+    }
+  }
+    > thead > tr > th {
+    border-bottom: 2px solid #ddd;
+  }
+
+  }
+}

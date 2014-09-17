@@ -14,7 +14,7 @@
 # with debug code, be sure to change to :production when moving from development
 # to production servers.
 
-environment = :production
+environment = :development
 #environment = :production
 
 

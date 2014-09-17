@@ -233,6 +233,31 @@ float:none;
 margin:5px 0 5px 5px;
 }
 
+body.page-node-edit, body.page-node-add, body.page-admin {
+.nav-tabs {
+  border-bottom: 1px solid $brand-primary;
+  > li {
+      > a {
+      &:hover {
+        border-color: $gray-lighter $gray-lighter #ddd!important;
+      }
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $white!important;
+        background-color: $brand-primary;
+        border: 1px solid $brand-primary;
+      }
+    }
+  }
+  }
+}
+
+
 
 @media screen and (min-width:768px){
 .navbar.container {

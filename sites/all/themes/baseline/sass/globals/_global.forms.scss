@@ -39,6 +39,9 @@ background-image:none;
 	}
 
 }
+.views-exposed-form .form-control {
+	width: 100%;
+}
 .widget-type-select.form-control, .field-type-select.form-control, table .form-control, .form-text.form-control {
 	width: 100%;
 }
@@ -559,4 +562,32 @@ font-weight:700;
 }
 .media-browser-tab .views-exposed-form .views-exposed-widget {
 	width: 25%;
+}
+
+body.page-node-edit, body.page-node-add, body.page-admin {
+
+	.form-control {
+  color: $gray;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+  }
+  .panel-default, .panel-default .pane-inner {
+	background-color: white;
+	border-color: #ddd;
+	}
+	
+	.panel-default .pane-inner > .panel-heading, .panel-default > .panel-heading {
+	background-color: whitesmoke;
+	border-color: #ddd;
+	.panel-title {
+		color: $gray-darker!important;
+	}
+	}
+
+  
+}
+
+body.cke_editable  {
+		background-color: white;
 }

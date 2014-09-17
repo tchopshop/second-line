@@ -7,6 +7,8 @@ html, body {
 }
 #leaderboard-wrapper {
 	height: 52px;
+	background-color: #222222;
+	border-color: #090909;
 	.region {
 		padding: 0;
 	}
@@ -357,14 +359,14 @@ figure.media {
 }
 
 .panel-default, .panel-default .pane-inner {
-	background-color: $gray-darker!important;
-	border-color: $gray-dark!important;
+	background-color: $gray-darker;
+	border-color: $gray-dark;
 }
 .panel-default .pane-inner > .panel-heading, .panel-default > .panel-heading {
-	background-color: $gray!important;
-	border-color: transparent!important;
+	background-color: $gray;
+	border-color: transparent;
 	.panel-title {
-		color: $gray-light!important;
+		color: $gray-light;
 	}
 }
 .page-admin {
@@ -373,8 +375,8 @@ figure.media {
 	border-color: $gray-lighter!important;
 	}
 	.panel-default .pane-inner > .panel-heading, .panel-default > .panel-heading {
-	background-color: $gray-light!important;
-	border-color: $gray-light!important;
+	background-color: $gray-lighter!important;
+	border-color: $gray-lighter!important;
 	.panel-title {
 		color: $gray-dark!important;
 	}
