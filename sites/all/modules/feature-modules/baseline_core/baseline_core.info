@@ -7,7 +7,6 @@ project = baseline_core
 dependencies[] = addressfield
 dependencies[] = autocomplete_deluxe
 dependencies[] = baseline_layouts
-dependencies[] = baseline_paragraph_elements
 dependencies[] = baseline_webform
 dependencies[] = ckeditor_link
 dependencies[] = ctools
