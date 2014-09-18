@@ -1209,6 +1209,38 @@ function baseline_paragraph_elements_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'paragraphs_item|carousel|default';
+  $ds_layout->entity_type = 'paragraphs_item';
+  $ds_layout->bundle = 'carousel';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_flexslider',
+        1 => 'group_slides',
+        2 => 'field_paragraph_image',
+      ),
+    ),
+    'fields' => array(
+      'group_flexslider' => 'ds_content',
+      'group_slides' => 'ds_content',
+      'field_paragraph_image' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['paragraphs_item|carousel|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'paragraphs_item|collage|default';
   $ds_layout->entity_type = 'paragraphs_item';
   $ds_layout->bundle = 'collage';
@@ -1345,6 +1377,36 @@ function baseline_paragraph_elements_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'paragraphs_item|grid_2_across_portrait|default';
+  $ds_layout->entity_type = 'paragraphs_item';
+  $ds_layout->bundle = 'grid_2_across_portrait';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_list_group',
+        1 => 'field_grid_images',
+      ),
+    ),
+    'fields' => array(
+      'group_list_group' => 'ds_content',
+      'field_grid_images' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['paragraphs_item|grid_2_across_portrait|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'paragraphs_item|grid_2_across|default';
   $ds_layout->entity_type = 'paragraphs_item';
   $ds_layout->bundle = 'grid_2_across';
@@ -1372,6 +1434,36 @@ function baseline_paragraph_elements_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['paragraphs_item|grid_2_across|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'paragraphs_item|grid_3_across_portrait|default';
+  $ds_layout->entity_type = 'paragraphs_item';
+  $ds_layout->bundle = 'grid_3_across_portrait';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_list_group',
+        1 => 'field_grid_images',
+      ),
+    ),
+    'fields' => array(
+      'group_list_group' => 'ds_content',
+      'field_grid_images' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['paragraphs_item|grid_3_across_portrait|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
@@ -1405,6 +1497,36 @@ function baseline_paragraph_elements_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'paragraphs_item|grid_4_across_portrait|default';
+  $ds_layout->entity_type = 'paragraphs_item';
+  $ds_layout->bundle = 'grid_4_across_portrait';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_list_group',
+        1 => 'field_grid_images',
+      ),
+    ),
+    'fields' => array(
+      'group_list_group' => 'ds_content',
+      'field_grid_images' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['paragraphs_item|grid_4_across_portrait|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'paragraphs_item|grid_4_across|default';
   $ds_layout->entity_type = 'paragraphs_item';
   $ds_layout->bundle = 'grid_4_across';
@@ -1432,6 +1554,36 @@ function baseline_paragraph_elements_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['paragraphs_item|grid_4_across|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'paragraphs_item|grid_5_across_portrait|default';
+  $ds_layout->entity_type = 'paragraphs_item';
+  $ds_layout->bundle = 'grid_5_across_portrait';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_list_group',
+        1 => 'field_grid_images',
+      ),
+    ),
+    'fields' => array(
+      'group_list_group' => 'ds_content',
+      'field_grid_images' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['paragraphs_item|grid_5_across_portrait|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
