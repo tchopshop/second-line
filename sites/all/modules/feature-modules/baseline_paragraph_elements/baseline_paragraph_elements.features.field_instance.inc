@@ -356,7 +356,7 @@ function baseline_paragraph_elements_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'file_entity',
         'settings' => array(
-          'file_view_mode' => 'grid_2_across',
+          'file_view_mode' => 'grid_2_across_no_crop',
         ),
         'type' => 'file_rendered',
         'weight' => 0,
@@ -2242,6 +2242,63 @@ function baseline_paragraph_elements_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'paragraphs_item-grid_2_across_portrait-field_grid_images'
+  $field_instances['paragraphs_item-grid_2_across_portrait-field_grid_images'] = array(
+    'bundle' => 'grid_2_across_portrait',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'grid_2_across_vertical',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => 'theme_ds_field_reset',
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_grid_images',
+    'label' => 'Images',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'images/[current-page:title]',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 'media_internet',
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-grid_3_across-field_grid_images'
   $field_instances['paragraphs_item-grid_3_across-field_grid_images'] = array(
     'bundle' => 'grid_3_across',
@@ -2261,6 +2318,63 @@ function baseline_paragraph_elements_field_default_field_instances() {
     'ds_extras_field_template' => 'theme_ds_field_reset',
     'entity_type' => 'paragraphs_item',
     'fences_wrapper' => 'li',
+    'field_name' => 'field_grid_images',
+    'label' => 'Images',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'images/[current-page:title]',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 'media_internet',
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-grid_3_across_portrait-field_grid_images'
+  $field_instances['paragraphs_item-grid_3_across_portrait-field_grid_images'] = array(
+    'bundle' => 'grid_3_across_portrait',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'grid_3_across_vertical',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => 'theme_ds_field_reset',
+    'entity_type' => 'paragraphs_item',
     'field_name' => 'field_grid_images',
     'label' => 'Images',
     'required' => 0,
@@ -2358,6 +2472,63 @@ function baseline_paragraph_elements_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'paragraphs_item-grid_4_across_portrait-field_grid_images'
+  $field_instances['paragraphs_item-grid_4_across_portrait-field_grid_images'] = array(
+    'bundle' => 'grid_4_across_portrait',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'grid_4_across_vertical',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => 'theme_ds_field_reset',
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_grid_images',
+    'label' => 'Images',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'images/[current-page:title]',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 'media_internet',
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-grid_5_across-field_grid_images'
   $field_instances['paragraphs_item-grid_5_across-field_grid_images'] = array(
     'bundle' => 'grid_5_across',
@@ -2376,6 +2547,63 @@ function baseline_paragraph_elements_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'fences_wrapper' => 'li',
+    'field_name' => 'field_grid_images',
+    'label' => 'Images',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'images/[current-page:title]',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 'media_internet',
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-grid_5_across_portrait-field_grid_images'
+  $field_instances['paragraphs_item-grid_5_across_portrait-field_grid_images'] = array(
+    'bundle' => 'grid_5_across_portrait',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'grid_5_across_vertical',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => 'theme_ds_field_reset',
+    'entity_type' => 'paragraphs_item',
     'field_name' => 'field_grid_images',
     'label' => 'Images',
     'required' => 0,
@@ -2920,6 +3148,46 @@ function baseline_paragraph_elements_field_default_field_instances() {
       'settings' => array(),
       'type' => 'paragraphs_embed',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-image-field_alignment'
+  $field_instances['paragraphs_item-image-field_alignment'] = array(
+    'bundle' => 'image',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'list_key',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_alignment',
+    'label' => 'Image Alignment',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 

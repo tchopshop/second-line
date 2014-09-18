@@ -30,7 +30,7 @@ foreach ($variables[\'#items\'] as $item) {
     $column[$index] = !isset($column[$index]) ? array_shift($words) . \' \' : $column[$index] . array_shift($words) . \' \';
     $index = drupal_strlen($column[$index]) >= $length ? $index + 1 : $index;
   }
-  $output .= \'<div class="text-columns clearfix"><div class="column">\' . implode(\'</div><div class="column">\', $column) . \'</div></div>\';
+  $output .= \'<div class="text-columns clearfix"><div class="column"><p>\' . implode(\'</p></div><div class="column"><p>\', $column) . \'</p></div></div>\';
 }
 return $output;';
   $formatter->fapi = '';
@@ -56,7 +56,7 @@ foreach ($variables[\'#items\'] as $item) {
     $column[$index] = !isset($column[$index]) ? array_shift($words) . \' \' : $column[$index] . array_shift($words) . \' \';
     $index = drupal_strlen($column[$index]) >= $length ? $index + 1 : $index;
   }
-  $output .= \'<div class="text-columns clearfix"><div class="column">\' . implode(\'</div><div class="column">\', $column) . \'</div></div>\';
+  $output .= \'<div class="text-columns clearfix"><div class="column"><p>\' . implode(\'</p></div><div class="column"><p>\', $column) . \'</p></div></div>\';
 }
 return $output;';
   $formatter->fapi = '';
@@ -111,7 +111,7 @@ foreach ($variables[\'#items\'] as $item) {
     $column[$index] = !isset($column[$index]) ? array_shift($words) . \' \' : $column[$index] . array_shift($words) . \' \';
     $index = drupal_strlen($column[$index]) >= $length ? $index + 1 : $index;
   }
-  $output .= \'<div class="text-columns clearfix"><div class="column">\' . implode(\'</div><div class="column">\', $column) . \'</div></div>\';
+  $output .= \'<div class="text-columns clearfix"><div class="column"><p>\' . implode(\'</p></div><div class="column"><p>\', $column) . \'</p></div></div>\';
 }
 return $output;';
   $formatter->fapi = '';

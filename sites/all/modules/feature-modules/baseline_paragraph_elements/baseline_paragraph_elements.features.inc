@@ -82,11 +82,6 @@ function baseline_paragraph_elements_paragraphs_info() {
       'bundle' => 'boxes_4_up',
       'locked' => '1',
     ),
-    'carousel' => array(
-      'name' => 'Carousel',
-      'bundle' => 'carousel',
-      'locked' => '1',
-    ),
     'collage' => array(
       'name' => 'Collage',
       'bundle' => 'collage',
