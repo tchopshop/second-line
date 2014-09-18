@@ -371,6 +371,46 @@ function baseline_images_image_default_styles() {
     ),
   );
 
+  // Exported image style: grid-1000x600-no-crop.
+  $styles['grid-1000x600-no-crop'] = array(
+    'name' => 'grid-1000x600-no-crop',
+    'label' => 'Grid-1000x600-no-crop',
+    'effects' => array(
+      3 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 1000,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      4 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 1000,
+          'height' => 600,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: grid-1200x1600.
   $styles['grid-1200x1600'] = array(
     'name' => 'grid-1200x1600',
@@ -480,6 +520,46 @@ function baseline_images_image_default_styles() {
         'data' => array(
           'width' => 160,
           'height' => 160,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: grid-160x160-no-crop.
+  $styles['grid-160x160-no-crop'] = array(
+    'name' => 'grid-160x160-no-crop',
+    'label' => 'Grid-160x160-no-crop',
+    'effects' => array(
+      11 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 160,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      12 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 160,
+          'height' => 160,
+          'anchor' => 'center-center',
         ),
         'weight' => 2,
       ),
@@ -601,6 +681,46 @@ function baseline_images_image_default_styles() {
     ),
   );
 
+  // Exported image style: grid-24x240-no-crop.
+  $styles['grid-24x240-no-crop'] = array(
+    'name' => 'grid-24x240-no-crop',
+    'label' => 'Grid-24x240-no-crop',
+    'effects' => array(
+      9 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 240,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      10 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 240,
+          'height' => 240,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: grid-300x200.
   $styles['grid-300x200'] = array(
     'name' => 'grid-300x200',
@@ -618,6 +738,46 @@ function baseline_images_image_default_styles() {
         'data' => array(
           'width' => 300,
           'height' => 200,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: grid-300x200-no-crop.
+  $styles['grid-300x200-no-crop'] = array(
+    'name' => 'grid-300x200-no-crop',
+    'label' => 'Grid-300x200-no-crop',
+    'effects' => array(
+      13 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 300,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      14 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 300,
+          'height' => 200,
+          'anchor' => 'center-center',
         ),
         'weight' => 2,
       ),
@@ -670,6 +830,46 @@ function baseline_images_image_default_styles() {
     ),
   );
 
+  // Exported image style: grid-400x240-no-crop.
+  $styles['grid-400x240-no-crop'] = array(
+    'name' => 'grid-400x240-no-crop',
+    'label' => 'Grid-400x240-no-crop',
+    'effects' => array(
+      5 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 400,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      6 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 400,
+          'height' => 240,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: grid-400x480.
   $styles['grid-400x480'] = array(
     'name' => 'grid-400x480',
@@ -710,6 +910,46 @@ function baseline_images_image_default_styles() {
         'data' => array(
           'width' => 500,
           'height' => 300,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: grid-500x300-no-crop.
+  $styles['grid-500x300-no-crop'] = array(
+    'name' => 'grid-500x300-no-crop',
+    'label' => 'Grid-500x300-no-crop',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 500,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      2 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 500,
+          'height' => 300,
+          'anchor' => 'center-center',
         ),
         'weight' => 2,
       ),
@@ -825,6 +1065,46 @@ function baseline_images_image_default_styles() {
         'data' => array(
           'width' => 800,
           'height' => 480,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: grid-800x480-no-crop.
+  $styles['grid-800x480-no-crop'] = array(
+    'name' => 'grid-800x480-no-crop',
+    'label' => 'Grid-800x480-no-crop',
+    'effects' => array(
+      7 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 800,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      8 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 800,
+          'height' => 480,
+          'anchor' => 'center-center',
         ),
         'weight' => 2,
       ),

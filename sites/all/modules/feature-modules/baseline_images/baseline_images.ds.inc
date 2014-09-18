@@ -147,6 +147,15 @@ function baseline_images_ds_view_modes_info() {
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'grid_2_across_no_crop';
+  $ds_view_mode->label = 'Grid 2 Across no crop';
+  $ds_view_mode->entities = array(
+    'file' => 'file',
+  );
+  $export['grid_2_across_no_crop'] = $ds_view_mode;
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
   $ds_view_mode->view_mode = 'grid_2_across_vertical';
   $ds_view_mode->label = 'Grid 2 Across Vertical';
   $ds_view_mode->entities = array(

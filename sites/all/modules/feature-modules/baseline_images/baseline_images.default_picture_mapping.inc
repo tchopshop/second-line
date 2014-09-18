@@ -523,6 +523,56 @@ function baseline_images_default_picture_mapping() {
   $picture_mapping = new PictureMapping();
   $picture_mapping->disabled = FALSE; /* Edit this to true to make a default picture_mapping disabled initially */
   $picture_mapping->api_version = 2;
+  $picture_mapping->label = 'Grid 2 Across no crop';
+  $picture_mapping->machine_name = 'grid_2_across_no_crop';
+  $picture_mapping->breakpoint_group = 'grid_2_across_no_crop';
+  $picture_mapping->mapping = array(
+    'breakpoints.theme.baseline.tablet-landscape' => array(
+      '1x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-500x300-no-crop',
+      ),
+      '2x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-1000x600-no-crop',
+      ),
+    ),
+    'breakpoints.theme.baseline.tablet-portrait' => array(
+      '1x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-400x240-no-crop',
+      ),
+      '2x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-800x480-no-crop',
+      ),
+    ),
+    'breakpoints.theme.baseline.smalltouch-landscape' => array(
+      '1x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-24x240-no-crop',
+      ),
+      '2x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-500x300-no-crop',
+      ),
+    ),
+    'breakpoints.theme.baseline.smalltouch-portrait' => array(
+      '1x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-160x160-no-crop',
+      ),
+      '2x' => array(
+        'mapping_type' => 'image_style',
+        'image_style' => 'grid-300x200-no-crop',
+      ),
+    ),
+  );
+  $export['grid_2_across_no_crop'] = $picture_mapping;
+
+  $picture_mapping = new PictureMapping();
+  $picture_mapping->disabled = FALSE; /* Edit this to true to make a default picture_mapping disabled initially */
+  $picture_mapping->api_version = 2;
   $picture_mapping->label = 'grid_2_across_vertical';
   $picture_mapping->machine_name = 'grid_2_across_vertical';
   $picture_mapping->breakpoint_group = 'grid_2_across_vertical';

@@ -103,7 +103,7 @@ function baseline_images_strongarm() {
       'grid_5_across_vertical' => array(
         'custom_settings' => TRUE,
       ),
-      'carousel' => array(
+      'grid_2_across_no_crop' => array(
         'custom_settings' => TRUE,
       ),
     ),
@@ -203,7 +203,7 @@ function baseline_images_strongarm() {
             'weight' => '0',
             'visible' => TRUE,
           ),
-          'carousel' => array(
+          'grid_2_across_no_crop' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),

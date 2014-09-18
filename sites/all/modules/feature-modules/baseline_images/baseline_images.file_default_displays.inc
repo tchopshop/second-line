@@ -310,6 +310,25 @@ function baseline_images_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
+  $file_display->name = 'image__grid_2_across_no_crop__file_field_picture';
+  $file_display->weight = 0;
+  $file_display->status = TRUE;
+  $file_display->settings = array(
+    'picture_mapping' => 'grid_2_across_no_crop',
+    'fallback_image_style' => 'grid-500x300-no-crop',
+    'image_link' => '',
+    'colorbox_settings' => array(
+      'colorbox_group' => '1_column',
+      'colorbox_gallery' => 'post',
+      'colorbox_gallery_custom' => '',
+      'colorbox_caption' => 'auto',
+      'colorbox_caption_custom' => '',
+    ),
+  );
+  $export['image__grid_2_across_no_crop__file_field_picture'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
   $file_display->name = 'image__grid_2_across_vertical__file_field_picture';
   $file_display->weight = 0;
   $file_display->status = TRUE;
