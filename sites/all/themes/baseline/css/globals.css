@@ -10872,7 +10872,7 @@ ul.links li {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.pages\.scss}line{font-family:\00003107}}
-.branding-elements, #main-content, div.messages, .block-inner, .pane-inner, .menu-wrapper, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, .rendered-by-ds .at-panel .region-inner, div.messages, .at-gutter {
+.branding-elements, #main-content, div.messages, .block-inner, .pane-inner, .menu-wrapper, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, .rendered-by-ds .at-panel .region-inner, .at-gutter {
   margin: 0 !important;
 }
 
@@ -12429,5 +12429,5 @@ figure.media {
   max-width: 1200px;
   position: relative;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
