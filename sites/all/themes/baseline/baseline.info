@@ -55,7 +55,7 @@ stylesheets[screen and (max-width:799px)][] = css/dl-menu.css
 ;;;;;;;;;;;;;;;;;;;;;
 
 ;scripts[] = js/bootstrap/affix.js
-;scripts[] = js/bootstrap/alert.js
+scripts[] = js/bootstrap/alert.js
 scripts[] = js/bootstrap/button.js
 ;scripts[] = js/bootstrap/carousel.js
 scripts[] = js/bootstrap/collapse.js
