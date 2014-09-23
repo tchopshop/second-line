@@ -69,7 +69,6 @@ scripts[] = js/bootstrap/transition.js
 scripts[] = js/modernizr.custom.js
 scripts[] = js/dropdownHover-ck.js
 scripts[] = js/jquery.dlmenu-ck.js
-scripts[] = js/colorbox.responsive.js
 scripts[] = js/script-ck.js
 
 ; Disable BootstrapCDN so the compiled LESS source files can be used.
