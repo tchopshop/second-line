@@ -445,7 +445,7 @@ figure.media {
 		margin-right: 30px;
 		margin-top: -5px;
 		@include breakpoint($smalltouch) {
-			margin-right: 10px;
+			margin-right: 25px;
 		}
 	}
 	li:last-child {
@@ -465,6 +465,9 @@ figure.media {
 		float: left;
 		margin-right: 5px;
 		margin-top: -1px;
+		@include breakpoint($smalltouch) {
+			margin-right: 0;
+		}
 	}
 	.icon-mail {
 		width: 16px;
@@ -472,6 +475,9 @@ figure.media {
 		float: left;
 		margin-right: 5px;
 		margin-top: 1px;
+		@include breakpoint($smalltouch) {
+			margin-right: 0;
+		}
 	}
 	.icon-facebook {
 		width: 18px;

@@ -12507,7 +12507,7 @@ figure.media {
 @media (max-width: 30em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003443}}
   .social-bar li {
-    margin-right: 10px;
+    margin-right: 25px;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003451}}
@@ -12532,7 +12532,13 @@ figure.media {
   margin-right: 5px;
   margin-top: -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003469}}
+@media (max-width: 30em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003462}}
+  .social-bar .icon-phone {
+    margin-right: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003472}}
 .social-bar .icon-mail {
   width: 16px;
   height: 13px;
@@ -12540,18 +12546,24 @@ figure.media {
   margin-right: 5px;
   margin-top: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003476}}
+@media (max-width: 30em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003472}}
+  .social-bar .icon-mail {
+    margin-right: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003482}}
 .social-bar .icon-facebook {
   width: 18px;
   height: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003480}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003486}}
 .social-bar p {
   float: left;
   margin-top: -5px;
 }
 @media (max-width: 30em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003480}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003486}}
   .social-bar p {
     display: none;
   }
