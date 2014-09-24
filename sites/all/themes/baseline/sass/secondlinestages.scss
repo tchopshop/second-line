@@ -27,15 +27,6 @@ html, body {
 	z-index: 1;
 	position: relative;
 }
-#logo img {
-	height: 80px;
-	margin-top: 5px;
-	margin-left: 15px;
-	margin-bottom: 5px;
-	@include breakpoint($tablet-landscape-and-above) {
-		margin-left: 0;
-	}
-}
 .logo-secondlinelogo {
 	width: 70px;
 	height: 77px;
@@ -52,13 +43,11 @@ html, body {
 	height: 55px;
 	border-top: 3px solid #373A3D;
 }
-.site-name {
-	@include text-hide;
-	background-image: url(images/lettering.png);
-	background-repeat: no-repeat;
+.logo-name {
+	text-indent: -2000px;
 	width: 70px;
-	height: 37px;
-	margin-top: 7px;
+	height: 36px;
+	margin-top: 10px;
 	float:left;
 }
 h2 {
