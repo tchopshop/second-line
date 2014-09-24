@@ -443,7 +443,24 @@ figure.media {
 	li {
 		float: left;
 	}
-	.icon-facebook, .icon-twitter, .icon-rss, .icon-phone, .icon-mail {
-		@include text-hide;
+	.icon-twitter {
+		width: 20px;
+		height: 16px;
+	}
+	.icon-rss {
+		width: 15px;
+		height: 15px;
+	}
+	.icon-phone {
+		width: 7px;
+		height: 17px;
+	}
+	.icon-mail {
+		width: 16px;
+		height: 13px;
+	}
+	.icon-facebook {
+		width: 18px;
+		height: 18px;
 	}
 }
