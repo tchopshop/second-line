@@ -31,6 +31,11 @@ html, body {
 	width: 70px;
 	height: 77px;
 	float: left;
+	a {
+		float: left;
+		width: 100%;
+		height: 100%;
+	}
 }
 .region-header .fieldable-panels-pane {
 	margin-top: -30px;
@@ -47,7 +52,7 @@ html, body {
 	text-indent: -2000px;
 	width: 70px;
 	height: 36px;
-	margin-top: 10px;
+	margin-top: 8px;
 	float:left;
 }
 h2 {
