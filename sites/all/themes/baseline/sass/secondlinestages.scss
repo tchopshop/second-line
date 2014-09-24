@@ -40,7 +40,7 @@ html, body {
 		}
 	}
 	&:hover {
-		opacity: .5;
+		opacity: .8;
 	}
 }
 .region-header .fieldable-panels-pane {
@@ -462,10 +462,16 @@ figure.media {
 	.icon-twitter {
 		width: 20px;
 		height: 16px;
+		&:hover {
+			opacity: .8;
+		}
 	}
 	.icon-rss {
 		width: 15px;
 		height: 15px;
+		&:hover {
+			opacity: .8;
+		}
 	}
 	.icon-phone {
 		width: 7px;
@@ -490,6 +496,9 @@ figure.media {
 	.icon-facebook {
 		width: 18px;
 		height: 18px;
+		&:hover {
+			opacity: .8;
+		}
 	}
 	p {
 		float: left;
