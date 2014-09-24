@@ -441,7 +441,9 @@ figure.media {
 	float: right;
 	list-style: none;
 	li {
-		@include text-hide;
 		float: left;
+	}
+	.icon-facebook, .icon-twitter, .icon-rss, .icon-phone, .icon-mail {
+		@include text-hide;
 	}
 }

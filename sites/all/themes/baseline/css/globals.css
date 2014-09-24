@@ -12500,10 +12500,13 @@ figure.media {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003443}}
 .social-bar li {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003446}}
+.social-bar .icon-facebook, .social-bar .icon-twitter, .social-bar .icon-rss, .social-bar .icon-phone, .social-bar .icon-mail {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  float: left;
 }
