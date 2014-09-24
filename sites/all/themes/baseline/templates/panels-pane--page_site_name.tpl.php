@@ -18,4 +18,4 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<h1 class="site-name"><?php print render($content); ?></h1>
+<h1 class="logo-name"><?php print render($content); ?></h1>
