@@ -35,10 +35,16 @@ html, body {
 		float: left;
 		width: 100%;
 		height: 100%;
+		&:hover {
+			color: transparent;
+		}
+	}
+	&:hover {
+		opacity: .5;
 	}
 }
 .region-header .fieldable-panels-pane {
-	margin-top: -30px;
+	margin-top: 5px;
 }
 .navbar {
 	margin-bottom: 0;
