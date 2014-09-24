@@ -444,6 +444,9 @@ figure.media {
 		float: left;
 		margin-right: 30px;
 		margin-top: -5px;
+		@include breakpoint($smalltouch) {
+			margin-right: 10px;
+		}
 	}
 	li:last-child {
 		margin-right: 0;
@@ -477,5 +480,8 @@ figure.media {
 	p {
 		float: left;
 		margin-top: -5px;
+		@include breakpoint($smalltouch) {
+		display: none;
+		}
 	}
 }
