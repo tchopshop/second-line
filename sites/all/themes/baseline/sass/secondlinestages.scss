@@ -443,6 +443,7 @@ figure.media {
 	li {
 		float: left;
 		margin-right: 30px;
+		margin-top: -5px;
 	}
 	li:last-child {
 		margin-right: 0;
@@ -459,11 +460,15 @@ figure.media {
 		width: 7px;
 		height: 17px;
 		float: left;
+		margin-right: 5px;
+		margin-top: -1px;
 	}
 	.icon-mail {
 		width: 16px;
 		height: 13px;
 		float: left;
+		margin-right: 5px;
+		margin-top: 1px;
 	}
 	.icon-facebook {
 		width: 18px;
@@ -471,5 +476,6 @@ figure.media {
 	}
 	p {
 		float: left;
+		margin-top: -5px;
 	}
 }
