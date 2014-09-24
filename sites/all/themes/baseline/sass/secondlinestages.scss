@@ -442,6 +442,10 @@ figure.media {
 	list-style: none;
 	li {
 		float: left;
+		margin-right: 30px;
+	}
+	li:last-child {
+		margin-right: 0;
 	}
 	.icon-twitter {
 		width: 20px;
@@ -454,13 +458,18 @@ figure.media {
 	.icon-phone {
 		width: 7px;
 		height: 17px;
+		float: left;
 	}
 	.icon-mail {
 		width: 16px;
 		height: 13px;
+		float: left;
 	}
 	.icon-facebook {
 		width: 18px;
 		height: 18px;
+	}
+	p {
+		float: left;
 	}
 }
