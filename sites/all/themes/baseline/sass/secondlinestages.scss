@@ -517,7 +517,7 @@ figure.media {
 
 .footer-menu .menu {
 	text-align: justify;
-	margin-top: 20px;
+	margin: 20px 0;
     font-size: 0.1px; /*hide whitespace between elements*/
 	> li {
 	display: inline-block;
@@ -543,6 +543,9 @@ figure.media {
 		    a {
 			    text-transform: capitalize;
 			    padding: 0;
+				&:hover {
+					background-color: transparent;
+					}
 		    }
 	      }
       }
@@ -551,6 +554,9 @@ figure.media {
 	    padding: 0;
 	    .caret {
 		    display: none;
+	    }
+	    &:hover {
+		    background-color: transparent;
 	    }
     }
 	}
