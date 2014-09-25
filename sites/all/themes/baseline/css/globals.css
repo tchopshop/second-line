@@ -12610,3 +12610,45 @@ figure.media {
     display: none;
   }
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003512}}
+#footer-wrapper {
+  background-color: #ec4d37;
+  float: left;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003518}}
+.footer-menu .menu {
+  text-align: justify;
+  font-size: 0.1px;
+  /*hide whitespace between elements*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003521}}
+.footer-menu .menu li {
+  display: inline-block;
+  width: 16%;
+  font-size: 16px;
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003526}}
+.footer-menu .menu li ul.dropdown-menu {
+  position: static;
+  display: block;
+  min-width: intrinsic;
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: 0px 0px 0px black;
+  box-shadow: 0px 0px 0px black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003536}}
+.footer-menu .menu li a {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003540}}
+.footer-menu .menu:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
