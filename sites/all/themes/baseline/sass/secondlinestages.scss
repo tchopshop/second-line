@@ -540,11 +540,15 @@ figure.media {
 	      li {
 		      width: 100%;
 		      font-size: 18px;
+				&:hover {
+					background-color: transparent;
+					}
 		    a {
 			    text-transform: capitalize;
 			    padding: 0;
 				&:hover {
 					background-color: transparent;
+					color: black;
 					}
 		    }
 	      }
@@ -557,6 +561,7 @@ figure.media {
 	    }
 	    &:hover {
 		    background-color: transparent;
+		    color: black;
 	    }
     }
 	}
