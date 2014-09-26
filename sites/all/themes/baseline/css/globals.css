@@ -11620,6 +11620,11 @@ body.page-node-edit .table > thead > tr > th, body.page-node-add .table > thead 
   border-bottom: 2px solid #ddd;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003240}}
+hr {
+  clear: both;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.modules\.scss}line{font-family:\000034}}
 .dev-query {
   background: #eee;
