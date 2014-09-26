@@ -5,4 +5,4 @@
  * Display Suite 1 column template.
  */
 ?>
-<br>
+<hr>
