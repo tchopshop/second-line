@@ -144,10 +144,12 @@ display:block;
 .image-float-left .columns, .float-left .column, .float-left, .column.float-left, .columns.float-left {
 	float: left;
 	padding-left: 0;
+	clear: left;
 }
 .image-float-right .columns, .float-right .column, .float-right, .column.float-right, .columns.float-right {
 	float: right;
 	padding-right: 0;
+	clear: right;
 }
 .image-center .columns, .center .column, .center, .column.center, .columns.center {
 	margin: 0 auto;

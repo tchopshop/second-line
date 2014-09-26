@@ -11486,15 +11486,17 @@ p:last-child, .navbar-search .control-group, .radio:last-child, .checkbox:last-c
 .image-float-left .columns, .image-float-left .region-leaderboard, .image-float-left .region-header, .image-float-left .region-help, .image-float-left .region-secondary-content, .image-float-left .region-highlighted, .image-float-left .region-content-aside, .image-float-left .region-tertiary-content, .image-float-left #footer, .float-left .column, .float-left, .column.float-left, .columns.float-left, .float-left.region-leaderboard, .float-left.region-header, .float-left.region-help, .float-left.region-secondary-content, .float-left.region-highlighted, .float-left.region-content-aside, .float-left.region-tertiary-content, .float-left#footer {
   float: left;
   padding-left: 0;
+  clear: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003149}}
 .image-float-right .columns, .image-float-right .region-leaderboard, .image-float-right .region-header, .image-float-right .region-help, .image-float-right .region-secondary-content, .image-float-right .region-highlighted, .image-float-right .region-content-aside, .image-float-right .region-tertiary-content, .image-float-right #footer, .float-right .column, .float-right, .column.float-right, .columns.float-right, .float-right.region-leaderboard, .float-right.region-header, .float-right.region-help, .float-right.region-secondary-content, .float-right.region-highlighted, .float-right.region-content-aside, .float-right.region-tertiary-content, .float-right#footer {
   float: right;
   padding-right: 0;
+  clear: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003154}}
 .image-center .columns, .image-center .region-leaderboard, .image-center .region-header, .image-center .region-help, .image-center .region-secondary-content, .image-center .region-highlighted, .image-center .region-content-aside, .image-center .region-tertiary-content, .image-center #footer, .center .column, .center, .column.center, .columns.center, .center.region-leaderboard, .center.region-header, .center.region-help, .center.region-secondary-content, .center.region-highlighted, .center.region-content-aside, .center.region-tertiary-content, .center#footer {
   margin: 0 auto;
   position: relative;
@@ -11502,54 +11504,54 @@ p:last-child, .navbar-search .control-group, .radio:last-child, .checkbox:last-c
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003160}}
 .image-float-left .columns, .image-float-left .region-leaderboard, .image-float-left .region-header, .image-float-left .region-help, .image-float-left .region-secondary-content, .image-float-left .region-highlighted, .image-float-left .region-content-aside, .image-float-left .region-tertiary-content, .image-float-left #footer {
   padding-left: 0;
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003164}}
 .image-float-right .columns, .image-float-right .region-leaderboard, .image-float-right .region-header, .image-float-right .region-help, .image-float-right .region-secondary-content, .image-float-right .region-highlighted, .image-float-right .region-content-aside, .image-float-right .region-tertiary-content, .image-float-right #footer {
   padding-right: 0;
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003168}}
 blockquote footer span.second-line {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003170}}
 blockquote footer span.second-line:before {
   content: '\2014 \00A0';
   color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003179}}
 td.download {
   min-width: 120px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003181}}
 td.download ul {
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003184}}
 td.download li {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003188}}
 .summary {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003201}}
 body.page-node-edit .table-striped > tbody > tr:nth-child(odd) > td,
 body.page-node-edit .table-striped > tbody > tr:nth-child(odd) > th, body.page-node-add .table-striped > tbody > tr:nth-child(odd) > td,
 body.page-node-add .table-striped > tbody > tr:nth-child(odd) > th, body.page-admin .table-striped > tbody > tr:nth-child(odd) > td,
 body.page-admin .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003215}}
 body.page-node-edit .table-hover > tbody > tr:hover > td,
 body.page-node-edit .table-hover > tbody > tr:hover > th, body.page-node-add .table-hover > tbody > tr:hover > td,
 body.page-node-add .table-hover > tbody > tr:hover > th, body.page-admin .table-hover > tbody > tr:hover > td,
@@ -11594,7 +11596,7 @@ body.page-node-add .table-hover > tbody > tr > th.active:hover, body.page-node-a
 body.page-admin .table-hover > tbody > tr > th.active:hover, body.page-admin .table-hover > tbody > tr.active:hover > td, body.page-admin .table-hover > tbody > tr.active:hover > th {
   background-color: #e8e8e8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003228}}
 body.page-node-edit .table > thead > tr > th,
 body.page-node-edit .table > thead > tr > td,
 body.page-node-edit .table > tbody > tr > th,
@@ -11613,7 +11615,7 @@ body.page-admin .table > tfoot > tr > th,
 body.page-admin .table > tfoot > tr > td {
   border-top: 1px solid #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.fields\.scss}line{font-family:\00003233}}
 body.page-node-edit .table > thead > tr > th, body.page-node-add .table > thead > tr > th, body.page-admin .table > thead > tr > th {
   border-bottom: 2px solid #ddd;
 }
