@@ -616,7 +616,7 @@ hr {
   margin-top: 24px;
   margin-bottom: 24px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #333333;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_scaffolding\.scss}line{font-family:\00003125}}
