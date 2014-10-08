@@ -52,6 +52,10 @@ class FeedsSyndicationParser extends FeedsParser {
         'name' => t('Description'),
         'description' => t('Description of the feed item.'),
       ),
+      'desc_link' => array(
+        'name' => t('Image source in description'),
+        'description' => t('Image source link in description.'),
+      ),
       'author_name' => array(
         'name' => t('Author name'),
         'description' => t('Name of the feed item\'s author.'),

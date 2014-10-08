@@ -1,0 +1,28 @@
+diff --git a/libraries/common_syndication_parser.inc b/libraries/common_syndication_parser.inc
+index 37bc5bb..6a3024f 100644
+--- a/libraries/common_syndication_parser.inc
++++ b/libraries/common_syndication_parser.inc
+@@ -452,6 +452,8 @@ function _parser_common_syndication_RSS20_parse($feed_XML) {
+     $item = array();
+     $item['title'] = _parser_common_syndication_title($title, $body);
+     $item['description'] = $body;
++    preg_match("/src=\"([^\s\"]+)/",$body,$matches);
++    $item['desc_link'] = ($matches)?$matches[1]:'';
+     $item['author_name'] = $original_author;
+     if (!empty($news['pubDate'])) {
+       $item['timestamp'] = _parser_common_syndication_parse_date($news['pubDate']);
+diff --git a/plugins/FeedsSyndicationParser.inc b/plugins/FeedsSyndicationParser.inc
+index 64e55a4..f14977e 100644
+--- a/plugins/FeedsSyndicationParser.inc
++++ b/plugins/FeedsSyndicationParser.inc
+@@ -47,6 +47,10 @@ class FeedsSyndicationParser extends FeedsParser {
+         'name' => t('Description'),
+         'description' => t('Description of the feed item.'),
+       ),
++      'desc_link' => array(
++        'name' => t('Image source in description'),
++        'description' => t('Image source link in description.'),
++      ),
+       'author_name' => array(
+         'name' => t('Author name'),
+         'description' => t('Name of the feed item\'s author.'),
