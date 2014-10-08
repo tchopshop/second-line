@@ -12694,3 +12694,8 @@ figure.media {
   display: inline-block;
   width: 100%;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003575}}
+.news-feed {
+  float: left;
+}
