@@ -648,4 +648,9 @@ h2 {
 }
 .front .base-one > div:nth-child(2) {
 	@include grid-column(2);
+	background-color: white;
+	padding: 0;
+	.small-12 {
+		padding: 10px;
+	}
 }
