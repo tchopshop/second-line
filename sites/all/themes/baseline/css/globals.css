@@ -12704,10 +12704,6 @@ figure.media {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003581}}
-.news-feed {
-  padding: 0 10px;
-}
 @media (max-width: 49.9375em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003581}}
   .news-feed {
@@ -12729,12 +12725,13 @@ figure.media {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003587}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003586}}
 .news-feed h2 {
   text-align: left;
   font-size: 2em;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  padding: 0 10px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003593}}
@@ -12769,6 +12766,7 @@ figure.media {
     padding-right: 0.9375rem;
     width: 50%;
     float: left;
+    border-bottom: none;
   }
 }
 @media (min-width: 30.0625em) and (max-width: 49.9375em) {
@@ -12776,8 +12774,9 @@ figure.media {
   .front .node-local-feed-items {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 25%;
+    width: 33.33333%;
     float: left;
+    border-bottom: none;
   }
 }
 @media (min-width: 50em) and (max-width: 64em) {
@@ -12787,6 +12786,7 @@ figure.media {
     padding-right: 0.9375rem;
     width: 100%;
     float: left;
+    padding: 0;
   }
 }
 @media (min-width: 64.0625em) {
@@ -12796,5 +12796,6 @@ figure.media {
     padding-right: 0.9375rem;
     width: 100%;
     float: left;
+    padding: 0;
   }
 }
