@@ -12722,10 +12722,10 @@ figure.media {
   position: relative;
   margin-bottom: 10px;
   padding-bottom: 0;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 16.66667%;
-  float: left;
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+  *zoom: 1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003591}}
 .front .node-local-feed-items a {
@@ -12746,31 +12746,150 @@ figure.media {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003161}}
+.front .node-local-feed-items:before, .front .node-local-feed-items:after {
+  content: " ";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003162}}
+.front .node-local-feed-items:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000348}}
+.front .node-local-feed-items > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000359}}
+.front .node-local-feed-items > li {
+  width: 50%;
+  padding: 0 0.625rem 1.25rem;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000366}}
+.front .node-local-feed-items > li:nth-of-type(n) {
+  clear: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000367}}
+.front .node-local-feed-items > li:nth-of-type(2n+1) {
+  clear: both;
+}
 @media (min-width: 30.0625em) and (max-width: 49.9375em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
   .front .node-local-feed-items {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 25%;
-    float: right;
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    *zoom: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003161}}
+  .front .node-local-feed-items:before, .front .node-local-feed-items:after {
+    content: " ";
+    display: table;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003162}}
+  .front .node-local-feed-items:after {
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000348}}
+  .front .node-local-feed-items > li {
+    display: block;
+    height: auto;
     float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000359}}
+  .front .node-local-feed-items > li {
+    width: 33.33333%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000366}}
+  .front .node-local-feed-items > li:nth-of-type(n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000367}}
+  .front .node-local-feed-items > li:nth-of-type(3n+1) {
+    clear: both;
   }
 }
 @media (min-width: 50em) and (max-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
   .front .node-local-feed-items {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 8.33333%;
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    *zoom: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003161}}
+  .front .node-local-feed-items:before, .front .node-local-feed-items:after {
+    content: " ";
+    display: table;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003162}}
+  .front .node-local-feed-items:after {
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000348}}
+  .front .node-local-feed-items > li {
+    display: block;
+    height: auto;
     float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000359}}
+  .front .node-local-feed-items > li {
+    width: 100%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000366}}
+  .front .node-local-feed-items > li:nth-of-type(n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000367}}
+  .front .node-local-feed-items > li:nth-of-type(1n+1) {
+    clear: both;
   }
 }
 @media (min-width: 64.0625em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
   .front .node-local-feed-items {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 8.33333%;
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    *zoom: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003161}}
+  .front .node-local-feed-items:before, .front .node-local-feed-items:after {
+    content: " ";
+    display: table;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_custom\.scss}line{font-family:\00003162}}
+  .front .node-local-feed-items:after {
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000348}}
+  .front .node-local-feed-items > li {
+    display: block;
+    height: auto;
     float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000359}}
+  .front .node-local-feed-items > li {
+    width: 100%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000366}}
+  .front .node-local-feed-items > li:nth-of-type(n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_block-grid\.scss}line{font-family:\0000367}}
+  .front .node-local-feed-items > li:nth-of-type(1n+1) {
+    clear: both;
   }
 }

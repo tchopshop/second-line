@@ -604,14 +604,14 @@ figure.media {
 	position: relative;
 	margin-bottom: 10px;
 	padding-bottom: 0;
-	@include grid-column($columns:2);
+	@include block-grid(2);
 	@include breakpoint ($tablet-portrait) {
-		@include grid-column($columns:3,$float:left,$last-column:true);
+		@include block-grid(3);
 	}
 	@include breakpoint ($tablet-landscape) {
-		@include grid-column($columns:1);		
+		@include block-grid(1);		
 	}
 	@include breakpoint ($standard) {
-		@include grid-column($columns:1);				
+		@include block-grid(1);				
 	}
 }
