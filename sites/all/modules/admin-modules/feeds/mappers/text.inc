@@ -26,15 +26,6 @@ function text_feeds_processor_targets_alter(&$targets, $entity_type, $bundle_nam
         'callback' => 'text_feeds_set_target',
         'description' => t('The @label field of the entity.', array('@label' => $instance['label'])),
       );
-      if ($info['type'] == 'text_with_summary') {
-        // Allow mapping to summary.
-        $targets[$name . ':summary'] = array(
-          'name' => t('@name: Summary', array('@name' => $instance['label'])),
-          'callback' => 'text_feeds_set_target',
-          'description' => t('The @label field of the entity.', array('@label' => $instance['label'])),
-          'real_target' => $name,
-        );
-      }
     }
   }
 }
@@ -42,34 +33,47 @@ function text_feeds_processor_targets_alter(&$targets, $entity_type, $bundle_nam
 /**
  * Callback for mapping text fields.
  */
-function text_feeds_set_target($source, $entity, $target, array $values) {
-  list($field_name, $column) = explode(':', $target . ':value');
+function text_feeds_set_target($source, $entity, $target, $value) {
+  if (empty($value)) {
+    return;
+  }
 
-  if ($column === 'value' && isset($source->importer->processor->config['input_format'])) {
+  if (!is_array($value)) {
+    $value = array($value);
+  }
+
+  if (isset($source->importer->processor->config['input_format'])) {
     $format = $source->importer->processor->config['input_format'];
   }
 
-  $field = isset($entity->$field_name) ? $entity->$field_name : array('und' => array());
+  $info = field_info_field($target);
 
   // Iterate over all values.
-  $delta = 0;
-  foreach ($values as $value) {
+  $field = isset($entity->$target) ? $entity->$target : array('und' => array());
 
-    if (is_object($value) && $value instanceof FeedsElement) {
-      $value = $value->getValue();
+  // Allow for multiple mappings to the same target.
+  $delta = count($field['und']);
+
+  foreach ($value as $v) {
+
+    if ($info['cardinality'] == $delta) {
+      break;
     }
 
-    if (is_scalar($value) && strlen($value)) {
+    if (is_object($v) && ($v instanceof FeedsElement)) {
+      $v = $v->getValue();
+    }
 
-      $field['und'][$delta][$column] = (string) $value;
+    if (is_scalar($v)) {
+      $field['und'][$delta]['value'] = $v;
 
       if (isset($format)) {
         $field['und'][$delta]['format'] = $format;
       }
-    }
 
-    $delta++;
+      $delta++;
+    }
   }
 
-  $entity->$field_name = $field;
+  $entity->$target = $field;
 }

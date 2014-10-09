@@ -456,6 +456,8 @@ function _parser_common_syndication_RSS20_parse($feed_XML) {
     $item = array();
     $item['title'] = _parser_common_syndication_title($title, $body);
     $item['description'] = $body;
+    preg_match("/src=\"([^\s\"]+)/",$body,$matches);
+    $item['desc_link'] = ($matches)?$matches[1]:'';
     $item['author_name'] = $original_author;
     if (!empty($news['pubDate'])) {
       $item['timestamp'] = _parser_common_syndication_parse_date($news['pubDate']);
