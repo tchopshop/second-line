@@ -307,9 +307,6 @@ h1 {
 .tablefield-wrapper {
 	@extend .row;
 }
-.flexslider {
-	margin-bottom: 0!important;
-}
 .flexslider .slides img {
 	padding: 0 20px;
 }
@@ -578,6 +575,9 @@ figure.media {
     display: inline-block;
     width: 100%;
 	}
+}
+.flexslider {
+	margin-bottom: 0!important;
 }
 .flexslider, .news-feed {
 	float: left;
