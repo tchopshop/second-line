@@ -303,6 +303,9 @@ h1 {
 .tablefield-wrapper {
 	@extend .row;
 }
+.flexslider {
+	margin-bottom: 0;
+}
 .flexslider .slides img {
 	padding: 0 20px;
 }
@@ -578,8 +581,8 @@ figure.media {
 .news-feed h2 {
 	text-align: left;
 	font-size: 2em;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 0!important;
+	margin-bottom: 0!important;
 }
 .front .node-local-feed-items {
 	position: relative;

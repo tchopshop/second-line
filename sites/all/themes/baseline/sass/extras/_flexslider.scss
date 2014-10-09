@@ -15,14 +15,14 @@
 	font-size: 1.2em;
     color: $white;
 	@include breakpoint($tablet-portrait) {
-    font-size: 1.8em;
+    font-size: 1.4em;
     }
 	@include breakpoint($tablet-landscape) {
-    font-size: 2.5em;
+    font-size: 1.8em;
     line-height: 1.2;
     }
 	@include breakpoint($standard) {
-    font-size: 3.1em;
+    font-size: 2.5em;
     line-height: 1.2;
     }
   -webkit-animation-duration: 2s;
