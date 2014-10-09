@@ -12705,6 +12705,11 @@ figure.media {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003581}}
+.news-feed {
+  padding: 0 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003584}}
 .news-feed h2 {
   text-align: left;
   font-size: 2em;
@@ -12712,11 +12717,15 @@ figure.media {
   margin-bottom: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003587}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
 .front .node-local-feed-items {
   position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 16.66667%;
+  float: left;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003591}}
 .front .node-local-feed-items a {
@@ -12736,4 +12745,32 @@ figure.media {
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+@media (min-width: 30.0625em) and (max-width: 49.9375em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
+  .front .node-local-feed-items {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 25%;
+    float: right;
+    float: left;
+  }
+}
+@media (min-width: 50em) and (max-width: 64em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
+  .front .node-local-feed-items {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 8.33333%;
+    float: left;
+  }
+}
+@media (min-width: 64.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
+  .front .node-local-feed-items {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 8.33333%;
+    float: left;
+  }
 }
