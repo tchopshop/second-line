@@ -12785,7 +12785,7 @@ figure.media {
   .front .node-local-feed-items {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 8.33333%;
+    width: 100%;
     float: left;
   }
 }
@@ -12794,7 +12794,7 @@ figure.media {
   .front .node-local-feed-items {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 8.33333%;
+    width: 100%;
     float: left;
   }
 }

@@ -607,16 +607,16 @@ figure.media {
 	position: relative;
 	margin-bottom: 10px!important;
 	padding-bottom: 0!important;
-	@include breakpoint ($smalltouch) {
+	@include breakpoint($smalltouch) {
 		@include grid-column(6);
-		}
-	@include breakpoint ($tablet-portrait) {
+		};
+	@include breakpoint($tablet-portrait) {
 		@include grid-column(3);
 	};
-	@include breakpoint ($tablet-landscape) {
-		@include grid-column(1);		
+	@include breakpoint($tablet-landscape) {
+		@include grid-column(12);		
 	};
-	@include breakpoint ($standard) {
-		@include grid-column(1);				
+	@include breakpoint($standard) {
+		@include grid-column(12);				
 	};
 }
