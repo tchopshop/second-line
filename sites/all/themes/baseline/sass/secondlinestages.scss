@@ -575,7 +575,12 @@ figure.media {
 .flexslider, .news-feed {
 	float: left;
 }
-
+.news-feed h2 {
+	text-align: left;
+	font-size: 2em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
 .front .node-local-feed-items {
 	position: relative;
 	padding-bottom: 10px;
