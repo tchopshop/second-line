@@ -583,11 +583,20 @@ figure.media {
 	float: left;
 }
 .news-feed {
+	margin-top: 20px;
 	@include breakpoint ($tablet-portrait-and-below) {
 		@include grid-row();
+		margin-top: 0;
 	}
 	.more-link {
 		clear: left;
+	@include breakpoint($tablet-portrait-and-below) {
+		padding: 0 10px;
+		}
+	}
+	.view-header {
+		margin-bottom: 5px;
+		margin-top: -5px;
 	@include breakpoint($tablet-portrait-and-below) {
 		padding: 0 10px;
 		}
@@ -616,6 +625,7 @@ h2 {
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
+	border-bottom: 1px solid $gray-light;
 	position: relative;
 	margin-bottom: 10px!important;
 	padding-bottom: 0!important;
