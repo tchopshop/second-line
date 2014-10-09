@@ -650,7 +650,7 @@ h2 {
 	margin-top: 40px;
 	@include breakpoint($tablet-landscape-and-above) {
 		@include grid-column(2);
-		margin-top: 0;
+		margin-top: 20px;
 		}
 	background-color: white;
 	padding: 0;
