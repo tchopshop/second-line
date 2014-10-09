@@ -582,14 +582,20 @@ figure.media {
 	@include breakpoint ($tablet-portrait-and-below) {
 		@include grid-row();
 	}
-}
-.news-feed h2 {
+	.more-link {
+		clear: left;
+	@include breakpoint($tablet-portrait-and-below) {
+		padding: 0 10px;
+		}
+	}
+h2 {
 	text-align: left;
 	font-size: 2em;
 	margin-top: 0!important;
 	margin-bottom: 0!important;
 	@include breakpoint($tablet-portrait-and-below) {
 		padding: 0 10px;
+		}
 		}
 }
 .front .node-local-feed-items {
@@ -605,9 +611,6 @@ figure.media {
 		font-size: 20px;
 		margin-top: 5px;
 		margin-bottom: 5px;
-	}
-	.more-link {
-		clear: left;
 	}
 	position: relative;
 	margin-bottom: 10px!important;
