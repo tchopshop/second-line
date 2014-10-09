@@ -634,7 +634,7 @@ h2 {
 		border-bottom: none;
 		};
 	@include breakpoint($tablet-portrait) {
-		@include grid-column(4);
+		@include grid-column(6);
 		border-bottom: none;
 	};
 	@include breakpoint($tablet-landscape) {
@@ -647,7 +647,10 @@ h2 {
 	};
 }
 .front .base-one > div:nth-child(2) {
-	@include grid-column(2);
+	@include grid-column(4);
+	@include breakpoint($tablet-portrait-and-above) {
+		@include grid-column(2);
+		}
 	background-color: white;
 	padding: 0;
 	.small-12 {
