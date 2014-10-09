@@ -103,10 +103,14 @@ h4 {
 	color: $brand-primary;
 	font-family: sans-serif;
 }
-.node-local-feed-items  {
+.local-feed-items  {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid $gray-light;
+	img {
+		float: left;
+		margin-right: 10px;
+	}
 }
 .grid-title /* h3 */ {
 	@extend h3;
