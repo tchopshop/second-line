@@ -602,16 +602,16 @@ figure.media {
 		margin-bottom: 5px;
 	}
 	position: relative;
-	margin-bottom: 10px;
-	padding-bottom: 0;
+	margin-bottom: 10px!important;
+	padding-bottom: 0!important;
 	@include block-grid(2);
 	@include breakpoint ($tablet-portrait) {
 		@include block-grid(3);
-	}
+	};
 	@include breakpoint ($tablet-landscape) {
 		@include block-grid(1);		
-	}
+	};
 	@include breakpoint ($standard) {
 		@include block-grid(1);				
-	}
+	};
 }

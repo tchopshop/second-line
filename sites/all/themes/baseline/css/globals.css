@@ -12720,8 +12720,8 @@ figure.media {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003590}}
 .front .node-local-feed-items {
   position: relative;
-  margin-bottom: 10px;
-  padding-bottom: 0;
+  margin-bottom: 10px !important;
+  padding-bottom: 0 !important;
   display: block;
   padding: 0;
   margin: 0 -0.625rem;
