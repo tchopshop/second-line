@@ -12836,3 +12836,11 @@ figure.media {
     padding: 0;
   }
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003649}}
+.front .base-one div:nth-child(2) {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 16.66667%;
+  float: left;
+}
