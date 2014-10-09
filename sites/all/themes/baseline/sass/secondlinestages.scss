@@ -584,6 +584,9 @@ figure.media {
 }
 .news-feed {
 	margin-top: 20px;
+	@include breakpoint ($tablet-portrait-and-below) {
+		margin-top: 0;
+	}
 	.more-link {
 		clear: left;
 	@include breakpoint($tablet-portrait-and-below) {
@@ -644,8 +647,10 @@ h2 {
 }
 .front .base-one > div:nth-child(2) {
 	@include grid-column(4);
+	margin-top: 40px;
 	@include breakpoint($tablet-landscape-and-above) {
 		@include grid-column(2);
+		margin-top: 0;
 		}
 	background-color: white;
 	padding: 0;
