@@ -646,6 +646,6 @@ h2 {
 		padding: 0;		
 	};
 }
-.front .base-one div:nth-child(2) {
+.front .base-one > div:nth-child(2) {
 	@include grid-column(2);
 }
