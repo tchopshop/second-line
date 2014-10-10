@@ -645,7 +645,7 @@ figure.media {
 		padding: 0;		
 	};
 }
-.front .base-one > div:nth-child(2) {
+.front .base-one > div:nth-child(3) {
 	@include grid-column(4);
 	margin-top: 40px;
 	@include breakpoint($tablet-landscape-and-above) {
@@ -663,6 +663,9 @@ figure.media {
 	font-size: 2em;
 	margin-top: 0!important;
 	margin-bottom: 0!important;
+	float:left;
+	width: 16.666%;
+	letter-spacing: 0;
 	@include breakpoint($tablet-portrait-and-below) {
 		padding: 0 10px;
 		}

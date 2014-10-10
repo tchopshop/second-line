@@ -12823,7 +12823,7 @@ figure.media {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003648}}
-.front .base-one > div:nth-child(2) {
+.front .base-one > div:nth-child(3) {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 33.33333%;
@@ -12834,7 +12834,7 @@ figure.media {
 }
 @media (min-width: 50em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003648}}
-  .front .base-one > div:nth-child(2) {
+  .front .base-one > div:nth-child(3) {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 16.66667%;
@@ -12843,7 +12843,7 @@ figure.media {
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003657}}
-.front .base-one > div:nth-child(2) .small-12, .front .base-one > div:nth-child(2) .region-leaderboard, .front .base-one > div:nth-child(2) .region-header, .front .base-one > div:nth-child(2) .region-help, .front .base-one > div:nth-child(2) .region-secondary-content, .front .base-one > div:nth-child(2) .region-highlighted, .front .base-one > div:nth-child(2) .region-content-aside, .front .base-one > div:nth-child(2) .region-tertiary-content, .front .base-one > div:nth-child(2) #footer {
+.front .base-one > div:nth-child(3) .small-12, .front .base-one > div:nth-child(3) .region-leaderboard, .front .base-one > div:nth-child(3) .region-header, .front .base-one > div:nth-child(3) .region-help, .front .base-one > div:nth-child(3) .region-secondary-content, .front .base-one > div:nth-child(3) .region-highlighted, .front .base-one > div:nth-child(3) .region-content-aside, .front .base-one > div:nth-child(3) .region-tertiary-content, .front .base-one > div:nth-child(3) #footer {
   padding: 10px;
 }
 
@@ -12853,6 +12853,9 @@ figure.media {
   font-size: 2em;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  float: left;
+  width: 16.666%;
+  letter-spacing: 0;
 }
 @media (max-width: 49.9375em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003661}}
