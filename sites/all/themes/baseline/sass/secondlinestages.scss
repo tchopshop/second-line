@@ -600,7 +600,7 @@ figure.media {
 		padding: 0 10px;
 		}
 	}
-h2 {
+	h2 {
 	text-align: left;
 	font-size: 2em;
 	margin-top: 0!important;
@@ -658,3 +658,13 @@ h2 {
 		padding: 10px;
 	}
 }
+.flexslider + h2 {
+	text-align: left;
+	font-size: 2em;
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+	@include breakpoint($tablet-portrait-and-below) {
+		padding: 0 10px;
+		}
+}	
+

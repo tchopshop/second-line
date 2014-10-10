@@ -12846,3 +12846,17 @@ figure.media {
 .front .base-one > div:nth-child(2) .small-12, .front .base-one > div:nth-child(2) .region-leaderboard, .front .base-one > div:nth-child(2) .region-header, .front .base-one > div:nth-child(2) .region-help, .front .base-one > div:nth-child(2) .region-secondary-content, .front .base-one > div:nth-child(2) .region-highlighted, .front .base-one > div:nth-child(2) .region-content-aside, .front .base-one > div:nth-child(2) .region-tertiary-content, .front .base-one > div:nth-child(2) #footer {
   padding: 10px;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003661}}
+.flexslider + h2 {
+  text-align: left;
+  font-size: 2em;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 49.9375em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003661}}
+  .flexslider + h2 {
+    padding: 0 10px;
+  }
+}
