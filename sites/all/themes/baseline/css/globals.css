@@ -12856,6 +12856,10 @@ figure.media {
   width: 16.666%;
   letter-spacing: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003668}}
+.flexslider + h2 p:before, .flexslider + h2 p:after {
+  border: none;
+}
 @media (max-width: 49.9375em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003660}}
   .flexslider + h2 {
@@ -12864,12 +12868,12 @@ figure.media {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003673}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003676}}
 .partner-logos {
   padding: 20px;
   background-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003676}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003679}}
 .partner-logos #file-411 .columns, .partner-logos #file-411 .region-leaderboard, .partner-logos #file-411 .region-header, .partner-logos #file-411 .region-help, .partner-logos #file-411 .region-secondary-content, .partner-logos #file-411 .region-highlighted, .partner-logos #file-411 .region-content-aside, .partner-logos #file-411 .region-tertiary-content, .partner-logos #file-411 #footer {
   margin-top: 20px;
 }

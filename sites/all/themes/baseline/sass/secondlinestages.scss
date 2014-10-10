@@ -665,6 +665,9 @@ figure.media {
 	float:left;
 	width: 16.666%;
 	letter-spacing: 0;
+	p:before, p:after {
+		border: none;
+	}
 	@include breakpoint($tablet-portrait-and-below) {
 		padding: 0 10px;
 		width: 33.3333%;
