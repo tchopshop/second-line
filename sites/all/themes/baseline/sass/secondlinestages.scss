@@ -683,7 +683,7 @@ figure.media {
 	#file-411 .columns {
 		margin-top: 20px;
 	}
-	@include breakpoint($tablet-portrait-and-below) {
+	@include breakpoint($smalltouch) {
 		> div:nth-child(3), div:nth-child(6) {
 		clear: left;
 	}
