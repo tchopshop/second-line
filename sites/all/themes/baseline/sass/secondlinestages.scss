@@ -683,7 +683,9 @@ figure.media {
 	#file-411 .columns {
 		margin-top: 20px;
 	}
-	div:nth-child(3), div:nth-child(6) {
+	@include breakpoint($tablet-portrait-and-below) {
+		> div:nth-child(3), div:nth-child(6) {
 		clear: left;
+	}
 	}
 }

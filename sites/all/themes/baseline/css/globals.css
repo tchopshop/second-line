@@ -12884,7 +12884,9 @@ figure.media {
 .partner-logos #file-411 .columns, .partner-logos #file-411 .region-leaderboard, .partner-logos #file-411 .region-header, .partner-logos #file-411 .region-help, .partner-logos #file-411 .region-secondary-content, .partner-logos #file-411 .region-highlighted, .partner-logos #file-411 .region-content-aside, .partner-logos #file-411 .region-tertiary-content, .partner-logos #file-411 #footer {
   margin-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003686}}
-.partner-logos div:nth-child(3), .partner-logos div:nth-child(6) {
-  clear: left;
+@media (max-width: 49.9375em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003687}}
+  .partner-logos > div:nth-child(3), .partner-logos div:nth-child(6) {
+    clear: left;
+  }
 }
