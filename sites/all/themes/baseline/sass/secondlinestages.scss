@@ -532,7 +532,11 @@ figure.media {
     text-transform: uppercase;
     font-style: normal;
     font-weight: normal;
-      ul.dropdown-menu {
+	@include breakpoint ($tablet-portrait-and-below) {
+		width:100%;
+		text-align: center;
+	}
+	      ul.dropdown-menu {
 	      position: static;
 	      display: block;
 	      min-width: intrinsic;
@@ -678,5 +682,8 @@ figure.media {
 	background-color: white;
 	#file-411 .columns {
 		margin-top: 20px;
+	}
+	div:nth-child(3), div:nth-child(6) {
+		clear: left;
 	}
 }
