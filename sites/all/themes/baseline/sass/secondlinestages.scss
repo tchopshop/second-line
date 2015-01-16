@@ -699,9 +699,13 @@ figure.media {
 		margin-left: 60px;
 		margin-right: 20px;
 		@include breakpoint($smalltouch) {
-		margin-left: 20px!important;
+			margin-left: 20px!important;
+			float: right;
 		}
-
+		@include breakpoint($tablet-portrait) {
+			margin-left: 20px!important;
+		}
+		
 	}
 	ul {
 		list-style: none;
