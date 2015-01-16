@@ -12904,10 +12904,10 @@ figure.media {
   margin-left: 60px;
   margin-right: 20px;
 }
-@media (max-width: 49.9375em) {
+@media (max-width: 30em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003694}}
   #weather h2 {
-    margin-left: 0 !important;
+    margin-left: 20px !important;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003706}}
