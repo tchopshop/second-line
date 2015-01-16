@@ -696,7 +696,7 @@ figure.media {
 		float: left;
 		margin-top:15px!important;
 		padding: 0;
-		margin-left: 40px;
+		margin-left: 60px;
 		margin-right: 20px;
 	}
 	ul {
@@ -708,6 +708,9 @@ figure.media {
 		li {
 			display:inline;
 			padding-right: 15px;
+		}
+		li.city {
+			display: none;
 		}
 	}
 }

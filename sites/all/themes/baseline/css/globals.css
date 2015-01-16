@@ -12901,7 +12901,7 @@ figure.media {
   float: left;
   margin-top: 15px !important;
   padding: 0;
-  margin-left: 40px;
+  margin-left: 60px;
   margin-right: 20px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003702}}
@@ -12916,4 +12916,8 @@ figure.media {
 #weather ul li {
   display: inline;
   padding-right: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003712}}
+#weather ul li.city {
+  display: none;
 }
