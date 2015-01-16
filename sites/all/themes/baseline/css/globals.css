@@ -12890,3 +12890,30 @@ figure.media {
     clear: left;
   }
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003692}}
+#weather {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003694}}
+#weather h2 {
+  font-size: 1.2em;
+  float: left;
+  margin-top: 15px !important;
+  padding: 0;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003702}}
+#weather ul {
+  list-style: none;
+  float: left;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003708}}
+#weather ul li {
+  display: inline;
+  padding-right: 15px;
+}
