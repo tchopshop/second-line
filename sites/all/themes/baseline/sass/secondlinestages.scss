@@ -507,7 +507,7 @@ figure.media {
 	p {
 		float: left;
 		margin-top: -5px;
-		@include breakpoint($smalltouch) {
+		@include breakpoint($tablet-portrait-and-below) {
 		display: none;
 		}
 	}
@@ -691,6 +691,9 @@ figure.media {
 }
 #weather {
 	float: left;
+		@include breakpoint($smalltouch) {
+			float:right;
+		}
 	h2 {
 		font-size: 1.2em;
 		float: left;
@@ -700,7 +703,6 @@ figure.media {
 		margin-right: 20px;
 		@include breakpoint($smalltouch) {
 			margin-left: 20px!important;
-			float: right;
 		}
 		@include breakpoint($tablet-portrait) {
 			margin-left: 20px!important;
