@@ -729,7 +729,7 @@ figure.media {
 	margin-right: 15px;
 }
 .column {
-	border-right: solid 1px $gray-dark;
+	border-right: solid 1px $gray;
 }
 .column:nth-child(3) {
 	border-right: none;	
@@ -738,5 +738,5 @@ figure.media {
 	margin-top: 0;
 }
 .text-columns {
-	margin-top: 50px;
+	margin-top: 50px!important;
 }
