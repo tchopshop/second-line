@@ -1,7 +1,6 @@
 name = Simple Weather
 description = "Simple Weather widget that creates a current weather block."
 core = 7.x
-dependencies[] = block
 dependencies[] = libraries
 
 ; Information added by Drupal.org packaging script on 2014-09-27
