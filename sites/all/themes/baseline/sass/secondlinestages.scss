@@ -734,7 +734,7 @@ figure.media {
 .column:nth-child(3) {
 	border-right: none;	
 } 
-.column:nth-child(1) h3:nth-child(1) {
+.column:nth-child(1) p + h3 {
 	margin-top: 0;
 }
 .text-columns {

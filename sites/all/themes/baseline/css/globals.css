@@ -12957,7 +12957,7 @@ figure.media {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003737}}
-.column:nth-child(1) h3:nth-child(1), .column:nth-child(1) .grid-title:nth-child(1) {
+.column:nth-child(1) p + h3, .column:nth-child(1) p + .grid-title {
   margin-top: 0;
 }
 
