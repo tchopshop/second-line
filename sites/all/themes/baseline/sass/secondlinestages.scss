@@ -698,6 +698,12 @@ figure.media {
 		padding: 0;
 		margin-left: 60px;
 		margin-right: 20px;
+		@include breakpoint($tablet-portrait-and-below) {
+		margin-left: 0;
+		position: relative;
+		margin: 0 auto;
+		}
+
 	}
 	ul {
 		list-style: none;
