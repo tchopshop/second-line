@@ -12949,7 +12949,7 @@ figure.media {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003733}}
-.page-user #content-wrapper {
+.page-user #content-wrapper, .page-file #content-wrapper {
   max-width: 1200px;
   margin-left: auto !important;
   margin-right: auto !important;
