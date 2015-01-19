@@ -31,7 +31,8 @@ html, body {
 	width: 70px;
 	height: 77px;
 	float: left;
-	@include breakpoint ($smalltouch) {
+	margin-bottom:8px;
+	@include breakpoint ($tablet-portrait-and-below) {
 	margin-left: 10px;
 	}
 	a {
