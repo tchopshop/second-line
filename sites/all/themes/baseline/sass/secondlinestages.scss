@@ -31,7 +31,9 @@ html, body {
 	width: 70px;
 	height: 77px;
 	float: left;
+	@include breakpoint ($smalltouch) {
 	margin-left: 10px;
+	}
 	a {
 		float: left;
 		width: 100%;
@@ -356,7 +358,8 @@ h3 {
 .page-node-664 #messages-help-wrapper{
 	background: url(images/constance-top.jpg) center center no-repeat;
 	position: relative;
-	h1 {color: white;}
+	min-height: 150px;
+	h1 {color: $brand-primary;}
 }
 
 figure.media {
