@@ -12964,6 +12964,11 @@ figure.media {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003744}}
+.stages .base-one.row, .stages .base-one#page-manager-edit, .stages #content-wrapper .base-one.admin, #content-wrapper .stages .base-one.admin, .stages .page-node-delete .base-one#content-wrapper, .page-node-delete .stages .base-one#content-wrapper, .stages .base-one.text-columns, .stages .base-one.tablefield-wrapper, .stages .base-one.table-responsive {
+  max-width: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003747}}
 .stages .row.flexslider, .stages .flexslider#page-manager-edit, .stages #content-wrapper .flexslider.admin, #content-wrapper .stages .flexslider.admin, .stages .page-node-delete .flexslider#content-wrapper, .page-node-delete .stages .flexslider#content-wrapper, .stages .flexslider.text-columns, .stages .flexslider.tablefield-wrapper, .stages .flexslider.table-responsive {
   background-color: silver;
   float: none;
@@ -12971,7 +12976,7 @@ figure.media {
   max-width: intrinsic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003750}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003753}}
 .stages h3, .stages .grid-title {
   max-width: 1200px;
   margin-left: auto;
