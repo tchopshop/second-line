@@ -10373,6 +10373,17 @@ body.cke_editable {
   background-color: white;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.forms\.scss}line{font-family:\00003595}}
+form#panelizer-edit-content-form {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/globals\/_global\.forms\.scss}line{font-family:\00003599}}
+form#panelizer-edit-content-form .tabs.secondary {
+  float: left;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/extras\/_paragraphs\.scss}line{font-family:\000033}}
 .form-item-field-paragraphs-add-more-type select {
   float: left;

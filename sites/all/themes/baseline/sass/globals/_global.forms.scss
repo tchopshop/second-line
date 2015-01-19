@@ -591,3 +591,12 @@ body.page-node-edit, body.page-node-add, body.page-admin {
 body.cke_editable  {
 		background-color: white;
 }
+
+form#panelizer-edit-content-form {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	.tabs.secondary {
+		float: left;
+	}
+}
