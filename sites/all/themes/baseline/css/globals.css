@@ -745,7 +745,7 @@ p {
   font-weight: 200;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_type\.scss}line{font-family:\0000362}}
   .lead {
     font-size: 24px;
@@ -973,7 +973,7 @@ dd {
 .dl-horizontal dd:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_type\.scss}line{font-family:\00003201}}
   .dl-horizontal dt {
     float: left;
@@ -1280,7 +1280,7 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_tables\.scss}line{font-family:\00003171}}
   .table-responsive {
     width: 100%;
@@ -1780,7 +1780,7 @@ select[multiple].input-lg,
   color: #d9d9d9;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003347}}
   .form-inline .form-group, .navbar-form .form-group {
     display: inline-block;
@@ -1860,7 +1860,7 @@ select[multiple].input-lg,
   padding-top: 7px;
   padding-bottom: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003433}}
   .form-horizontal .control-label {
     text-align: right;
@@ -2412,7 +2412,7 @@ tbody.collapse.in {
   margin-bottom: 1px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_dropdowns\.scss}line{font-family:\00003203}}
   .navbar-right .dropdown-menu {
     right: 0;
@@ -2738,7 +2738,7 @@ tbody.collapse.in {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navs\.scss}line{font-family:\00003177}}
   .nav-justified > li, .nav-tabs.nav-justified > li {
     display: table-cell;
@@ -2767,7 +2767,7 @@ tbody.collapse.in {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navs\.scss}line{font-family:\00003206}}
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
@@ -2816,7 +2816,7 @@ tbody.collapse.in {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\0000311}}
   .navbar {
     border-radius: 0px;
@@ -2836,7 +2836,7 @@ tbody.collapse.in {
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\0000331}}
   .navbar-header {
     float: left;
@@ -2867,7 +2867,7 @@ tbody.collapse.in {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\0000350}}
   .navbar-collapse {
     width: auto;
@@ -2900,7 +2900,7 @@ tbody.collapse.in {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\0000399}}
   .container > .navbar-header,
   .container > .navbar-collapse,
@@ -2916,7 +2916,7 @@ tbody.collapse.in {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003118}}
   .navbar-static-top {
     border-radius: 0;
@@ -2931,7 +2931,7 @@ tbody.collapse.in {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003129}}
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -2964,7 +2964,7 @@ tbody.collapse.in {
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003167}}
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -2999,7 +2999,7 @@ tbody.collapse.in {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003179}}
   .navbar-toggle {
     display: none;
@@ -3016,7 +3016,7 @@ tbody.collapse.in {
   padding-bottom: 10px;
   line-height: 24px;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003229}}
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -3041,7 +3041,7 @@ tbody.collapse.in {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003218}}
   .navbar-nav {
     float: left;
@@ -3062,7 +3062,7 @@ tbody.collapse.in {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003278}}
   .navbar-left {
     float: left !important;
@@ -3085,13 +3085,13 @@ tbody.collapse.in {
   margin-top: 6px;
   margin-bottom: 6px;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003304}}
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003292}}
   .navbar-form {
     width: auto;
@@ -3143,7 +3143,7 @@ tbody.collapse.in {
   margin-top: 13px;
   margin-bottom: 13px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003364}}
   .navbar-text {
     float: left;
@@ -3215,7 +3215,7 @@ tbody.collapse.in {
   background-color: #e7e7e7;
   color: #555555;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003459}}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
@@ -3316,7 +3316,7 @@ tbody.collapse.in {
   background-color: #090909;
   color: white;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_navbar\.scss}line{font-family:\00003593}}
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #090909;
@@ -4586,7 +4586,7 @@ button.close {
   margin-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_modals\.scss}line{font-family:\00003124}}
   .modal-dialog {
     width: 600px;
@@ -4604,7 +4604,7 @@ button.close {
     width: 300px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 800px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/bootstrap\/_modals\.scss}line{font-family:\00003137}}
   .modal-lg {
     width: 900px;
@@ -4803,7 +4803,7 @@ button.close {
   display: none !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 479px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003736}}
   .visible-xs {
     display: block !important;
@@ -4825,7 +4825,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 799px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003736}}
   .visible-sm {
     display: block !important;
@@ -4847,7 +4847,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 800px) and (max-width: 1023px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003736}}
   .visible-md {
     display: block !important;
@@ -4869,7 +4869,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003736}}
   .visible-lg {
     display: block !important;
@@ -4891,25 +4891,25 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003747}}
   .hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 799px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003747}}
   .hidden-sm {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 800px) and (max-width: 1023px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003747}}
   .hidden-md {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/_mixins\.scss}line{font-family:\00003747}}
   .hidden-lg {
     display: none !important;
