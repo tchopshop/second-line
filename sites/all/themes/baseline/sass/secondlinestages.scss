@@ -595,7 +595,7 @@ figure.media {
 .news-feed {
 	margin-top: 20px;
 	@include breakpoint ($tablet-landscape-and-below) {
-		margin-top: -70px;
+		margin-top: -35px;
 	}
 	.more-link {
 		clear: left;
@@ -669,14 +669,14 @@ figure.media {
 	margin-top: 0!important;
 	margin-bottom: 0!important;
 	float:left;
-	width: 16.666%;
+	width: 33.333%;
 	letter-spacing: 0;
 	p:before, p:after {
 		border: none;
 	}
 	@include breakpoint($standard) {
 		padding: 0 10px;
-		width: 33.3333%;
+		width: 16.666%;
 		}
 }	
 .partner-logos {

@@ -13488,7 +13488,7 @@ figure.media {
 @media (max-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003595}}
   .news-feed {
-    margin-top: -70px;
+    margin-top: -35px;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003600}}
@@ -13614,7 +13614,7 @@ figure.media {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   float: left;
-  width: 16.666%;
+  width: 33.333%;
   letter-spacing: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003674}}
@@ -13625,7 +13625,7 @@ figure.media {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003666}}
   .flexslider + h2 {
     padding: 0 10px;
-    width: 33.3333%;
+    width: 16.666%;
   }
 }
 
