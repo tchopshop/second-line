@@ -594,19 +594,19 @@ figure.media {
 }
 .news-feed {
 	margin-top: 20px;
-	@include breakpoint ($tablet-portrait-and-below) {
+	@include breakpoint ($tablet-landscape-and-below) {
 		margin-top: -70px;
 	}
 	.more-link {
 		clear: left;
-	@include breakpoint($tablet-portrait-and-below) {
+	@include breakpoint($tablet-landscape-and-below) {
 		padding: 0 10px;
 		}
 	}
 	.view-header {
 		margin-bottom: 5px;
 		margin-top: -5px;
-	@include breakpoint($tablet-portrait-and-below) {
+	@include breakpoint($tablet-landscape-and-below) {
 		padding: 0 10px;
 		}
 	}
@@ -615,7 +615,7 @@ figure.media {
 	font-size: 2em;
 	margin-top: 0!important;
 	margin-bottom: 0!important;
-	@include breakpoint($tablet-portrait-and-below) {
+	@include breakpoint($tablet-landscape-and-below) {
 		padding: 0 10px;
 		}
 		}
@@ -647,7 +647,7 @@ figure.media {
 		border-bottom: none;
 	};
 	@include breakpoint($tablet-landscape) {
-		@include grid-column(12);	
+		@include grid-column(6);	
 		padding: 0;	
 	};
 	@include breakpoint($standard) {
@@ -658,7 +658,7 @@ figure.media {
 .front .base-one > div:nth-child(3) {
 	@include grid-column(4);
 	float: none;
-	@include breakpoint($tablet-landscape-and-above) {
+	@include breakpoint($tablet-portrait-and-above) {
 		@include grid-column(2);
 		}
 	background-color: white;

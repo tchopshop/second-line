@@ -12741,7 +12741,7 @@ figure.media {
 .news-feed {
   margin-top: 20px;
 }
-@media (max-width: 49.9375em) {
+@media (max-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003595}}
   .news-feed {
     margin-top: -70px;
@@ -12751,7 +12751,7 @@ figure.media {
 .news-feed .more-link {
   clear: left;
 }
-@media (max-width: 49.9375em) {
+@media (max-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003600}}
   .news-feed .more-link {
     padding: 0 10px;
@@ -12762,7 +12762,7 @@ figure.media {
   margin-bottom: 5px;
   margin-top: -5px;
 }
-@media (max-width: 49.9375em) {
+@media (max-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003606}}
   .news-feed .view-header {
     padding: 0 10px;
@@ -12775,7 +12775,7 @@ figure.media {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-@media (max-width: 49.9375em) {
+@media (max-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003613}}
   .news-feed h2 {
     padding: 0 10px;
@@ -12833,7 +12833,7 @@ figure.media {
   .front .node-local-feed-items {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 100%;
+    width: 50%;
     float: left;
     padding: 0;
   }
@@ -12859,7 +12859,7 @@ figure.media {
   background-color: white;
   padding: 0;
 }
-@media (min-width: 50em) {
+@media (min-width: 30.0625em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003658}}
   .front .base-one > div:nth-child(3) {
     padding-left: 0.9375rem;
