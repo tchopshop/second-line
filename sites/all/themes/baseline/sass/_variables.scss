@@ -332,8 +332,8 @@ $column-gutter: rem-calc($column-gutter-px) !default;
 // Media Query Ranges
 $small-range: (0em, 480px) !default;
 $medium-range: (481px, 800px) !default;
-$large-range: (801px, 1200px) !default;
-$xlarge-range: (1201px, 1440px) !default;
+$large-range: (801px, 1024px) !default;
+$xlarge-range: (1024px, 1440px) !default;
 $xxlarge-range: (1441px, 99999999em) !default;
 
 //** Number of columns in the grid.
