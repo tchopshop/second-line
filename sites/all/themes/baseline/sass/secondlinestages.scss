@@ -671,13 +671,13 @@ figure.media {
 	float:left;
 	width: 33.333%;
 	letter-spacing: 0;
-	p:before, p:after {
-		border: none;
-	}
 	@include breakpoint($standard) {
 		padding: 0 10px;
 		width: 16.666%;
 		}
+	p:before, p:after {
+		border: none;
+	}
 }	
 .partner-logos {
 	padding: 20px;
