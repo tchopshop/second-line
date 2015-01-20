@@ -658,7 +658,7 @@ figure.media {
 .front .base-one > div:nth-child(3) {
 	@include grid-column(4);
 	float: none;
-	@include breakpoint($tablet-portrait-and-above) {
+	@include breakpoint($tablet-landscape-and-above) {
 		@include grid-column(2);
 		}
 	background-color: white;
@@ -678,7 +678,7 @@ figure.media {
 	p:before, p:after {
 		border: none;
 	}
-	@include breakpoint($tablet-portrait-and-below) {
+	@include breakpoint($tablet-landscape-and-below) {
 		padding: 0 10px;
 		width: 33.3333%;
 		}

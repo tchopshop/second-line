@@ -12859,7 +12859,7 @@ figure.media {
   background-color: white;
   padding: 0;
 }
-@media (min-width: 30.0625em) {
+@media (min-width: 50em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003658}}
   .front .base-one > div:nth-child(3) {
     padding-left: 0.9375rem;
@@ -12887,7 +12887,7 @@ figure.media {
 .flexslider + h2 p:before, .flexslider + h2 p:after {
   border: none;
 }
-@media (max-width: 49.9375em) {
+@media (max-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Macintosh\%20HD\%202\/Dropbox\/sites\/second-line\/sites\/all\/themes\/baseline\/sass\/secondlinestages\.scss}line{font-family:\00003670}}
   .flexslider + h2 {
     padding: 0 10px;
