@@ -642,13 +642,9 @@ figure.media {
 		@include grid-column(6);
 		border-bottom: none;
 		};
-	@include breakpoint($tablet-portrait) {
+	@include breakpoint($tablet) {
 		@include grid-column(6);
 		border-bottom: none;
-	};
-	@include breakpoint($tablet-landscape) {
-		@include grid-column(6);	
-		padding: 0;	
 	};
 	@include breakpoint($standard) {
 		@include grid-column(12);		
@@ -658,7 +654,7 @@ figure.media {
 .front .base-one > div:nth-child(3) {
 	@include grid-column(4);
 	float: none;
-	@include breakpoint($tablet-landscape-and-above) {
+	@include breakpoint($standard) {
 		@include grid-column(2);
 		}
 	background-color: white;
@@ -678,7 +674,7 @@ figure.media {
 	p:before, p:after {
 		border: none;
 	}
-	@include breakpoint($tablet-landscape-and-below) {
+	@include breakpoint($standard) {
 		padding: 0 10px;
 		width: 33.3333%;
 		}
