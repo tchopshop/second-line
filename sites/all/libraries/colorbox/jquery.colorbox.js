@@ -929,6 +929,9 @@
 		}, 100);
 		
 		if (settings.get('inline')) {
+			if (href.search('#picture-colorbox-') == 0) {
+				href = '.' + href.substr(1, href.length);
+			}
 			var $target = $(href);
 			// Inserts an empty placeholder where inline content is being pulled from.
 			// An event is bound to put inline content back when Colorbox closes or loads new content.

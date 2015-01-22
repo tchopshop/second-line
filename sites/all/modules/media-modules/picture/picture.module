@@ -764,8 +764,7 @@ function theme_picture_formatter_colorbox($variables) {
     $item['breakpoints'] = $variables['colorbox_group'];
     $item['style_name'] = $variables['colorbox_image_style'];
     $id = 'picture-colorbox-' . user_password();
-    $colorbox = '<div style="display: none;"><div id="' . $id . '" class="picture-colorbox-container">' . theme('picture', $item) . '</div></div>';
-
+    $colorbox = '<div style="display: none;"><div id="' . $id . '" class="' . $id . ' picture-colorbox-container">' . theme('picture', $item) . '</div></div>';
     $options = array(
       'attributes' => array('class' => array('colorbox-inline')),
       'query' => array('maxWidth' => '80%', 'maxHeight' => '80%', 'inline' => 'true'),
